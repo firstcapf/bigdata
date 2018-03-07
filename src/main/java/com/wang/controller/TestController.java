@@ -1,6 +1,7 @@
 package com.wang.controller;
 
 
+import com.wang.Service.ContentService;
 import com.wang.Service.StudentService;
 import com.wang.entity.StudentEntity;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
@@ -8,23 +9,26 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.RestController;
 
 import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
 
-@Controller
+@RestController
 @EnableAutoConfiguration
 public class TestController{
-    @RequestMapping("/")
+    @RequestMapping("/index")
     @ResponseBody
     String home()
     {
-        return "Hello World!";
+        return "index";
     }
 
 
     @Resource
     private StudentService studentService;
+    @Resource
+    private ContentService contentService;
 
     @RequestMapping("/showStudent")
     @ResponseBody
@@ -33,4 +37,8 @@ public class TestController{
         StudentEntity stu = this.studentService.getStudentById(Id);
         return stu;
     }
+
+
+
+
 }

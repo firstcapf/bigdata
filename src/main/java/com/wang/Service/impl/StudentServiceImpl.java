@@ -1,13 +1,14 @@
-package com.wang.Service;
+package com.wang.Service.impl;
 
 import com.wang.Dao.StudentDao;
+import com.wang.Service.StudentService;
 import com.wang.entity.StudentEntity;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
 
 @Service("studentService")
-public class StudentServiceImpl implements  StudentService{
+public class StudentServiceImpl implements StudentService {
     @Resource
     private StudentDao studentDao;
 
