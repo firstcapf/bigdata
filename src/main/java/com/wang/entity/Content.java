@@ -1,7 +1,12 @@
 package com.wang.entity;
 
-public class Content {
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
 
+@Entity
+public class Content {
 
     public String getTitle() {
         return title;
@@ -43,6 +48,8 @@ public class Content {
         this.cid = cid;
     }
 
+    @Id
+    @GeneratedValue(strategy= GenerationType.AUTO)
     private  int cid;
     private  String title;
     private  String content;
