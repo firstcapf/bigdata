@@ -1,7 +1,6 @@
-package com.wang.Service;
+package com.wang.service;
 
 import com.wang.entity.StudentEntity;
-import org.springframework.stereotype.Service;
 
 
 public interface StudentService {

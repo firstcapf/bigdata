@@ -1,11 +1,8 @@
-package com.wang.Service.impl;
+package com.wang.service.impl;
 
-import com.wang.Dao.ContentDao;
-import com.wang.Dao.StudentDao;
-import com.wang.Service.ContentService;
-import com.wang.Service.StudentService;
+import com.wang.dao.ContentDao;
+import com.wang.service.ContentService;
 import com.wang.entity.Content;
-import com.wang.entity.StudentEntity;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
@@ -17,8 +14,8 @@ public class ContentServiceImpl implements ContentService {
     private ContentDao contentDao;
 
     @Override
-    public List<Content> topnews() {
-        return contentDao.topnews();
+    public List<Content> topnews(int  type ) {
+        return contentDao.topnews(type);
     }
 
     @Override

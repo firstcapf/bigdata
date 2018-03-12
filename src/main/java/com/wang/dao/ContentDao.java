@@ -1,12 +1,11 @@
-package com.wang.Dao;
+package com.wang.dao;
 
 import com.wang.entity.Content;
-import com.wang.entity.StudentEntity;
 
 import java.util.List;
 
 public interface ContentDao {
-    List<Content> topnews();
+    List<Content> topnews(int type);
     Content selectcontentbycid(int cid);
 
 

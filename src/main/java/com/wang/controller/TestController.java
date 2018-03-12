@@ -1,11 +1,10 @@
 package com.wang.controller;
 
 
-import com.wang.Service.ContentService;
-import com.wang.Service.StudentService;
+import com.wang.service.ContentService;
+import com.wang.service.StudentService;
 import com.wang.entity.StudentEntity;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
-import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;

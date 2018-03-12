@@ -1,4 +1,4 @@
-package com.wang.Dao;
+package com.wang.dao;
 
 import com.wang.entity.StudentEntity;
 

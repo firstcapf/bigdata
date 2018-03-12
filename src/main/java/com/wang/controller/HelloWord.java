@@ -1,15 +1,12 @@
 package com.wang.controller;
 
-import com.wang.Service.ContentService;
-import org.springframework.beans.factory.annotation.Value;
+import com.wang.service.ContentService;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
 
 import javax.annotation.Resource;
-import java.util.Date;
 import java.util.Map;
 
 @Controller
@@ -39,8 +36,10 @@ public class HelloWord {
     @RequestMapping("/")
     public String web(Map<String,Object> model){
 
-        contentService.topnews();
-        model.put("topnewslist", contentService.topnews());
+        //contentService.topnews();
+        model.put("topnewslist1", contentService.topnews(1));
+        model.put("topnewslist2", contentService.topnews(2));
+        model.put("topnewslist3", contentService.topnews(3));
 
         return "index";//返回的内容就是templetes下面文件的名称
     }
@@ -48,8 +47,8 @@ public class HelloWord {
     @RequestMapping("/news")
     public String news_content(Map<String,Object> model){
 
-        contentService.topnews();
-        model.put("topnewslist", contentService.topnews());
+       // contentService.topnews();
+        model.put("topnewslist", contentService.topnews(1));
 
         return "index";//返回的内容就是templetes下面文件的名称
     }

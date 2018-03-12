@@ -1,7 +1,7 @@
-package com.wang.Service.impl;
+package com.wang.service.impl;
 
-import com.wang.Dao.StudentDao;
-import com.wang.Service.StudentService;
+import com.wang.dao.StudentDao;
+import com.wang.service.StudentService;
 import com.wang.entity.StudentEntity;
 import org.springframework.stereotype.Service;
 

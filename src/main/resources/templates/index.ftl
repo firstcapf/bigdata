@@ -173,17 +173,10 @@
       </dl> -->
     </div>
     <ul class="newlist">
-
-    <#list topnewslist as topnews>
+    <#list topnewslist1 as topnews>
         <li><a href="content/news?cid=${topnews.cid}" target="_blank">${topnews.publish_date}，${topnews.title}</a></li>
      </#list>
-
-
-
-
-        <!-- <li><a href="newscenter/20170310.html"  title="2017年3月10日，农业部农规院在成都市都江堰主持召开“国家级农村土地承包经营权信息应用平台咨询会" target="_blank">2017年3月10 日，农业部农规院在成都市都江堰主持召开“国家级农村土地承包经营权信息应用平台咨询会”</a></li>
-        <li><a href="newscenter/20170228.html"  title="2017年2月28日，四川省农业厅主持召开“全省农村集体产权制度动员部署会”" target="_blank">2017年2月28日，四川省农业厅主持召开“全省农村集体产权制度动员部署会”</a></li> -->
-    </ul>
+   </ul>
   </div>
 </div>
 <!-- 新闻动态结束 -->
@@ -227,18 +220,11 @@
         <dd><a  href="http://f.mlr.gov.cn/201705/t20170511_1507374.html"  title="2017年5月8日，国土资发【2017】72号 国土资源部关于土地利用总体规划管理办法的通知" target="_blank">【2017】72号 国土资源部关于土地利用总体规划管理办法的通知</a></dd>
       </dl>
     </div>
-    <ul class="newlist">
-        <li><a href="http://www.gov.cn/zhengce/2016-05/24/content_5076149.htm"  title="关于印发《农村承包土地的经营权抵押贷款试点暂行办法》的通知" target="_blank">2016年03月15日，关于印发《农村承包土地的经营权抵押贷款试点暂行办法》的通知</a></li>
-        <li><a href="http://f.mlr.gov.cn/201707/t20170711_1524933.html"  title="国土资源部关于进一步加强和改进执法监察工作的意见" target="_blank">2017年03月20日，国土资源部关于进一步加强和改进执法监察工作的意见</a></li>
-        <li><a href="http://f.mlr.gov.cn/201702/t20170206_1436879.html"  title="国务院关于全国土地整治规划(2016—2020年)的批复" target="_blank">2016年12月23日，国务院关于全国土地整治规划(2016—2020年)的批复</a></li>
-        <li><a href="http://www.scdlr.gov.cn/sitefiles/services/cms/page.aspx?s=2&n=382&c=300435"  title="国土资源部住房城乡建设部关于印发《利用集体建设用地建设租赁住房试点方案》的通知" target="_blank">2017年08月29日，国土资源部住房城乡建设部关于印发《利用集体建设用地建设租赁住房试点方案》的通知</a></li>
-        <li><a href="http://www.scdlr.gov.cn/sitefiles/services/cms/page.aspx?s=2&n=106&c=301722"  title="川国土资规[2017]2号关于印发《关于服务保障农业供给侧结构性改革加快培育农业农村发展新动能的意见》的通知" target="_blank">2017年06月01日，川国土资规[2017]2号关于印发《关于服务保障农业供给侧结构性改革加快培育农业农村发展新动能的意见》的通知</a></li>
-        <!-- <li><a href="http://www.moa.gov.cn/govpublic/SCYJJXXS/201610/t20161018_5308511.htm"  title="农办市[2016]30号农业部办公厅关于印发《农业农村大数据试点方案》的通知" target="_blank">2016年10月14日，农办市[2016]30号农业部办公厅关于印发...</a></li>
-        <li><a href="http://www.moa.gov.cn/govpublic/SCYJJXXS/201609/t20160901_5260726.htm"  title="农市发[2016]5号农业部关于印发《“十三五”全国农业农村信息化发展规划》的通知" target="_blank">2016年8月29日，农市发[2016]5号农业部关于印发《“十三...</a></li>
-        <li><a href="http://www.moa.gov.cn/ztzl/scdh/tzgg/201607/t20160721_5213458.htm"  title="农市发[2016]2号关于印发《“互联网+”现代农业三年行动实施方案》的通知" target="_blank">2016年7月21日，农市发[2016]2号关于印发《“互联网+”...</a></li>
-        <li><a href="http://www.moa.gov.cn/zwllm/tzgg/tz/201512/t20151231_4972005.htm"  title="农市发[2015]6号农业部关于推进农业农村大数据发展的实施意见" target="_blank">2015年12月31日，农市发[2015]6号农业部关于推进农业农村...</a></li>
-        <li><a href="http://www.moa.gov.cn/zwllm/tzgg/tfw/201505/t20150522_4610253.htm"  title="农办科[2015]22号农业部办公厅关于印发《国家农业科技服务云平台建设工作方案（试行）》的通知" target="_blank">2015年5月22日，农办科[2015]22号农业部办公厅关于印发...</a></li> -->
-    </ul>
+     <ul class="newlist">
+      <#list topnewslist2 as topnews>
+          <li><a href="content/news?cid=${topnews.cid}" target="_blank">${topnews.publish_date}，${topnews.title}</a></li>
+      </#list>
+      </ul>
   </div>
 </div>
 <!-- 政策要闻结束 -->
