@@ -89,6 +89,7 @@
           <li class="navitem"><a href="achievments/yjcg.html">研究成果</a></li>
           <li class="navitem"><a href="solution/jjfa.html">解决方案</a></li>
           <li class="navitem"><a href="download/zlxz.html">资料下载</a></li>
+          <li class="navitem"><a href="certificate/search">证书查询</a></li>
           <li class="navitem"><a href="about/adout-us.html">关于我们</a></li>
           <!-- <li class="navitem"><a href="theme/ztcx.html">专题查询</a></li> -->
        </ul>
@@ -174,7 +175,7 @@
     </div>
     <ul class="newlist">
     <#list topnewslist1 as topnews>
-        <li><a href="content/news?cid=${topnews.cid}" target="_blank">${topnews.publish_date}，${topnews.title}</a></li>
+        <li><a href="content/news?cid=${topnews.cid}" >${topnews.publish_date}，${topnews.title}</a></li>
      </#list>
    </ul>
   </div>
@@ -222,7 +223,7 @@
     </div>
      <ul class="newlist">
       <#list topnewslist2 as topnews>
-          <li><a href="content/news?cid=${topnews.cid}" target="_blank">${topnews.publish_date}，${topnews.title}</a></li>
+          <li><a href="content/news?cid=${topnews.cid}" >${topnews.publish_date}，${topnews.title}</a></li>
       </#list>
       </ul>
   </div>
@@ -310,6 +311,7 @@
         <a href="achievments/yjcg.html">研究成果</a>|
         <a href="solution/jjfa.html">解决方案</a>|
         <a href="download/zlxz.html">资料下载</a>|
+        <a href="certificate/search">证书查询</a>|
         <a href="about/adout-us.html">关于我们</a>|
         <a href="theme/ztcx.html">专题查询</a>|
         <a href="job/rczp.html">人才招聘</a>

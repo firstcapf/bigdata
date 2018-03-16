@@ -7,6 +7,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import javax.annotation.Resource;
+import javax.servlet.http.HttpServletRequest;
 import java.util.Map;
 
 @Controller
@@ -28,7 +29,6 @@ public class HelloWord {
     public String word(@PathVariable String name) {
         return "word--spring boot:" + name;
     }
-
 
 
 
