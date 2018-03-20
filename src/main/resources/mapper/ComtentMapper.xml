@@ -18,6 +18,10 @@
         from b_content     where type= #{type,jdbcType=INTEGER}  limit 0  , 5
     </select>
 
+    <select id="newslist" resultType="com.wang.entity.Content"  parameterType="java.lang.Integer"  >
+        select  <include refid="Base_Column_List" />
+        from b_content     where type= #{type,jdbcType=INTEGER}
+    </select>
 
     <select id="selectcontentbycid" resultMap="BaseResultMap"  parameterType="java.lang.Integer"  >
         select  <include refid="Base_Column_List" />

@@ -9,7 +9,7 @@
 <!-- iPhone保持原始尺寸及比例 -->
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
 
-<title>研究院-研究团队</title>
+<title>研究院-研究成果</title>
 <link rel="stylesheet" type="text/css" href="../static/css/main.css"/>
 <link rel="stylesheet" type="text/css" href="../static/css/neiye.css"/>
 </head>
@@ -18,7 +18,7 @@
  <a name="pagetop" id="pagetop"></a>
  <div id="banner">
     <div id="nyshow">
-      <div class="jdtu"><img src="../static/images/yanjiu_teams_show.png" alt="研究团队" /></div>
+      <div class="jdtu"><img src="../static/images/yanjiu_solution_show.png" alt="解决方案" /></div>
     </div>
     <div class="min_show">西南交通大学中国土地信息大数据研究院</div>
  </div>
@@ -35,9 +35,9 @@
           <li class="navitem"><a href="../index.ftl">网站首页</a></li>
           <li class="navitem"><a href="../content/newslist.ftl">动态消息</a></li>
           <li class="navitem"><a href="../type/yjfx1.html">研究方向</a></li>
-          <li id="navactive" class="navitem"><a href="yjtd1.html">研究团队</a></li>
+          <li class="navitem"><a href="../teams/yjtd1.html">研究团队</a></li>
           <li class="navitem"><a href="../achievments/yjcg.html">研究成果</a></li>
-          <li class="navitem"><a href="../solution/solutionlist.ftl">解决方案</a></li>
+          <li id="navactive" class="navitem"><a href="solutionlist.ftl">解决方案</a></li>
           <li class="navitem"><a href="../download/zlxz.html">资料下载</a></li>
           <li class="navitem"><a href="../about/adout-us.html">关于我们</a></li>
        </ul>
@@ -50,117 +50,91 @@
  <div id="boxsear"  style="display:none;">
     <div id="back"><img src="../static/images/back.gif" alt="关闭搜索" /></div>
     <form id="searchform">
-      <input type="keyword" id="keywords" placeholder="输入关键字" value="输入关键字"  onfocus="if(value=='输入关键字') {value=''}" onblur="if (value=='') {value='输入关键字'}"/>
+			<input type="keyword" id="keywords" placeholder="输入关键字" value="输入关键字"  onfocus="if(value=='输入关键字') {value=''}" onblur="if (value=='') {value='输入关键字'}"/>
             <input name="search" id="bot" type="button" value="搜&nbsp;索" />
-    </form>
+		</form>
         <script>
            window.onload =function(){
                 var oBtn=document.getElementById('btn');
                 var oSearch=document.getElementById('boxsear');
                 var oback=document.getElementById('back');
                 oBtn.onclick=function(){
-                     if(oSearch.style.display=='block'){
-                        oSearch.style.display='none'
-                      }else{
-                    oSearch.style.display='block'
-                    }
+	                   if(oSearch.style.display=='block'){
+	                     	oSearch.style.display='none'
+	                  	}else{
+		              	oSearch.style.display='block'
+		                }
                     }
                oback.onclick=function(){
-                    oSearch.style.display='none'
-               }
+		                oSearch.style.display='none'
+		           }
                }
         </script>
  </div>
  <!--搜索的代码结束-->
 <div id="mbaoxue">
   <div id="page_content">
-   您所在的位置 > <a href="../index.ftl">首页</a> > <span>研究团队 </span>
+   您所在的位置 > <a href="../index.ftl">首页</a> > <span>解决方案 </span>
   </div>
 </div>
 <div id="page_content">
      <!--左侧栏目-->
 <div class="left_box" id="spleft">
-  <div class="lanmu_title">研究团队</div>
-  <div id="lanmu_list">
-    <ul>
-      <li  ><a href="yjtd1.html" title="说明">大数据、云计算及智能技术团队</a></li>
-      <li  ><a href="yjtd2.html" title="说明">机器人与智能系统团队</a></li>
-      <li id="cbnavactive" ><a href="yjtd3.html" title="说明">地理信息系统、虚拟地理环境领域团队</a></li>
-      <li  ><a href="yjtd4.html" title="新增智慧环保">政策、制度、法律法规领域团队</a></li>
-      <li id="cbnmove"><img src="../static/images/lmbg.jpg"
-        width="228" height="32" />
-      </li>
-    </ul>
-  </div>
+	<div class="lanmu_title">解决方案</div>
+	<div id="lanmu_list">
+		<ul>
+			<li id="cbnavactive" ><a href="solutionlist.ftl" title="说明">智慧国土</a></li>
+			<li  ><a href="solutiondetail.ftl" title="说明">智慧林业</a></li>
+			<li  ><a href="jjfa3.html" title="说明">智慧农业</a></li>
+			<li  ><a href="jjfa4.html" title="新增智慧环保">智慧数采</a></li>
+			<li id="cbnmove"><img src="../static/images/lmbg.jpg"
+				width="228" height="32" />
+			</li>
+		</ul>
+	</div>
 </div>
      <!--左侧栏目END-->
      <!--右侧代码-->
-  <div class="yjiu_hz">
+     <div class="yjiu_hz">
         <div id="demo-nested" class="cwBox boxHz">
           <ul id="demo-nested-nav">
-            <li><a href="#">团队简介</a></li>
-            <li><a href="#">团队代表</a></li>
+            <li><a href="#">四川省智慧国土大数据综合管理平台项目</a></li>
          </ul>
          <div class="tabs-container">
-              <div class="tab-nested ctbox">
-                <br>
-                <P>地理信息技术与虚拟地理环境方向”有教师14人（含教授5人、副教授7人、讲师2人）、博士研究生10余人，硕士研究生40余人。</P>
-              </div>
-              <div class="tab-nested">
-                <br>
-        <ul>
-          <li style="height: 180px;"><a href="http://userweb.swjtu.edu.cn/Userweb/xiaomagecc/english.htm">
-            <img src="td/qing_zhu_portray.jpg" class="img-responsive" alt="" style="width: 100px;float: left;padding-left: 15px"></a>
-            <div class="event_box_caption" style="float: left;width: 310px;">
-                                    <p> &nbsp; &nbsp; &nbsp;&nbsp;朱庆，西南交通大学，博士，教授/博导<br>
- &nbsp; &nbsp; &nbsp;&nbsp;教育部长江学者特聘教授<br>
- &nbsp; &nbsp; &nbsp;&nbsp;智能化物联网首席专家<br>
-</p>
-    </div>
-    <div class="event_box_caption" style="float: left;width: 255px;">
-<p>&nbsp; &nbsp;研究方向：<br>
-&nbsp; &nbsp; 数字摄影测量<br>
-&nbsp; &nbsp; 多维动态GIS<br>
-&nbsp; &nbsp; 虚拟地理环境<br>
-</p>
-</div>
-          </li>
+            <div class="tab-nested ctbox">
 
-          <li style="height: 180px;"><a href="http://userweb.swjtu.edu.cn/Userweb/jhuang/index.htm">
-            <img src="td/huangjin.jpg" class="img-responsive" alt="" style="width: 100px;float: left;padding-left: 15px"></a>
-            <div class="event_box_caption" style="float: left;width: 310px;">
-                                    <p> &nbsp; &nbsp; &nbsp;&nbsp;黄进， 博士，副教授，硕士生导师<br>
- &nbsp; &nbsp; &nbsp;&nbsp;西南交通大学中国土地信息大数据研究院执行院长<br>
- &nbsp; &nbsp; &nbsp;&nbsp;硕士毕业于西南交通大学计算机应用技术专业<br>
- &nbsp; &nbsp; &nbsp;&nbsp;博士毕业于西南交通大学交通信息工程与控制专业<br>
+				 <div class="textbox">
+<p align="left">&nbsp; &nbsp; &nbsp;&nbsp;四川省国土资源厅智慧国土大数据综合管理平台项目是围绕解决我省国土资源管理与开发利用过程中存在的重大问题，面向资源监管、共享与服务、智能预警的目标，开展的国土资源信息化大数据平台建设工程。  就是要按照四川省国民经济与社会发展的总体战略部署，在科学发展观的指导下，通过信息技术的广泛应用，使其能够直接、全面、准确地掌握四川省国土资源信息及其动态变化情况，形成上下联动的、科学规范的智慧化国土资源管理模式，克服现行资源管理体制下常规作业方式难以逾越的障碍，切实解决国土资源管理工作中存在的关键性、迫切性问题，全面提升我省国土资源管理与服务水平。四川智慧国土大数据综合管理平台主要建立内容如下：
+  <img src="img/zhgt-4.png">
+建立软件系统：<br>
+（1） 四川国土资源目录服务系统<br>
+（2） 四川国土资源数据汇交系统<br>
+（3） 四川国土资源数据共享开放平台<br>
+（4） 四川国土资源决策支持系统<br>
+（5） 四川国土资源智库信息化平台<br>
+（6） 四川国土资源专题信息服务系统<br>
+（7） 四川矿产资源智能监测系统<br>
+（8） 四川地质环境灾害预警及应急指挥系统<br>
+（9） 四川国土资源测绘监管与保障系统<br>
+（10）  四川国土资源大数据支撑平台<br>
 </p>
-    </div>
-    <div class="event_box_caption" style="float: left;width: 180px">
-<p>&nbsp; &nbsp; 研究方向：<br>
-&nbsp; &nbsp; 图像处理与计算机视觉<br>
-&nbsp; &nbsp; 大数据与数据挖掘<br>
-&nbsp; &nbsp; 云计算与计算智能<br>
-&nbsp; &nbsp; 模式识别与智能信息处理<br>
-</p>
-</div>
-          </li>
 
-           
-        </ul>
-              </div>
-          </div>
+</div>
+</div>
+
+
         </div>
-
-
-</div>
-
-<script type="text/javascript" src="../static/js/tab.js"></script>
-       <script type="text/javascript">
+         <script type="text/javascript" src="../static/js/tab.js"></script>
+	     <script type="text/javascript">
              var tabber2 = new Yetii({
                id: 'demo-nested',
                tabclass: 'tab-nested'
               });
          </script>
+      </div>
+   </div>
+</div>
+</div>
 <footer>
   <div id="yj_cont">
      <div class="foot_nav">
@@ -185,7 +159,7 @@
           电话：027-66367729
         </div>
          <div class="yjlx email">
-    Zip code  <br />
+		Zip code  <br />
           610031
          </div>
         <div class="yjlx time">
@@ -196,7 +170,7 @@
           SOCIAL NETWORK <br />
 
            <a href="http://weibo.com/smartercities" target="_blank"><img src="../static/images/link_weibo.png" alt="新浪微博" /></a>
-      <a href="http://qing.blog.sina.com.cn/smartercities" target="_blank"><img src="../static/images/link_qing.png" alt="新浪轻博客" /></a>
+		  <a href="http://qing.blog.sina.com.cn/smartercities" target="_blank"><img src="../static/images/link_qing.png" alt="新浪轻博客" /></a>
         </div>
       </div>
       <a href="#pagetop" class="bk_top" id="backtop" title="返回顶部"></a>
@@ -207,13 +181,13 @@
      <span>鄂ICP备12012524号</span>
       Copyright © 2016-2017  http://www.LandBigData.edu.cn  All Rights Reserved 西南交通大学中国土地信息大数据研究院版权所有
       <script type="text/javascript"
-    src="2968491/tongji.js"></script>
+		src="2968491/tongji.js"></script>
   <noscript>
-    <a href="http://www.linezing.com"><img
-      src="http://img.tongji.linezing.com/2968491/tongji.gif" />
-    </a>
+		<a href="http://www.linezing.com"><img
+			src="http://img.tongji.linezing.com/2968491/tongji.gif" />
+		</a>
   </noscript>
-      <script type="text/javascript">
+  	  <script type="text/javascript">
 var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
 document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F7046593115956ee41bf7b68c95808f81' type='text/javascript'%3E%3C/script%3E"));
 </script>
@@ -232,18 +206,18 @@ document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3
 <script src="../static/js/back_top.js" type="text/javascript"></script>
 
 <script type="text/javascript">
-  function requestContent(name,type,uriType){
-          var url="/wrisc/"+type+"/"+uriType;
-        $.ajax({
-          url: url,
-          type: 'POST',
-          dataType:"html",
-          cache: false,
-          success: function(html){
-            $("#"+name).html(html);
-          }
-        });
-  }
+	function requestContent(name,type,uriType){
+			    var url="/wrisc/"+type+"/"+uriType;
+				$.ajax({
+				  url: url,
+				  type: 'POST',
+				  dataType:"html",
+				  cache: false,
+				  success: function(html){
+				    $("#"+name).html(html);
+				  }
+				});
+	}
 </script>
 </body>
 </html>

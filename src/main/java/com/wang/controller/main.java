@@ -12,7 +12,7 @@ import java.util.Map;
 
 @Controller
 @EnableAutoConfiguration
-public class HelloWord {
+public class main {
 
 
     @Resource

@@ -31,12 +31,12 @@
        <p id="lang"><span id="btn">搜索</span>|<a href="index.html">中文</a>|<a target="_blank" href="#">Egnlish</a><!-- <a target="_blank" href="http://www.wrisc.cn/wrisc/en/index.html">Egnlish</a> --></p>
        <ul id="nav" style="width: 740px;">
           <li id="moved"><img src="../static/images/hoverbg.gif" width="55" height="9" /></li>
-          <li class="navitem"><a href="../index.ftl">网站首页</a></li>
-          <li id="navactive" class="navitem"><a href="xwdt.html">动态消息</a></li>
+          <li class="navitem"><a href="/">网站首页</a></li>
+          <li id="navactive" class="navitem"><a href="newslist">动态消息</a></li>
           <li class="navitem"><a href="../type/yjfx1.html">研究方向</a></li>
           <li class="navitem"><a href="../teams/yjtd1.html">研究团队</a></li>
           <li class="navitem"><a href="../achievments/yjcg.html">研究成果</a></li>
-          <li class="navitem"><a href="../solution/jjfa.html">解决方案</a></li>
+          <li class="navitem"><a href="../solution/solutionlist.ftl">解决方案</a></li>
           <li class="navitem"><a href="../download/zlxz.html">资料下载</a></li>
           <li class="navitem"><a href="../about/adout-us.html">关于我们</a></li>
        </ul>
@@ -72,7 +72,7 @@
  <!--搜索的代码结束-->
 <div id="mbaoxue">
   <div id="page_content">
-   您所在的位置 > <a href="../index.ftl">首页</a> > <span>动态消息</span>
+   您所在的位置 > <a href="/">首页</a> > <span>动态消息</span>
   </div>
 </div>
 <div id="page_content">
@@ -81,8 +81,8 @@
             <div class="lanmu_title">动态消息</div>
             <div id="lanmu_list">
               <ul>
-                  <li  id="cbnavactive"><a href="xwdt.html">新闻动态</a></li>
-                  <li ><a href="zcyw.html">政策要闻</a></li>
+                  <li  id="cbnavactive"><a href="newslist">新闻动态</a></li>
+                  <li ><a href="zcywlist">政策要闻</a></li>
                   <li id="cbnmove"><img src="../static/images/lmbg.jpg" width="228" height="32" /></li>
               </ul>
             </div>
@@ -112,12 +112,12 @@
 <footer>
   <div id="yj_cont">
      <div class="foot_nav">
-        <a href="#" style="padding-left:0px;">网站首页</a>|
-        <a href="../content/xwdt.html">动态消息</a>|
+        <a href="/" style="padding-left:0px;">网站首页</a>|
+        <a href="../content/newslist.ftl">动态消息</a>|
         <a href="../type/yjfx1.html">研究方向</a>|
         <a href="../teams/yjtd1.html">研究团队</a>|
         <a href="../achievments/yjcg.html">研究成果</a>|
-        <a href="../solution/jjfa.html">解决方案</a>|
+        <a href="../solution/solutionlist.ftl">解决方案</a>|
         <a href="../download/zlxz.html">资料下载</a>|
         <a href="about/adout-us.html">关于我们</a>|
         <a href="../theme/ztcx.html">专题查询</a>|

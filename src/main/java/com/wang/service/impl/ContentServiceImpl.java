@@ -13,9 +13,16 @@ public class ContentServiceImpl implements ContentService {
     @Resource
     private ContentDao contentDao;
 
+
+
     @Override
     public List<Content> topnews(int  type ) {
         return contentDao.topnews(type);
+    }
+
+    @Override
+    public List<Content> newslist(int  type ) {
+        return contentDao.newslist(type);
     }
 
     @Override

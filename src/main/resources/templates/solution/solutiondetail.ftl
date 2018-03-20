@@ -33,11 +33,11 @@
        <ul id="nav" style="width: 740px;">
          <li id="moved"><img src="../static/images/hoverbg.gif" width="55" height="9" /></li>
           <li class="navitem"><a href="../index.ftl">网站首页</a></li>
-          <li class="navitem"><a href="../content/xwdt.html">动态消息</a></li>
+          <li class="navitem"><a href="../content/newslist.ftl">动态消息</a></li>
           <li class="navitem"><a href="../type/yjfx1.html">研究方向</a></li>
           <li class="navitem"><a href="../teams/yjtd1.html">研究团队</a></li>
           <li class="navitem"><a href="../achievments/yjcg.html">研究成果</a></li>
-          <li id="navactive" class="navitem"><a href="jjfa.html">解决方案</a></li>
+          <li id="navactive" class="navitem"><a href="solutionlist.ftl">解决方案</a></li>
           <li class="navitem"><a href="../download/zlxz.html">资料下载</a></li>
           <li class="navitem"><a href="../about/adout-us.html">关于我们</a></li>
        </ul>
@@ -83,8 +83,8 @@
 	<div class="lanmu_title">解决方案</div>
 	<div id="lanmu_list">
 		<ul>
-			<li id="cbnavactive" ><a href="jjfa.html" title="说明">智慧国土</a></li>
-			<li  ><a href="jjfa2.html" title="说明">智慧林业</a></li>
+			<li  ><a href="solutionlist.ftl" title="说明">智慧国土</a></li>
+			<li id="cbnavactive" ><a href="solutiondetail.ftl" title="说明">智慧林业</a></li>
 			<li  ><a href="jjfa3.html" title="说明">智慧农业</a></li>
 			<li  ><a href="jjfa4.html" title="新增智慧环保">智慧数采</a></li>
 			<li id="cbnmove"><img src="../static/images/lmbg.jpg"
@@ -98,31 +98,21 @@
      <div class="yjiu_hz">
         <div id="demo-nested" class="cwBox boxHz">
           <ul id="demo-nested-nav">
-            <li><a href="#">四川省智慧国土大数据综合管理平台项目</a></li>
+            <li><a href="#">西藏智慧林业大数据综合管理平台</a></li>
          </ul>
          <div class="tabs-container">
             <div class="tab-nested ctbox">
 
 				 <div class="textbox">
-<p align="left">&nbsp; &nbsp; &nbsp;&nbsp;四川省国土资源厅智慧国土大数据综合管理平台项目是围绕解决我省国土资源管理与开发利用过程中存在的重大问题，面向资源监管、共享与服务、智能预警的目标，开展的国土资源信息化大数据平台建设工程。  就是要按照四川省国民经济与社会发展的总体战略部署，在科学发展观的指导下，通过信息技术的广泛应用，使其能够直接、全面、准确地掌握四川省国土资源信息及其动态变化情况，形成上下联动的、科学规范的智慧化国土资源管理模式，克服现行资源管理体制下常规作业方式难以逾越的障碍，切实解决国土资源管理工作中存在的关键性、迫切性问题，全面提升我省国土资源管理与服务水平。四川智慧国土大数据综合管理平台主要建立内容如下：
-  <img src="img/zhgt-4.png">
-建立软件系统：<br>
-（1） 四川国土资源目录服务系统<br>
-（2） 四川国土资源数据汇交系统<br>
-（3） 四川国土资源数据共享开放平台<br>
-（4） 四川国土资源决策支持系统<br>
-（5） 四川国土资源智库信息化平台<br>
-（6） 四川国土资源专题信息服务系统<br>
-（7） 四川矿产资源智能监测系统<br>
-（8） 四川地质环境灾害预警及应急指挥系统<br>
-（9） 四川国土资源测绘监管与保障系统<br>
-（10）  四川国土资源大数据支撑平台<br>
+<p align="left">&nbsp; &nbsp; &nbsp;&nbsp;项目建设目标：建设西藏自治区智慧林业大数据综合管理平台，实现林业数据采集、数据汇交、数据处理、预警分析、查询共享、林业数据专题服务等功能。<br>
+项目建设规模：总体项目在西藏自治区林业厅建设一套智慧林业大数据综合管理平台。包括林业数据智慧采集系统、数据库管理系统、平台接入系统、平台工具软件、林业资源数据共享平台、大数据支撑平台、林业环境与灾害分析预警系统、林业资源专题服务平台、平台运维管理系统共九大系统。
+<img src="img/zhly-1.png">
+<br>
+主要任务是推动“智慧林业”建设，构筑新一代林业信息技术体系；建立完善林业大数据体系，推进林业管理决策的科学化、智能化；建设覆盖全自治区林也信息管理基础平台，全面落实林业信息登记制度；深化和拓展林业综合监管平台应用，建立精准治理、多方参与的林业监管新模式；推进林业信息数据共享与开放，充分发挥林业信息在实施国家大数据战略中的重要基础作用；构建“互联网+林业政务服务”体系，有效提升林业惠民服务水平；完善地质环境与地质灾害预警预报体系，整体提升地质灾害防御与应急能力；深入推进林业调查评价信息化，全面快速掌握林业资源资产开发利用状况；大力推动林业调查工作信息化建设，全面提高林地调查工作的现代化水平和社会服务能力；建立和完善信息化标准体系，形成规范、有序的信息化建设新局面；加强林业信息安全保障体系建设，切实提升网络安全防护能力。
 </p>
 
 </div>
 </div>
-
-
         </div>
          <script type="text/javascript" src="../static/js/tab.js"></script>
 	     <script type="text/javascript">
@@ -139,11 +129,11 @@
   <div id="yj_cont">
      <div class="foot_nav">
         <a href="#" style="padding-left:0px;">网站首页</a>|
-        <a href="../content/xwdt.html">动态消息</a>|
+        <a href="../content/newslist.ftl">动态消息</a>|
         <a href="../type/yjfx1.html">研究方向</a>|
         <a href="../teams/yjtd1.html">研究团队</a>|
         <a href="../achievments/yjcg.html">研究成果</a>|
-        <a href="../solution/jjfa.html">解决方案</a>|
+        <a href="../solution/solutionlist.ftl">解决方案</a>|
         <a href="../download/zlxz.html">资料下载</a>|
         <a href="about/adout-us.html">关于我们</a>|
         <a href="../theme/ztcx.html">专题查询</a>|

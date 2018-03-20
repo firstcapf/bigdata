@@ -79,15 +79,15 @@
    <div class="top">
      <h1 id="logo"><div  class="imglog"><img src="static/images/logo.png"/></div></h1>
      <div class="rtop">
-       <p id="lang"><span id="btn">搜索</span>|<a href="index.ftp">中文</a>|<a target="_blank" href="#">Egnlish</a><!-- <a target="_blank" href="http://www.wrisc.cn/wrisc/en/index.html">Egnlish</a> --></p>
+       <p id="lang"><span id="btn">搜索</span>|<a href="/">中文</a>|<a target="_blank" href="#">Egnlish</a><!-- <a target="_blank" href="http://www.wrisc.cn/wrisc/en/index.html">Egnlish</a> --></p>
        <ul id="nav" style="width: 740px;">
           <li id="moved"><img src="static/images/hoverbg.gif" width="55" height="9" /></li>
-          <li id="navactive" class="navitem"><a href="index.ftp">网站首页</a></li>
-          <li class="navitem"><a href="content/xwdt.html">动态消息</a></li>
+          <li id="navactive" class="navitem"><a href="/">网站首页</a></li>
+          <li class="navitem"><a href="content/newslist">动态消息</a></li>
           <li class="navitem"><a href="type/yjfx1.html">研究方向</a></li>
           <li class="navitem"><a href="teams/yjtd1.html">研究团队</a></li>
           <li class="navitem"><a href="achievments/yjcg.html">研究成果</a></li>
-          <li class="navitem"><a href="solution/jjfa.html">解决方案</a></li>
+          <li class="navitem"><a href="solution/solutionlist.ftl">解决方案</a></li>
           <li class="navitem"><a href="download/zlxz.html">资料下载</a></li>
           <li class="navitem"><a href="certificate/search">证书查询</a></li>
           <li class="navitem"><a href="about/adout-us.html">关于我们</a></li>
@@ -126,7 +126,7 @@
 <div id="page_content">
 <!---滚动新闻代码-->
    <div class="homenews">
-      <span><a href="content/xwdt.html" target="_blank">更多&gt;&gt;</a></span>
+      <span><a href="content/newslist" >更多&gt;&gt;</a></span>
       <h2 class="xinwen_title">新闻动态:</h2>
       <div id="announ" class="announ1">
          <ul>
@@ -163,19 +163,11 @@
         <dt><a href="content/20170718.html" title="2017年7月18-19日，“成都市农村经营管理综合业务系统培训班”在西南交通大学犀浦校区开班" target="_blank"><img src="static/images/img/20170718.jpg"></a></dt>
         <dd><a href="content/20170718.html" title="2017年7月18-19日，“成都市农村经营管理综合业务系统培训班”在西南交通大学犀浦校区开班" target="_blank">2017年7月18-19日，“成都市农村经营管理综合业务系统培训班”在西南交通大学犀浦校区开班</a></dd>
       </dl>
-      <!--<dl>
-        <dt><a href="newscenter/20170613.html"  title="2017年6月13日，四川省国土资源厅与西南交通大学签订厅校战略合作协议" target="_blank">
-        <img src="static/images/img/20170613.png"></a></dt>
-        <dd><a  href="n"  title="2017年6月13日，四川省国土资源厅与西南交通大学签订厅校战略合作协议" target="_blank">2017年6月13日，四川省国土资源厅与西南交通大学签订厅校战略合作协议</a></dd>
-      </dl>
-       <dl>
-        <dt><a href="newscenter/20160112.html"  title="2016年1月12日，四川省农业厅与西南交通大学签订校厅战略合作协议" target="_blank"><img src="static/images/img/20160112.jpg"></a></dt>
-        <dd><a  href="newscenter/20160112.html"  title="2016年1月12日，四川省农业厅与西南交通大学签订校厅战略合作协议" target="_blank">2016年1月12日，四川省农业厅与西南交通大学签订校厅战略合作协议</a></dd>
-      </dl> -->
+
     </div>
     <ul class="newlist">
     <#list topnewslist1 as topnews>
-        <li><a href="content/news?cid=${topnews.cid}" >${topnews.publish_date}，${topnews.title}</a></li>
+        <li><a href="content/news?cid=${topnews.cid}" >【${topnews.publish_date}】&nbsp;${topnews.title}</a></li>
      </#list>
    </ul>
   </div>
@@ -184,7 +176,7 @@
 
 <!---滚动政策要闻代码-->
    <div class="homenews">
-      <span><a href="content/zcyw.html" target="_blank">更多&gt;&gt;</a></span>
+      <span><a href="content/zcywlist" >更多&gt;&gt;</a></span>
       <h2 class="xinwen_title">政策要闻:</h2>
       <div id="announ" class="announ2">
         <ul>
@@ -223,7 +215,7 @@
     </div>
      <ul class="newlist">
       <#list topnewslist2 as topnews>
-          <li><a href="content/news?cid=${topnews.cid}" >${topnews.publish_date}，${topnews.title}</a></li>
+          <li><a href="content/news?cid=${topnews.cid}" >【${topnews.publish_date}】&nbsp;${topnews.title}</a></li>
       </#list>
       </ul>
   </div>
@@ -232,14 +224,14 @@
 
 <!---滚动解决方案代码-->
    <div class="homenews">
-      <span><a href="solution/jjfa.html" target="_blank">更多&gt;&gt;</a></span>
+      <span><a href="solution/solutionlist" target="_blank">更多&gt;&gt;</a></span>
       <h2 class="xinwen_title">解决方案:</h2>
       <div id="announ" class="announ3">
          <ul>
-		    <li><a href="solution/jjfa.html" target="_blank">四川省智慧国土大数据综合管理平台</a></li>
-		    <li><a href="solution/jjfa2.html" target="_blank">西藏自治区智慧林业大数据综合管理平台</a></li>
-		    <li><a href="solution/jjfa3.html" target="_blank">四川省智慧农业大数据综合管理平台</a></li>
-		    <li><a href="solution/jjfa4.html" target="_blank">西藏自治区智慧采集大数据综合管理平台</a></li>
+		    <li><a href="solution/solutionlist.ftl" target="_blank">智慧国土大数据综合管理平台</a></li>
+		    <li><a href="solution/solutiondetail.ftl" target="_blank">智慧林业大数据综合管理平台</a></li>
+		    <li><a href="solution/jjfa3.html" target="_blank">智慧农业大数据综合管理平台</a></li>
+		    <li><a href="solution/jjfa4.html" target="_blank">智慧采集大数据综合管理平台</a></li>
 	     </ul>
       </div>
   </div>
@@ -253,19 +245,19 @@
           <div class="img-list">
               <ul>
 		            <li>
-	                  	<a href="solution/jjfa.html" target="_blank"><img src="LandBigData/zhihui_guotu.png" alt="智慧国土" /></a>
+	                  	<a href="solution/solutionlist" ><img src="LandBigData/zhihui_guotu.png" alt="智慧国土" /></a>
 	                </li>
 
 		            <li>
-	                  	<a href="solution/jjfa2.html" target="_blank"><img src="LandBigData/zhihui_linye.png" alt="智慧林业" /></a>
+	                  	<a href="solution/solutiondetail" ><img src="LandBigData/zhihui_linye.png" alt="智慧林业" /></a>
 	                </li>
 
 		            <li>
-	                  	<a href="solution/jjfa3.html" target="_blank"><img src="LandBigData/zhihui_nongye.png" alt="智慧农业" /></a>
+	                  	<a href="solution/solutiondetail" ><img src="LandBigData/zhihui_nongye.png" alt="智慧农业" /></a>
 	                </li>
 
 		            <li>
-	                  	<a href="solution/jjfa4.html" target="_blank"><img src="LandBigData/zhihui_shucai.png" alt="智慧数采" /></a>
+	                  	<a href="solution/solutiondetail" ><img src="LandBigData/zhihui_shucai.png" alt="智慧数采" /></a>
 	                </li>
 
               </ul>
@@ -274,18 +266,19 @@
   </div>
   <!--解决方案结束 -->
   <!--合作链接 -->
-  <div class="hz_links">
-	     <ul>
-			<li><a href="http://www.swjtu.edu.cn/"  target="_blank"><img src="static/images/hzlj1.png" alt="西南交通大学" border="0" /></a></li>
-			<li><a href="http://www.scst.gov.cn/" target="_blank"><img src="static/images/hzlj2.jpg" alt="四川省科技厅" border="0" /></a></li>
-			<li><a href="http://www.scagri.gov.cn/"  target="_blank"><img src="static/images/hzlj3.png" alt="四川省农业厅" border="0" /></a></li>
-			<li><a href="http://www.scdlr.gov.cn/" target="_blank"><img src="static/images/hzlj4.jpg" alt="四川省国土资源厅" border="0" /></a></li>
-	     </ul>
-  </div>
+
   <!--合作链接结束 -->
   <!--友情链接-->
   <div id="frend_link">
     <h2>友情链接</h2>
+     <div class="hz_links">
+      <ul>
+          <li><a href="http://www.swjtu.edu.cn/"  target="_blank"><img src="static/images/hzlj1.png" alt="西南交通大学" border="0" /></a></li>
+          <li><a href="http://www.scst.gov.cn/" target="_blank"><img src="static/images/hzlj2.jpg" alt="四川省科技厅" border="0" /></a></li>
+          <li><a href="http://www.scagri.gov.cn/"  target="_blank"><img src="static/images/hzlj3.png" alt="四川省农业厅" border="0" /></a></li>
+          <li><a href="http://www.scdlr.gov.cn/" target="_blank"><img src="static/images/hzlj4.jpg" alt="四川省国土资源厅" border="0" /></a></li>
+      </ul>
+  </div>
     <div class="links_fd">
       <a href="http://www.cnscn.com.cn/" title="西藏自治区国土厅" target="_blank">西藏自治区国土厅</a>|
       <a href="http://www.chinasmartcity.org/" title="西藏自治区农牧厅" target="_blank">西藏自治区农牧厅</a>|
@@ -304,12 +297,12 @@
 <footer>
   <div id="yj_cont">
      <div class="foot_nav">
-        <a href="index.ftp" style="padding-left:0px;">网站首页</a>|
-        <a href="content/xwdt.html">动态消息</a>|
+        <a href="/" style="padding-left:0px;">网站首页</a>|
+        <a href="content/newslist">动态消息</a>|
         <a href="type/yjfx1.html">研究方向</a>|
         <a href="teams/yjtd1.html">研究团队</a>|
         <a href="achievments/yjcg.html">研究成果</a>|
-        <a href="solution/jjfa.html">解决方案</a>|
+        <a href="solution/solutionlist.ftl">解决方案</a>|
         <a href="download/zlxz.html">资料下载</a>|
         <a href="certificate/search">证书查询</a>|
         <a href="about/adout-us.html">关于我们</a>|
