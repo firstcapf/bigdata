@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.wang.dao.SignatureDao" >
+    <resultMap id="BaseResultMap" type="com.wang.entity.Signature" >
+        <result column="id" property="id" jdbcType="VARCHAR" />
+        <result column="truename" property="truename" jdbcType="VARCHAR" />
+        <result column="telephone" property="telephone" jdbcType="VARCHAR" />
+        <result column="company" property="company" jdbcType="VARCHAR" />
+        <result column="position" property="position" jdbcType="VARCHAR" />
+        <result column="registertime" property="registertime" jdbcType="VARCHAR" />
+        <result column="email" property="email" jdbcType="VARCHAR" />
+        <result column="meeting" property="meeting" jdbcType="VARCHAR" />
+        <result column="meetingtime" property="meetingtime" jdbcType="VARCHAR" />
+        <result column="meetingaddr" property="meetingaddr" jdbcType="VARCHAR" />
+        <result column="remark" property="remark" jdbcType="VARCHAR" />
+        <result column="is_del" property="is_del" jdbcType="VARCHAR" />
+    </resultMap>
+    <sql id="Base_Column_List" >
+      id,truename,telephone ,company,position,registertime,email,meeting,meetingaddr,remark,is_del
+    </sql>
+
+    <select id="selectSignatureall" resultMap="BaseResultMap" >
+        select  <include refid="Base_Column_List" />
+        from signature
+    </select>
+
+
+    <insert id="insertSignature" parameterType="com.wang.entity.Signature" >
+        INSERT INTO signature (truename,telephone ,company,position,registertime,email,meeting,meetingaddr,remark,is_del)
+        VALUES
+        (#{truename},
+        #{telephone},
+        #{company},
+        #{position},
+        #{registertime},
+        #{email},
+        #{meeting},
+        #{meetingaddr},
+        #{remark},
+        #{is_del})
+    </insert>
+
+</mapper>
+
