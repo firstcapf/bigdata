@@ -1,6 +1,8 @@
 package com.wang.controller;
 
 
+import com.wang.Tools.ResultUtil;
+import com.wang.entity.Result;
 import com.wang.service.SignatureService;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.stereotype.Controller;
@@ -12,12 +14,11 @@ import javax.servlet.http.HttpServletRequest;
 import java.util.List;
 import java.util.Map;
 
-@Controller
 //@Controller
+@Controller
 @EnableAutoConfiguration
 @RequestMapping("/signature")
 public class Signature {
-
 
     @Resource
     private SignatureService signatureService;
@@ -32,7 +33,6 @@ public class Signature {
         return  signatureService.selectSignatureall();
     }
 
-
     @RequestMapping("/signatureadd")
     public String signatureaddtapi(HttpServletRequest request, Map<String,Object> model){
         com.wang.entity.Signature sin=new com.wang.entity.Signature();
@@ -40,9 +40,12 @@ public class Signature {
         sin.setTelephone(request.getParameter("telephone"));
         sin.setCompany(request.getParameter("company"));
         sin.setPosition(request.getParameter("position"));
+        sin.setMeeting(request.getParameter("meeting"));
+        System.out.print(sin.getTruename());
+        System.out.print(sin.getMeeting());
+        model.put("result",signatureService.insertSignature(sin));
 
-     //   System.out.print(sin.getTelephone()+sin.getTruename()+sin.getCompany()+sin.getPosition());
-        signatureService.insertSignature(sin);
+      //  return signatureService.insertSignature(sin);
         return "signature/signatureok";
     }
 }
