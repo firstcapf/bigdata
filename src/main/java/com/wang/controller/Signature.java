@@ -41,10 +41,7 @@ public class Signature {
         sin.setCompany(request.getParameter("company"));
         sin.setPosition(request.getParameter("position"));
         sin.setMeeting(request.getParameter("meeting"));
-        System.out.print(sin.getTruename());
-        System.out.print(sin.getMeeting());
         model.put("result",signatureService.insertSignature(sin));
-
       //  return signatureService.insertSignature(sin);
         return "signature/signatureok";
     }

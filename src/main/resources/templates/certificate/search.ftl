@@ -9,7 +9,7 @@
 <!-- iPhone保持原始尺寸及比例 -->
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
 
-<title>研究院-人才招聘</title>
+<title>研究院-证书查询</title>
 <link rel="stylesheet" type="text/css" href="../static/css/main.css"/>
 <link rel="stylesheet" type="text/css" href="../static/css/neiye.css"/>
 </head>
@@ -19,7 +19,7 @@
  <a name="pagetop" id="pagetop"></a>
  <div id="banner">
     <div id="nyshow">
-      <div class="jdtu"><img src="../static/images/ture_false.jpg" alt="人才招聘" /></div>
+      <div class="jdtu"><img src="../static/images/ture_false.jpg" alt="证书查询" /></div>
     </div>
     <div class="min_show">西南交通大学中国土地信息大数据研究院</div>
  </div>

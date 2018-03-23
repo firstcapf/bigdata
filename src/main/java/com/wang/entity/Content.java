@@ -48,6 +48,38 @@ public class Content {
         this.cid = cid;
     }
 
+    public String getHits() {
+        return hits;
+    }
+
+    public void setHits(String hits) {
+        this.hits = hits;
+    }
+
+    public String getSource() {
+        return source;
+    }
+
+    public void setSource(String source) {
+        this.source = source;
+    }
+
+    public String getType() {
+        return type;
+    }
+
+    public void setType(String type) {
+        this.type = type;
+    }
+
+    public String getLink() {
+        return link;
+    }
+
+    public void setLink(String link) {
+        this.link = link;
+    }
+
     @Id
     @GeneratedValue(strategy= GenerationType.AUTO)
     private  int cid;
@@ -55,4 +87,11 @@ public class Content {
     private  String content;
     private  String image_url;
     private  String publish_date;
+    private String  hits;
+    private String  source;
+    private String  type;
+
+
+    private String  link;
+
 }

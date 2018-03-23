@@ -33,7 +33,7 @@ public class Content {
 
         int cid = Integer.parseInt(request.getParameter("cid"));
         model.put("news", contentService.selectcontentbycid(cid));
-        return "content/news";//返回的内容就是templetes下面文件的名称
+               return "content/news";//返回的内容就是templetes下面文件的名称
     }
 
 
@@ -48,6 +48,8 @@ public class Content {
         int type=1;
         model.put("newslist", contentService.newslist(type));
         model.put("type",type);
+
+
         return "content/newslist";//返回的内容就是templetes下面文件的名称
     }
 

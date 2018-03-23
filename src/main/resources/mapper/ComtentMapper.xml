@@ -5,22 +5,26 @@
         <result column="title" property="title" jdbcType="VARCHAR" />
         <result column="content" property="content" jdbcType="VARCHAR" />
         <result column="image_url" property="image_url" jdbcType="VARCHAR" />
+        <result column="hits" property="hits" jdbcType="VARCHAR" />
+        <result column="source" property="source" jdbcType="VARCHAR" />
+        <result column="type" property="type" jdbcType="VARCHAR" />
+        <result column="link" property="link" jdbcType="VARCHAR" />
         <result column="publish_date" property="publish_date" jdbcType="VARCHAR" />
     </resultMap>
     <sql id="Base_Column_List" >
-      cid,title,content ,image_url,publish_date
+      cid,title,content ,image_url,hits,source,type,publish_date,link
     </sql>
 
 
 
     <select id="topnews" resultType="com.wang.entity.Content"  parameterType="java.lang.Integer"  >
         select  <include refid="Base_Column_List" />
-        from b_content     where type= #{type,jdbcType=INTEGER}  limit 0  , 5
+        from b_content     where type= #{type,jdbcType=INTEGER}  ORDER BY publish_date desc  limit 0  , 5
     </select>
 
     <select id="newslist" resultType="com.wang.entity.Content"  parameterType="java.lang.Integer"  >
         select  <include refid="Base_Column_List" />
-        from b_content     where type= #{type,jdbcType=INTEGER}
+        from b_content     where type= #{type,jdbcType=INTEGER}  ORDER BY publish_date desc
     </select>
 
     <select id="selectcontentbycid" resultMap="BaseResultMap"  parameterType="java.lang.Integer"  >

@@ -26,10 +26,11 @@
 <body>
     <header>
         <i class="am-icon-angle-left back"></i>
-        <p>预报名成功</p>
+        <p>预报名结果</p>
     </header>
     <div class="register">
-        <p style="font-size: 25px;line-height: 40px;text-align: center;color: red; margin-top: 30px;">恭喜！！！<br>**的预报名信息提交成功！</p>
+        <p style="font-size: 25px;line-height: 40px;text-align: center;color: red; margin-top: 30px;">您好，${result.data.truename}</p>
+        <p style="font-size: 25px;line-height: 40px;text-align: center;color: red; margin-top: 30px;">${result.msg}</p>
     </div>
 </body>
 </html>

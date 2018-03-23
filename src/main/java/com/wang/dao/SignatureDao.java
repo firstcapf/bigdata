@@ -8,4 +8,7 @@ public interface SignatureDao {
     List<Signature> selectSignatureall( );
 
     int  insertSignature(Signature sin);
+    Signature  selectSignatureby(Signature sin);
+
+
 }

@@ -63,11 +63,11 @@
 
      </ul>
       <ul id="warp-nav">
-                  <li class="selected"><img src="LandBigData/1205823.png"></li>
-                  <li class="selected"><img src="LandBigData/1205824.png"></li>
-                  <li class="selected"><img src="LandBigData/1205825.png"></li>
-                  <li class="selected"><img src="LandBigData/1205826.png"></li>
-                  <li class="selected"><img src="LandBigData/1205827.png"></li>
+                  <li class="selected"><img src="../static/images/xyd.png"></li>
+                  <li class="selected"><img src="../static/images/xyd.png"></li>
+                  <li class="selected"><img src="../static/images/xyd.png"></li>
+                  <li class="selected"><img src="../static/images/xyd.png"></li>
+                  <li class="selected"><img src="../static/images/xyd.png"></li>
       </ul>
   </div>
     </div>
@@ -79,9 +79,9 @@
    <div class="top">
      <h1 id="logo"><div  class="imglog"><img src="static/images/logo.png"/></div></h1>
      <div class="rtop">
-       <p id="lang"><span id="btn">搜索</span>|<a href="/">中文</a>|<a target="_blank" href="#">Egnlish</a><!-- <a target="_blank" href="http://www.wrisc.cn/wrisc/en/index.html">Egnlish</a> --></p>
+         <p id="lang"><span id="btn">登录</span></span> <span id="btn">搜索</span>|<a href="/">中文</a>|<a target="_blank" href="#">Egnlish</a><!-- <a target="_blank" href="http://www.wrisc.cn/wrisc/en/index.html">Egnlish</a> --></p>
        <ul id="nav" style="width: 740px;">
-          <li id="moved"><img src="static/images/hoverbg.gif" width="55" height="9" /></li>
+          <li id="moved"></li>
           <li id="navactive" class="navitem"><a href="/">网站首页</a></li>
           <li class="navitem"><a href="content/newslist">动态消息</a></li>
           <li class="navitem"><a href="type/yjfx1.html">研究方向</a></li>

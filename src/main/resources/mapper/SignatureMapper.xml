@@ -24,11 +24,16 @@
         from signature
     </select>
 
+    <select id="selectSignatureby" resultMap="BaseResultMap" parameterType="com.wang.entity.Signature">
+        select  <include refid="Base_Column_List" />
+        from signature where telephone=#{telephone} and  meeting=#{meeting}
+    </select>
+
 
     <insert id="insertSignature" parameterType="com.wang.entity.Signature" >
         INSERT INTO signature (truename,telephone ,company,position,registertime,email,meeting,meetingaddr,remark,is_del)
-        VALUES
-        (#{truename},
+        SELECT
+        #{truename},
         #{telephone},
         #{company},
         #{position},
@@ -37,8 +42,11 @@
         #{meeting},
         #{meetingaddr},
         #{remark},
-        #{is_del})
+        #{is_del}
+        FROM DUAL WHERE NOT EXISTS (SELECT id FROM  signature WHERE telephone = #{telephone,jdbcType=VARCHAR} and truename = #{truename,jdbcType=VARCHAR})
     </insert>
+
+
 
 </mapper>
 

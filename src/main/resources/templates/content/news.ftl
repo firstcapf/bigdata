@@ -30,7 +30,7 @@
      <div class="rtop">
        <p id="lang"><span id="btn">搜索</span>|<a href="index.html">中文</a>|<a target="_blank" href="#">Egnlish</a><!-- <a target="_blank" href="http://www.wrisc.cn/wrisc/en/index.html">Egnlish</a> --></p>
        <ul id="nav" style="width: 740px;">
-          <li id="moved"><img src="../static/images/hoverbg.gif" width="55" height="9" /></li>
+          <li id="moved"></li>
           <li class="navitem"><a href="/">网站首页</a></li>
           <li id="navactive" class="navitem"><a href="newslist">动态消息</a></li>
           <li class="navitem"><a href="../type/yjfx1.html">研究方向</a></li>
@@ -81,8 +81,13 @@
             <div class="lanmu_title">动态消息</div>
             <div id="lanmu_list">
               <ul>
+              <#if (news.type == "1")>
                   <li  id="cbnavactive"><a href="newslist">新闻动态</a></li>
                   <li ><a href="zcywlist">政策要闻</a></li>
+              <#else>
+                  <li  ><a href="newslist">新闻动态</a></li>
+                  <li id="cbnavactive" ><a href="zcywlist">政策要闻</a></li>
+              </#if>
                   <li id="cbnmove"><img src="../static/images/lmbg.jpg" width="228" height="32" /></li>
               </ul>
             </div>
@@ -91,20 +96,11 @@
 
      <!--右侧代码-->
      <div id="right_box">
-        <h3 class="news_title">   ${news.title}<span>(2015年3月31日)</span></h3>
+        <h3 class="news_title">   ${news.title}</h3>
         <br>
 
         ${news.content}
 
-
-        <img src="news-image/20150331-1.jpg">
-        <div class="news_text">
-        <div>
-  &nbsp;“ 学校徐飞校长、朱健梅副校长等8人到访四川省农业厅，与省厅任永昌厅长、张强副厅长等商讨“西南交通大学 四川省农业厅战略合作协议”签署事宜。<br>
-  <img src="news-image/20150331-2.jpg">
-&nbsp;
-</div>
-        </div>
      </div>
 </div>
 
