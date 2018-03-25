@@ -36,7 +36,7 @@ public class main {
     @RequestMapping("/")
     public String web(Map<String,Object> model){
 
-        //contentService.topnews();
+        model.put("topimagenewslist", contentService.topimagenews(1));
         model.put("topnewslist1", contentService.topnews(1));
         model.put("topnewslist2", contentService.topnews(2));
         model.put("topnewslist3", contentService.topnews(3));

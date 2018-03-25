@@ -79,7 +79,7 @@
    <div class="top">
      <h1 id="logo"><div  class="imglog"><img src="static/images/logo.png"/></div></h1>
      <div class="rtop">
-         <p id="lang"><span id="btn">登录</span></span> <span id="btn">搜索</span>|<a href="/">中文</a>|<a target="_blank" href="#">Egnlish</a><!-- <a target="_blank" href="http://www.wrisc.cn/wrisc/en/index.html">Egnlish</a> --></p>
+         <p id="lang"><span ><a href="http://192.168.32.21:8080">登录</a></span></span> <span id="btn">搜索</span>|<a href="/">中文</a>|<a target="_blank" href="#">Egnlish</a><!-- <a target="_blank" href="http://www.wrisc.cn/wrisc/en/index.html">Egnlish</a> --></p>
        <ul id="nav" style="width: 740px;">
           <li id="moved"></li>
           <li id="navactive" class="navitem"><a href="/">网站首页</a></li>
@@ -150,19 +150,16 @@
 <div class="home_main min20">
   <div class="newbox">
     <div class="newimg">
-      <dl>
-        <dt><a href="content/20170828.html" title="2017年8月28日，“西安市高陵区农村土地制度改革三项试点工作专家座谈会”在陕西省西安市高陵区人民政府举行" target="_blank" ><img src="static/images/img/20170828.jpg"></a>
-        </dt>
-        <dd><a href="content/20170828.html" title="2017年8月28日，“西安市高陵区农村土地制度改革三项试点工作专家座谈会”在陕西省西安市高陵区人民政府举行" target="_blank">2017年8月28日，“西安市高陵区农村土地制度改革三项试点工作专家座谈会”在高陵区人民政府举行</a></dd>
-      </dl>
-      <dl>
-        <dt><a href="content/20170726.html" title="2017年7月24日，西南交通大学与西藏自治区人民政府签署“一大五小”战略合作协议" target="_blank"><img src="static/images/img/20170726.jpg"></a></dt>
-        <dd><a href="content/20170726.html" title="2017年7月24日，西南交通大学与西藏自治区人民政府签署“一大五小”战略合作协议" target="_blank">2017年7月24日，西南交通大学与西藏自治区人民政府签署“一大五小”战略合作协议”</a></dd>
-      </dl>
-      <dl>
-        <dt><a href="content/20170718.html" title="2017年7月18-19日，“成都市农村经营管理综合业务系统培训班”在西南交通大学犀浦校区开班" target="_blank"><img src="static/images/img/20170718.jpg"></a></dt>
-        <dd><a href="content/20170718.html" title="2017年7月18-19日，“成都市农村经营管理综合业务系统培训班”在西南交通大学犀浦校区开班" target="_blank">2017年7月18-19日，“成都市农村经营管理综合业务系统培训班”在西南交通大学犀浦校区开班</a></dd>
-      </dl>
+
+    <#list topimagenewslist as toppicnews >
+        <dl>
+            <dt><a href="content/news?cid=${toppicnews.cid}" title="" target="_blank" ><img src="static/images/img/20170828.jpg"></a>
+            </dt>
+            <dd><a href="content/news?cid=${toppicnews.cid}" title="" target="_blank">${toppicnews.title}</a></dd>
+        </dl>
+
+    </#list>
+
 
     </div>
     <ul class="newlist">

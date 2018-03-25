@@ -17,6 +17,11 @@
 
 
 
+    <select id="topimagenews" resultType="com.wang.entity.Content"  parameterType="java.lang.Integer"  >
+        select  <include refid="Base_Column_List" />
+        from b_content   where type= #{type,jdbcType=INTEGER}  AND LENGTH(image_url)>=5  ORDER BY publish_date desc  limit 0  , 3
+    </select>
+
     <select id="topnews" resultType="com.wang.entity.Content"  parameterType="java.lang.Integer"  >
         select  <include refid="Base_Column_List" />
         from b_content     where type= #{type,jdbcType=INTEGER}  ORDER BY publish_date desc  limit 0  , 5
@@ -30,9 +35,11 @@
     <select id="selectcontentbycid" resultMap="BaseResultMap"  parameterType="java.lang.Integer"  >
         select  <include refid="Base_Column_List" />
         from b_content
-        where cid= #{cid,jdbcType=INTEGER}
+        where cid= #{cid,jdbcType=INTEGER};
     </select>
 
-
+    <select id="updatehits"  parameterType="java.lang.Integer"  >
+        UPDATE b_content SET hits=hits+1 WHERE  cid= #{cid,jdbcType=INTEGER};
+    </select>
 </mapper>
 

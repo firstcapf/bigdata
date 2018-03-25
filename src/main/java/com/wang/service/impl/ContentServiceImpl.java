@@ -15,6 +15,12 @@ public class ContentServiceImpl implements ContentService {
 
 
 
+
+    @Override
+    public List<Content> topimagenews(int  type ) {
+        return contentDao.topimagenews(type);
+    }
+
     @Override
     public List<Content> topnews(int  type ) {
         return contentDao.topnews(type);
@@ -27,6 +33,7 @@ public class ContentServiceImpl implements ContentService {
 
     @Override
     public Content selectcontentbycid(int cid) {
+        contentDao.updatehits(cid);
         return contentDao.selectcontentbycid(cid);
     }
 }
