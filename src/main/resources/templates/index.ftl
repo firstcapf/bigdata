@@ -144,7 +144,7 @@
     <div class="newimg">
     <#list topimagenewslist1 as toppicnews >
         <dl>
-            <dt><a href="content/news?cid=${toppicnews.cid}" title="" target="_blank" ><img src="static/images/img/20170828.jpg"></a>
+            <dt><a href="content/news?cid=${toppicnews.cid}" title="" target="_blank" ><img src="static/images/${toppicnews.image_url}"></a>
             </dt>
             <dd><a href="content/news?cid=${toppicnews.cid}" title="" target="_blank">${toppicnews.title}</a></dd>
         </dl>
