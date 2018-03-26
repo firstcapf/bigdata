@@ -9,17 +9,19 @@
 <!-- iPhone保持原始尺寸及比例 -->
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
 
-<title>研究院-人才招聘</title>
+<title>研究院-帮助</title>
 <link rel="stylesheet" type="text/css" href="../static/css/main.css"/>
 <link rel="stylesheet" type="text/css" href="../static/css/neiye.css"/>
-</head>
+<link rel="stylesheet" type="text/css" href="../static/demo_project/styles/bootstrap.min.css"/>
+<link rel="stylesheet" type="text/css" href="../static/demo_project/styles/demoprjs.css"/>
 
+</head>
 <body>
 <!--切换图代码-->
  <a name="pagetop" id="pagetop"></a>
  <div id="banner">
     <div id="nyshow">
-      <div class="jdtu"><img src="../static/images/job_show.jpg" alt="人才招聘" /></div>
+      <div class="jdtu"><img src="../static/images/help.png" alt="帮助" /></div>
     </div>
     <div class="min_show">西南交通大学中国土地信息大数据研究院</div>
  </div>
@@ -41,7 +43,7 @@
           <li class="navitem"><a href="../solution/solutionlist.ftl">解决方案</a></li>
           <li class="navitem"><a href="../download/zlxz.html">资料下载</a></li>
           <!-- <li class="navitem"><a href="../about/adout-us.html">关于我们</a></li> -->
-          <li id="navactive" class="navitem"><a href="rczp.html">人才招聘</a></li>
+          <li id="navactive" class="navitem"class="navitem"><a href="../job/recruit.ftl">人才招聘</a></li>
        </ul>
      </div>
    </div>
@@ -76,68 +78,31 @@
  <!--搜索的代码结束-->
 <div id="mbaoxue">
   <div id="page_content">
-   您所在的位置 > <a href="/dsjyjy/">首页</a> > <span>人才招聘 </span>
+   您所在的位置 > <a href="../index.ftl">首页</a> > <span>帮助 </span>
   </div>
 </div>
 <div id="page_content">
-     <!--左侧栏目-->
-     <div class="left_box" id="spleft">
-            <div class="lanmu_title">人才招聘</div>
-            <div id="lanmu_list">
-              <ul>
-                  <li onclick="show('shContent')" ><a href="#">社会招聘</a></li>
-                  <li onclick="show('sxContent')" ><a href="#">实习生招聘</a></li>
-                  <li id="cbnmove"><img src="../static/images/lmbg.jpg" width="228" height="32" /></li>
-              </ul>
-            </div>
+
+   <div class="yjiu_hz" style="width: 950px">
+   <div id="demo-nested" class="cwBox boxHZ">
+     <ul id="demo-nested-nav">
+        <li class="activeli"><a href="#">帮助</a></li>
+     </ul>
+     <div class="jl_link">交流空间链接在此点击<br>
+          <a href="http://qing.weibo.com/2957929005" target="_blank"> 西南交通大学中国土地信息大数据研究院轻微博 </a>
      </div>
-     <!--左侧栏目END-->
-     <!--右侧代码-->
-     <div id="shContent"  class="yjiu_hz">
-        <div style="text-indent:2em;">西南交通大学中国土地信息大数据研究院是2015年提出并更名，2016年10月9日，学校第十四届党委会第46次常委（扩大）会议审议并通过成立。决议确定：研究院以科学技术发展研究院为主管部门，由信息科学与技术学院、电气学院、地理科学与环境工程学院联合共建。2016年10月27日，学校发布西交校人【2016】120号“西南交通大学关于成立‘西南交通大学中国土地信息大数据研究院’等三个机构的通知”的文件，研究院正式成立。2016年12月26日，学校发布西交校[2016]82号“西南交通大学关于启用‘四川省社会科学重点研究基地现代设计与文化研究中心’等单位印章的通知”的文件，研究院正式对外开展科研项目的合作。2017年3月27日，学校在九里校区创新大厦为研究院分配了科研场地，支持研究院的科学研究工作，为“西南交通大学 四川省农业厅战略合作协议”中共建“四川省农村土地大数据中心”和“西南交通大学 四川省国土资源厅战略合作协议”中共建“四川省国土资源大数据中心”提供场地保障。为落实校厅农业大数据、农业信息科学、农业技术、农业精准化等方面提供了保障。
-</div>
-        <div id="demo-nested" class="cwBox boxHz">
-          <ul id="demo-nested-nav">
-    		    <li><a href="#">成 都</a></li>
-         </ul>
-         <div class="tabs-container">
-             <div class="tab-nested ctbox">
-               <ul id="news_list">
-                   <li>
-                     <span>2017-05-10</span>
-                     <a href="/wrisc/job/job_java_arch">JAVA系统架构师</a>
-                   </li>
-                   <li>
-                     <span>2017-05-10</span>
-                     <a href="/wrisc/job/job_java_dev">JAVA开发工程师</a>
-                   </li>
-                   <li>
-                     <span>2017-05-16</span>
-                     <a href="/wrisc/job/job_pcb_dev">PCB设计工程师</a>
-                   </li>
-                   <li>
-                     <span>2017-05-16</span>
-                     <a href="/wrisc/job/job_embed_dev">嵌入式软件工程师</a>
-                   </li>
-                </ul>
-             </div>
-        </div>
-         <script type="text/javascript" src="javascript/tab.js"></script>
-	     <script type="text/javascript">
-             var tabber2 = new Yetii({
-               id: 'demo-nested',
-               tabclass: 'tab-nested'
-              });
-         </script>
-      </div>
-   </div>
-   <!-- 实习生招聘 -->
-   <div id="sxContent" class="yjiu_hz">
-               <p style="text-indent:2em;">目前暂时没有实习生招聘计划，谢谢关注！</p>
-   </div>
-</div>
 
 
+   <script type="text/javascript" src="../static/js/tab.js"></script>
+   <script type="text/javascript">
+     var tabber2=new Yetii({
+      id:'demo-nested',
+      tabclass:'tab-nested'
+     });
+   </script>
+   </div>
+   </div>
+</div>
 <footer>
   <div id="yj_cont">
      <div class="foot_nav">
@@ -150,7 +115,7 @@
         <a href="../download/zlxz.html">资料下载</a>|
         <a href="about/adout-us.html">关于我们</a>|
         <a href="../theme/ztcx.html">专题查询</a>|
-        <a href="../job/rczp.html">人才招聘</a>
+        <a href="../job/recruit.ftl">人才招聘</a>
      </div>
      <div class="bott_link">
      <a href="#">隐私条约</a> <a href="#">使用条款</a> <a href="#">反馈</a>
@@ -162,7 +127,7 @@
           电话：027-66367729
         </div>
          <div class="yjlx email">
-    Zip code  <br />
+		Zip code  <br />
           610031
          </div>
         <div class="yjlx time">
@@ -172,7 +137,7 @@
         <div class="yjlx network">
           SOCIAL NETWORK <br />
 
-      <a href="http://weibo.com/smartercities" target="_blank"><img src="../static/images/link_weibo.png" alt="新浪微博" /></a>
+           <a href="http://weibo.com/smartercities" target="_blank"><img src="../static/images/link_weibo.png" alt="新浪微博" /></a>
 		  <a href="http://qing.blog.sina.com.cn/smartercities" target="_blank"><img src="../static/images/link_qing.png" alt="新浪轻博客" /></a>
         </div>
       </div>
@@ -181,10 +146,10 @@
   </div>
   <div id="copyright">
     <div id="yj_cont">
-      <span>鄂ICP备12012524号</span>
+     <span>鄂ICP备12012524号</span>
       Copyright © 2016-2017  http://www.LandBigData.edu.cn  All Rights Reserved 西南交通大学中国土地信息大数据研究院版权所有
       <script type="text/javascript"
-    src="../../2968491/tongji.js"></script>
+		src="../../2968491/tongji.js"></script>
   <noscript>
 		<a href="http://www.linezing.com"><img
 			src="http://img.tongji.linezing.com/2968491/tongji.gif" />
@@ -194,7 +159,6 @@
 var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
 document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F7046593115956ee41bf7b68c95808f81' type='text/javascript'%3E%3C/script%3E"));
 </script>
-
     </div>
   </div>
 </footer>
@@ -204,17 +168,26 @@ document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3
 <script src="../static/js/nav.min.js" type="text/javascript"></script>
 <!--导航效果的js END-->
 <!--切换图JS-->
-<script src="../static/js/banner.slide.jquery.js" type="text/javascript"></script>
+<script type="text/javascript" src="../static/js/banner.slide.jquery.js"></script>
 <!--导航切换和回到顶部JS-->
 <script src="../static/js/back_top.js" type="text/javascript"></script>
+
 <script type="text/javascript">
-	//初始化函数
-	$(".yjiu_hz").hide();
-	$("#shContent").show();
-	function show(name){
-		$(".yjiu_hz").hide();
-		$("#"+name).show("slow");
+	function requestContent(name,type,uriType){
+			    var url="/wrisc/"+type+"/"+uriType;
+				$.ajax({
+				  url: url,
+				  type: 'POST',
+				  dataType:"html",
+				  cache: false,
+				  success: function(html){
+				    $("#"+name).html(html);
+				  }
+				});
 	}
 </script>
+<script type="text/javascript" src="../static/demo_project/styles/jquery.min.js"></script>
+<script type="text/javascript" src="../static/demo_project/styles/demoprjs.js"></script>
+
 </body>
 </html>

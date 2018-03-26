@@ -32,11 +32,11 @@
        <p id="lang"><span id="btn">搜索</span>|<a href="index.html">中文</a>|<a target="_blank" href="#">Egnlish</a><!-- <a target="_blank" href="http://www.wrisc.cn/wrisc/en/index.html">Egnlish</a> --></p>
        <ul id="nav" style="width: 740px;">
          <li id="moved"><img src="../static/images/hoverbg.gif" width="55" height="9" /></li>
-          <li class="navitem"><a href="../index.ftl">网站首页</a></li>
-          <li class="navitem"><a href="../content/newslist.ftl">动态消息</a></li>
-          <li class="navitem"><a href="../type/yjfx1.html">研究方向</a></li>
-          <li class="navitem"><a href="../teams/yjtd1.html">研究团队</a></li>
-          <li class="navitem"><a href="../achievments/yjcg.html">研究成果</a></li>
+          <li class="navitem"><a href="../index">网站首页</a></li>
+          <li class="navitem"><a href="../content/newslist">动态消息</a></li>
+          <li class="navitem"><a href="../direction/directionlist">研究方向</a></li>
+          <li class="navitem"><a href="../teams/teamlist">研究团队</a></li>
+          <li class="navitem"><a href="../achievments/achievments">研究成果</a></li>
           <li id="navactive" class="navitem"><a href="solutionlist.ftl">解决方案</a></li>
           <li class="navitem"><a href="../download/zlxz.html">资料下载</a></li>
           <li class="navitem"><a href="../about/adout-us.html">关于我们</a></li>
@@ -74,7 +74,7 @@
  <!--搜索的代码结束-->
 <div id="mbaoxue">
   <div id="page_content">
-   您所在的位置 > <a href="../index.ftl">首页</a> > <span>解决方案</span>
+   您所在的位置 > <a href="../index.ftl">首页</a> > <span>解决方案 </span>
   </div>
 </div>
 <div id="page_content">
@@ -85,8 +85,8 @@
 		<ul>
 			<li  ><a href="solutionlist.ftl" title="说明">智慧国土</a></li>
 			<li  ><a href="solutiondetail.ftl" title="说明">智慧林业</a></li>
-			<li id="cbnavactive" ><a href="jjfa3.html" title="说明">智慧农业</a></li>
-			<li  ><a href="jjfa4.html" title="新增智慧环保">智慧数采</a></li>
+			<li  ><a href="solution_agriculture.ftl" title="说明">智慧农业</a></li>
+			<li id="cbnavactive" ><a href="data_acquisition.ftl" title="新增智慧环保">智慧数采</a></li>
 			<li id="cbnmove"><img src="../static/images/lmbg.jpg"
 				width="228" height="32" />
 			</li>
@@ -98,17 +98,24 @@
      <div class="yjiu_hz">
         <div id="demo-nested" class="cwBox boxHz">
           <ul id="demo-nested-nav">
-            <li><a href="#">四川省智慧农业大数据综合管理平台</a></li>
+            <li><a href="#">智慧采集大数据综合管理平台</a></li>
          </ul>
          <div class="tabs-container">
             <div class="tab-nested ctbox">
 
 				 <div class="textbox">
-<p align="left">&nbsp; &nbsp; &nbsp;&nbsp;项目建设目标：建设西藏自治区智慧农业大数据综合管理平台，实现农业数据采集、数据汇交、数据处理、预警分析、查询共享、农业数据专题服务等功能。<br>
-项目建设规模：总体项目在西藏自治区农业厅建设一套智慧农业大数据综合管理平台。包括农业数据智慧采集系统、数据库管理系统、平台接入系统、平台工具软件、农业资源数据共享平台、大数据支撑平台、农业环境与灾害分析预警系统、农业资源专题服务平台、平台运维管理系统共九大系统。
-<img src="img/zhny-1.jpg">
+<p align="left">&nbsp; &nbsp; &nbsp;&nbsp;智慧采集系统：主要由智慧采集系统移动端、智慧采集接入监管系统、数据管理系统和业务应用系统四个子系统构成。
 <br>
-主要任务是推动“智慧农业”建设，构筑新一代农业信息技术体系；建立完善农业大数据体系，推进农业管理决策的科学化、智能化；建设覆盖全自治区林也信息管理基础平台，全面落实农业信息登记制度；深化和拓展农业综合监管平台应用，建立精准治理、多方参与的农业监管新模式；推进农业信息数据共享与开放，充分发挥农业信息在实施国家大数据战略中的重要基础作用；构建“互联网+农业政务服务”体系，有效提升农业惠民服务水平；完善地质环境与地质灾害预警预报体系，整体提升地质灾害防御与应急能力；深入推进农业调查评价信息化，全面快速掌握农业资源资产开发利用状况；大力推动农业调查工作信息化建设，全面提高林地调查工作的现代化水平和社会服务能力；建立和完善信息化标准体系，形成规范、有序的信息化建设新局面；加强农业信息安全保障体系建设，切实提升网络安全防护能力。
+Pad：智慧采集系统移动端，移动调查工具，是外业调查工具的总称，本文中特指用于确权调查的工具。
+<br>
+智慧采集系统基于云服务的体系架构，能够实现与其它系统的无缝对接，实现数据的实时上报；系统提供基于API的开放式服务，可以与农业、林业、国土等业务系统的互联互通提供基础。系统实现农业部规定全业务覆盖，实现承包地、权利人、发包方数据一体化管理，实现多维度、多体系的查询统计。
+智慧采集系统主要由智慧采集系统移动端、智慧采集接入监管系统、数据管理系统和业务应用系统四个子系统构成:<br>
+<img src="img/zhsc-2.png">
+（1） 智慧采集系统移动端<br>
+（2） 智慧采集接入监管系统<br>
+（3） 数据管理系统<br>
+（4） 业务应用系统
+<img src="img/zhsc-4.png">
 </p>
 
 </div>
@@ -137,7 +144,7 @@
         <a href="../download/zlxz.html">资料下载</a>|
         <a href="about/adout-us.html">关于我们</a>|
         <a href="../theme/ztcx.html">专题查询</a>|
-        <a href="../job/rczp.html">人才招聘</a>
+        <a href="../job/recruit.ftl">人才招聘</a>
      </div>
      <div class="bott_link">
      <a href="#">隐私条约</a> <a href="#">使用条款</a> <a href="#">反馈</a>

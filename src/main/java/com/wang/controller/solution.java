@@ -31,4 +31,14 @@ public class solution {
     public String solutiondetail(HttpServletRequest request, Map<String,Object> model){
         return "solution/solutiondetail";//返回的内容就是templetes下面文件的名称
     }
+
+    @RequestMapping("/solution_agriculture")
+    public String solution_agriculture(HttpServletRequest request, Map<String,Object> model){
+        return "solution/solution_agriculture";//返回的内容就是templetes下面文件的名称
+    }
+
+    @RequestMapping("/data_acquisition")
+    public String data_acquisition(HttpServletRequest request, Map<String,Object> model){
+        return "solution/data_acquisition";//返回的内容就是templetes下面文件的名称
+    }
 }

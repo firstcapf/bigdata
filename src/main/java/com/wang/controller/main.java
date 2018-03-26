@@ -14,10 +14,8 @@ import java.util.Map;
 @EnableAutoConfiguration
 public class main {
 
-
     @Resource
     private ContentService contentService;
-
 
     @RequestMapping("/hello")
     public String hello() {
@@ -30,13 +28,11 @@ public class main {
         return "word--spring boot:" + name;
     }
 
-
-
-
     @RequestMapping("/")
     public String web(Map<String,Object> model){
 
-        model.put("topimagenewslist", contentService.topimagenews(1));
+        model.put("topimagenewslist1", contentService.topimagenews(1));
+        model.put("topimagenewslist2", contentService.topimagenews(2));
         model.put("topnewslist1", contentService.topnews(1));
         model.put("topnewslist2", contentService.topnews(2));
         model.put("topnewslist3", contentService.topnews(3));
@@ -52,9 +48,5 @@ public class main {
 
         return "index";//返回的内容就是templetes下面文件的名称
     }
-
-
-
-
 
 }

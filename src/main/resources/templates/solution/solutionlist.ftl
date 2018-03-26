@@ -1,4 +1,4 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+       <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 
@@ -85,8 +85,8 @@
 		<ul>
 			<li id="cbnavactive" ><a href="solutionlist.ftl" title="说明">智慧国土</a></li>
 			<li  ><a href="solutiondetail.ftl" title="说明">智慧林业</a></li>
-			<li  ><a href="jjfa3.html" title="说明">智慧农业</a></li>
-			<li  ><a href="jjfa4.html" title="新增智慧环保">智慧数采</a></li>
+			<li  ><a href="solution_agriculture.ftl" title="说明">智慧农业</a></li>
+			<li  ><a href="data_acquisition.ftl" title="新增智慧环保">智慧数采</a></li>
 			<li id="cbnmove"><img src="../static/images/lmbg.jpg"
 				width="228" height="32" />
 			</li>
@@ -98,25 +98,25 @@
      <div class="yjiu_hz">
         <div id="demo-nested" class="cwBox boxHz">
           <ul id="demo-nested-nav">
-            <li><a href="#">四川省智慧国土大数据综合管理平台项目</a></li>
+            <li><a href="#">智慧国土大数据综合管理平台项目</a></li>
          </ul>
          <div class="tabs-container">
             <div class="tab-nested ctbox">
 
 				 <div class="textbox">
-<p align="left">&nbsp; &nbsp; &nbsp;&nbsp;四川省国土资源厅智慧国土大数据综合管理平台项目是围绕解决我省国土资源管理与开发利用过程中存在的重大问题，面向资源监管、共享与服务、智能预警的目标，开展的国土资源信息化大数据平台建设工程。  就是要按照四川省国民经济与社会发展的总体战略部署，在科学发展观的指导下，通过信息技术的广泛应用，使其能够直接、全面、准确地掌握四川省国土资源信息及其动态变化情况，形成上下联动的、科学规范的智慧化国土资源管理模式，克服现行资源管理体制下常规作业方式难以逾越的障碍，切实解决国土资源管理工作中存在的关键性、迫切性问题，全面提升我省国土资源管理与服务水平。四川智慧国土大数据综合管理平台主要建立内容如下：
+<p align="left">&nbsp; &nbsp; &nbsp;&nbsp;国土资源厅智慧国土大数据综合管理平台项目是围绕解决国土资源管理与开发利用过程中存在的重大问题，面向资源监管、共享与服务、智能预警的目标，开展的国土资源信息化大数据平台建设工程。  就是要按照国民经济与社会发展的总体战略部署，在科学发展观的指导下，通过信息技术的广泛应用，使其能够直接、全面、准确地掌握四川省国土资源信息及其动态变化情况，形成上下联动的、科学规范的智慧化国土资源管理模式，克服现行资源管理体制下常规作业方式难以逾越的障碍，切实解决国土资源管理工作中存在的关键性、迫切性问题，全面提升国土资源管理与服务水平。智慧国土大数据综合管理平台主要建立内容如下：
   <img src="img/zhgt-4.png">
 建立软件系统：<br>
-（1） 四川国土资源目录服务系统<br>
-（2） 四川国土资源数据汇交系统<br>
-（3） 四川国土资源数据共享开放平台<br>
-（4） 四川国土资源决策支持系统<br>
-（5） 四川国土资源智库信息化平台<br>
-（6） 四川国土资源专题信息服务系统<br>
-（7） 四川矿产资源智能监测系统<br>
-（8） 四川地质环境灾害预警及应急指挥系统<br>
-（9） 四川国土资源测绘监管与保障系统<br>
-（10）  四川国土资源大数据支撑平台<br>
+（1） 国土资源目录服务系统<br>
+（2） 国土资源数据汇交系统<br>
+（3） 国土资源数据共享开放平台<br>
+（4） 国土资源决策支持系统<br>
+（5） 国土资源智库信息化平台<br>
+（6） 国土资源专题信息服务系统<br>
+（7） 矿产资源智能监测系统<br>
+（8） 地质环境灾害预警及应急指挥系统<br>
+（9） 国土资源测绘监管与保障系统<br>
+（10）  国土资源大数据支撑平台<br>
 </p>
 
 </div>
@@ -147,7 +147,7 @@
         <a href="../download/zlxz.html">资料下载</a>|
         <a href="about/adout-us.html">关于我们</a>|
         <a href="../theme/ztcx.html">专题查询</a>|
-        <a href="../job/rczp.html">人才招聘</a>
+        <a href="../job/recruit.ftl">人才招聘</a>
      </div>
      <div class="bott_link">
      <a href="#">隐私条约</a> <a href="#">使用条款</a> <a href="#">反馈</a>
