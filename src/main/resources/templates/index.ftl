@@ -36,31 +36,26 @@
                   -->
               <li><a href="content/20170726.html" target="_blank"><img src="LandBigData/lb_20170726.png"/></a>
               </li>
-
               <!--
                   <li><a href="http://www.wrisc.cn/wrisc/demoproject/projects" target="_blank"><img src="/wrisc/static/v2/images/bg1.jpg" /></a></li>
                   -->
               <li><a href="content/20170613.html" target="_blank">
               <img src="LandBigData/20170613_1.png"/></a></li>
-
               <!--
                   <li><a href="http://" target="_blank"><img src="/wrisc/static/v2/images/bg1.jpg" /></a></li>
                   -->
               <li><a href="http://" target="_blank">
               <img src="LandBigData/lb_linye.png"/></a></li>
-
               <!--
                   <li><a href="http://www.wrisc.cn/wrisc/type/zhcs" target="_blank"><img src="/wrisc/static/v2/images/bg1.jpg" /></a></li>
                   -->
               <li><a href="#" target="_blank">
               <img src="LandBigData/lb_guotu.png"/></a></li>
-
               <!--
                   <li><a href="http://" target="_blank"><img src="/wrisc/static/v2/images/bg1.jpg" /></a></li>
                   -->
               <!-- <li><a href="#" target="_blank">
               <img src="LandBigData/lb_shucai.png"/></a></li> -->
-
      </ul>
       <ul id="warp-nav">
                   <li class="selected"><img src="../static/images/xyd.png"></li>
@@ -84,8 +79,8 @@
           <li id="moved"></li>
           <li id="navactive" class="navitem"><a href="/">网站首页</a></li>
           <li class="navitem"><a href="content/newslist">动态消息</a></li>
-          <li class="navitem"><a href="direction/directionlist">研究方向</a></li>
-          <li class="navitem"><a href="teams/teamlist">研究团队</a></li>
+          <li class="navitem"><a href="direction/direction_bigdata">研究方向</a></li>
+          <li class="navitem"><a href="teams/team_bigdata">研究团队</a></li>
           <li class="navitem"><a href="achievments/achievments">研究成果</a></li>
           <li class="navitem"><a href="solution/solutionlist">解决方案</a></li>
           <li class="navitem"><a href="download/down">资料下载</a></li>
@@ -237,30 +232,26 @@
         </div>
   </div>
   <!--解决方案结束 -->
-  <!--合作链接 -->
-
-  <!--合作链接结束 -->
   <!--友情链接-->
   <div id="frend_link">
     <h2>友情链接</h2>
-     <div class="hz_links">
-      <ul>
-          <li><a href="http://www.swjtu.edu.cn/"  target="_blank"><img src="static/images/hzlj1.png" alt="西南交通大学" border="0" /></a></li>
-          <li><a href="http://www.scst.gov.cn/" target="_blank"><img src="static/images/hzlj2.jpg" alt="四川省科技厅" border="0" /></a></li>
-          <li><a href="http://www.scagri.gov.cn/"  target="_blank"><img src="static/images/hzlj3.png" alt="四川省农业厅" border="0" /></a></li>
-          <li><a href="http://www.scdlr.gov.cn/" target="_blank"><img src="static/images/hzlj4.jpg" alt="四川省国土资源厅" border="0" /></a></li>
-      </ul>
-  </div>
+     <#--<div class="hz_links">-->
+      <#--<ul>-->
+          <#--<li><a href="http://www.swjtu.edu.cn/"  target="_blank"><img src="static/images/hzlj1.png" alt="西南交通大学" border="0" /></a></li>-->
+          <#--<li><a href="http://www.scst.gov.cn/" target="_blank"><img src="static/images/hzlj2.jpg" alt="四川省科技厅" border="0" /></a></li>-->
+          <#--<li><a href="http://www.scagri.gov.cn/"  target="_blank"><img src="static/images/hzlj3.png" alt="四川省农业厅" border="0" /></a></li>-->
+          <#--<li><a href="http://www.scdlr.gov.cn/" target="_blank"><img src="static/images/hzlj4.jpg" alt="四川省国土资源厅" border="0" /></a></li>-->
+      <#--</ul>-->
+  <#--</div>-->
     <div class="links_fd">
+      <a href="http://www.swjtu.edu.cn/" title="西南交通大学" target="_blank">西南交通大学</a>|
+      <a href="http://www.scst.gov.cn/" title="四川省科技厅" target="_blank">四川省科技厅</a>|
+      <a href="http://www.scagri.gov.cn/" title="四川省农业厅" target="_blank">四川省农业厅</a>|
+      <a href="http://www.scdlr.gov.cn/" title="四川省国土资源厅" target="_blank">四川省国土资源厅</a>
       <a href="http://www.cnscn.com.cn/" title="西藏自治区国土厅" target="_blank">西藏自治区国土厅</a>|
       <a href="http://www.chinasmartcity.org/" title="西藏自治区农牧厅" target="_blank">西藏自治区农牧厅</a>|
       <a href="http://www.ciotc.cn/" title="创想智慧城市网" target="_blank">创想智慧城市网</a>|
-      <a href="http://www.yktworld.com/" title="一卡通世界" target="_blank">一卡通世界</a>|
-      <a href="http://www.yktchina.com/" title="中国一卡通网" target="_blank">中国一卡通网</a>|
-      <a href="http://www.smartcard.org.cn/" title="中国智能卡网" target="_blank">中国智能卡网</a>|
-      <a href="http://www.rfidchina.org/" title="RFID中国网" target="_blank">RFID中国网</a>|
-      <a href="http://www.accessnet.cn/" title="中国门禁网" target="_blank">中国门禁网</a>|
-      <a href="http://www.zhinengjiaotong.com/" title="智能交通" target="_blank">智能交通</a>
+      <a href="http://www.yktworld.com/" title="一卡通世界" target="_blank">一卡通世界</a>
     </div>
   </div>
   <!--友情链接结束 -->
@@ -269,23 +260,21 @@
 <footer>
   <div id="yj_cont">
      <div class="foot_nav">
-        <a href="/" style="padding-left:0px;">网站首页</a>|
-        <a href="content/newslist">动态消息</a>|
-        <a href="direction/directionlist">研究方向</a>|
-        <a href="teams/yjtd1.html">研究团队</a>|
-        <a href="achievments/yjcg.html">研究成果</a>|
-        <a href="solution/solutionlist.ftl">解决方案</a>|
-        <a href="download/zlxz.html">资料下载</a>|
-        <a href="certificate/search">证书查询</a>|
-        <a href="about/adout-us.html">关于我们</a>|
-        <a href="theme/ztcx.html">专题查询</a>|
-        <a href="job/recruit.ftl">人才招聘</a>
+         <a href="/" style="/">网站首页</a>|
+         <a href="../content/newslist">动态消息</a>|
+         <a href="../direction/direction_bigdata">研究方向</a>|
+         <a href="../teams/teamlist">研究团队</a>|
+         <a href="../achievments/achievments">研究成果</a>|
+         <a href="../solution/solutionlist">解决方案</a>|
+         <a href="../download/down">资料下载</a>|
+         <a href="about/adout-us">关于我们</a>|
+         <a href="../theme/themes">专题查询</a>|
+         <a href="../job/recruit">人才招聘</a>
      </div>
 
-     <div class="bott_link">
-     <a href="#">隐私条约</a> <a href="#">使用条款</a> <a href="#">反馈</a>
-     </div>
-
+     <#--<div class="bott_link">-->
+     <#--<a href="#">隐私条约</a> <a href="#">使用条款</a> <a href="#">反馈</a>-->
+     <#--</div>-->
      <div id="foot_cont">
        <div id="ft_conbox">
         <div class="yjlx add">
@@ -317,11 +306,6 @@
       Copyright © 2016-2017  http://www.LandBigData.edu.cn  All Rights Reserved 西南交通大学中国土地信息大数据研究院版权所有
        <script type="text/javascript"
 		src="../2968491/tongji.js"></script>
- <!--  <noscript>
-		<a href="http://www.linezing.com"><img
-			src="http://img.tongji.linezing.com/2968491/tongji.gif" />
-		</a>
-  </noscript> -->
 
   	  <script type="text/javascript">
 var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");

@@ -31,16 +31,16 @@
         <div class="rtop">
             <p id="lang"><span id="btn">搜索</span>|<a href="index.html">中文</a>|<a target="_blank" href="#">Egnlish</a><!-- <a target="_blank" href="http://www.wrisc.cn/wrisc/en/index.html">Egnlish</a> --></p>
             <ul id="nav" style="width: 740px;">
-                <li id="moved"><img src="../static/images/hoverbg.gif" width="55" height="9" /></li>
-                <li class="navitem"><a href="../index.ftl">网站首页</a></li>
-                <li class="navitem"><a href="../content/newslist.ftl">动态消息</a></li>
+                <li id="moved"></li>
+                <li class="navitem"><a href="/">网站首页</a></li>
+                <li class="navitem"><a href="../content/newslist">动态消息</a></li>
                 <li id="navactive" class="navitem"><a href="/">研究方向</a></li>
-                <li class="navitem"><a href="../teams/yjtd1.html">研究团队</a></li>
-                <li class="navitem"><a href="../achievments/yjcg.html">研究成果</a></li>
+                <li class="navitem"><a href="../teams/team_bigdata">研究团队</a></li>
+                <li class="navitem"><a href="../achievments/achievments">研究成果</a></li>
                 <li class="navitem"><a href="../solution/solutionlist">解决方案</a></li>
-                <li class="navitem"><a href="../download/zlxz.html">资料下载</a></li>
-                <li class="navitem"><a href="certificate/search">证书查询</a></li>
-                <li class="navitem"><a href="../about/adout-us.html">关于我们</a></li>
+                <li class="navitem"><a href="../download/down">资料下载</a></li>
+                <li class="navitem"><a href="../certificate/search">证书查询</a></li>
+                <li class="navitem"><a href="../about/about_us">关于我们</a></li>
             </ul>
         </div>
     </div>
@@ -83,10 +83,10 @@
         <div class="lanmu_title">研究方向</div>
         <div id="lanmu_list">
             <ul>
-                <li id="cbnavactive" ><a href="../type/yjfx1.html" title="说明">大数据、云计算及智能技术领域</a></li>
-                <li  ><a href="../type/yjfx2.html" title="说明">机器人与智能系统</a></li>
-                <li  ><a href="../type/yjfx3.html" title="说明">地理信息系统、虚拟地理环境领域</a></li>
-                <li  ><a href="../type/yjfx4.html" title="新增智慧环保">政策、制度、法律法规领域</a></li>
+                <li id="cbnavactive" ><a href="/" title="说明">大数据、云计算及智能技术领域</a></li>
+                <li  ><a href="../direction/direction_robot" title="说明">机器人与智能系统</a></li>
+                <li  ><a href="../direction/direction_geographic" title="说明">地理信息系统、虚拟地理环境领域</a></li>
+                <li  ><a href="../direction/direction_policy.ftl" title="新增智慧环保">政策、制度、法律法规领域</a></li>
                 <li id="cbnmove"><img src="../static/images/lmbg.jpg"
                                       width="228" height="32" />
                 </li>
@@ -201,16 +201,16 @@
 <footer>
     <div id="yj_cont">
         <div class="foot_nav">
-            <a href="#" style="padding-left:0px;">网站首页</a>|
-            <a href="../content/newslist.ftl">动态消息</a>|
-            <a href="/">研究方向</a>|
-            <a href="../teams/yjtd1.html">研究团队</a>|
-            <a href="../achievments/yjcg.html">研究成果</a>|
-            <a href="../solution/solutionlist.ftl">解决方案</a>|
-            <a href="../download/zlxz.html">资料下载</a>|
-            <a href="about/adout-us.html">关于我们</a>|
-            <a href="../theme/ztcx.html">专题查询</a>|
-            <a href="../job/recruit.ftl">人才招聘</a>
+            <a href="/" style="/">网站首页</a>|
+            <a href="../content/newslist">动态消息</a>|
+            <a href="../direction/direction_bigdata">研究方向</a>|
+            <a href="../teams/teamlist">研究团队</a>|
+            <a href="../achievments/achievments">研究成果</a>|
+            <a href="../solution/solutionlist">解决方案</a>|
+            <a href="../download/down">资料下载</a>|
+            <a href="../about/adout-us">关于我们</a>|
+            <a href="../theme/themes">专题查询</a>|
+            <a href="../job/recruit">人才招聘</a>
         </div>
         <div class="bott_link">
             <a href="#">隐私条约</a> <a href="#">使用条款</a> <a href="#">反馈</a>

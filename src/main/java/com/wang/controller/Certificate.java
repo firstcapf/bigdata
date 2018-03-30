@@ -1,6 +1,7 @@
 package com.wang.controller;
 
 import com.wang.service.CertificateService;
+import io.swagger.annotations.ApiOperation;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -19,6 +20,7 @@ public class Certificate {
     @Resource
     private CertificateService certificateService;
 
+    @ApiOperation("")
     @RequestMapping("/search")
     public String certificate(HttpServletRequest request, Map<String,Object> model){
         return "certificate/search";//返回的内容就是templetes下面文件的名称
