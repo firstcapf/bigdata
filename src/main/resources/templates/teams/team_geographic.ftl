@@ -33,14 +33,14 @@
 <ul id="nav" style="width: 740px;">
 <li id="moved"></li>
     <li class="navitem"><a href="/">网站首页</a></li>
-    <li class="navitem"><a href="../content/newslist">动态消息</a></li>
-    <li class="navitem"><a href="../direction/direction_bigdata">研究方向</a></li>
-    <li id="navactive" class="navitem"><a href="team_bigdata">研究团队</a></li>
-    <li class="navitem"><a href="../achievments/achievments">研究成果</a></li>
-    <li class="navitem"><a href="../solution/solutionlist">解决方案</a></li>
-    <li class="navitem"><a href="../download/down">资料下载</a></li>
-    <li class="navitem"><a href="../certificate/search">证书查询</a></li>
-    <li class="navitem"><a href="../about/about_us">关于我们</a></li>
+    <li class="navitem"><a href="../content/newslist.ftl">动态消息</a></li>
+    <li class="navitem"><a href="../direction/direction_bigdata.ftl">研究方向</a></li>
+    <li id="navactive" class="navitem"><a href="team_bigdata.ftl">研究团队</a></li>
+    <li class="navitem"><a href="../achievments/achievments.ftl">研究成果</a></li>
+    <li class="navitem"><a href="../solution/solutionlist.ftl">解决方案</a></li>
+    <li class="navitem"><a href="../download/down.ftl">资料下载</a></li>
+    <li class="navitem"><a href="../certificate/search.ftl">证书查询</a></li>
+    <li class="navitem"><a href="../about/about_us.ftl">关于我们</a></li>
 </ul>
 </div>
 </div>
@@ -84,10 +84,10 @@ window.onload =function(){
 <div class="lanmu_title">研究团队</div>
 <div id="lanmu_list">
 <ul>
-    <li  ><a href="team_bigdata" title="说明">大数据、云计算及智能技术团队</a></li>
-    <li  ><a href="team_robot" title="说明">机器人与智能系统团队</a></li>
-    <li id="cbnavactive"  ><a href="team_geographic" title="说明">地理信息系统、虚拟地理环境领域团队</a></li>
-    <li ><a href="team_policy" title="新增智慧环保">政策、制度、法律法规领域团队</a></li>
+    <li  ><a href="team_bigdata.ftl" title="说明">大数据、云计算及智能技术团队</a></li>
+    <li  ><a href="team_robot.ftl" title="说明">机器人与智能系统团队</a></li>
+    <li id="cbnavactive"  ><a href="team_geographic.ftl" title="说明">地理信息系统、虚拟地理环境领域团队</a></li>
+    <li ><a href="team_policy.ftl" title="新增智慧环保">政策、制度、法律法规领域团队</a></li>
     <li id="cbnmove"><img src="../static/images/lmbg.jpg"
     width="228" height="32" />
     </li>
@@ -165,20 +165,20 @@ var tabber2 = new Yetii({
 <footer>
 <div id="yj_cont">
 <div class="foot_nav">
-<a href="#" style="padding-left:0px;">网站首页</a>|
-<a href="../content/newslist.ftl">动态消息</a>|
-<a href="../type/yjfx1.html">研究方向</a>|
-<a href="../teams/yjtd1.html">研究团队</a>|
-<a href="../achievments/yjcg.html">研究成果</a>|
-<a href="../solution/solutionlist.ftl">解决方案</a>|
-<a href="../download/zlxz.html">资料下载</a>|
-<a href="../about/adout-us.html">关于我们</a>|
-<a href="../theme/ztcx.html">专题查询</a>|
-<a href="../job/recruit.ftl">人才招聘</a>
+    <a href="#" style="padding-left:0px;">网站首页</a>|
+    <a href="../content/newslist.ftl">动态消息</a>|
+    <a href="../direction/direction_bigdata.ftl">研究方向</a>|
+    <a href="../teams/team_bigdata.ftl">研究团队</a>|
+    <a href="../achievments/achievments.ftl">研究成果</a>|
+    <a href="../solution/solutionlist.ftl">解决方案</a>|
+    <a href="../download/down.ftl">资料下载</a>|
+    <a href="../about/about_us.ftl">关于我们</a>|
+    <a href="../theme/themes.ftl">专题查询</a>|
+    <a href="../job/recruit.ftl">人才招聘</a>
 </div>
-<div class="bott_link">
-<a href="#">隐私条约</a> <a href="#">使用条款</a> <a href="#">反馈</a>
-</div>
+<#--<div class="bott_link">-->
+<#--<a href="#">隐私条约</a> <a href="#">使用条款</a> <a href="#">反馈</a>-->
+<#--</div>-->
 <div id="foot_cont">
 <div id="ft_conbox">
 <div class="yjlx add">
@@ -226,9 +226,6 @@ document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3
 <script src="../static/js/jquery-1.7.2.min.js"></script>
 <script src="../static/js/nav.min.js" type="text/javascript"></script>
 <!--导航效果的js END-->
-<!--切换图JS-->
-<script src="../static/js/jquery-1.7.2.min.js"></script>
-<script type="text/javascript" src="../static/js/banner.slide.jquery.js"></script>
 <!--导航切换和回到顶部JS-->
 <script src="../static/js/back_top.js" type="text/javascript"></script>
 

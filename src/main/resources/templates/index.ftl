@@ -174,7 +174,7 @@
     <div class="newimg">
     <#list topimagenewslist2 as toppicnews >
         <dl>
-            <dt><a href="${toppicnews.link}" title="" target="_blank" ><img src="static/images/img/ZC_20170072.png"></a>
+            <dt><a href="${toppicnews.link}" title="" target="_blank" ><img src="/static/images/${toppicnews.image_url}"/></a>
             </dt>
             <dd><a href="${toppicnews.link}" title="" target="_blank">${toppicnews.title}</a></dd>
         </dl>

@@ -32,6 +32,19 @@
         <h1 id="logo"><div  class="imglog"><img src="../static/images/logo.png"/></div></h1>
         <div class="rtop">
             <p id="lang"><span id="btn">搜索</span>|<a href="index.html">中文</a>|<a target="_blank" href="#">Egnlish</a><!-- <a target="_blank" href="http://www.wrisc.cn/wrisc/en/index.html">Egnlish</a> --></p>
+            <ul id="nav" style="width: 740px;">
+                <li id="moved"></li>
+                <li id="navactive" class="navitem"><a href="/">网站首页</a></li>
+                <li class="navitem"><a href="../content/newslist.ftl">动态消息</a></li>
+                <li class="navitem"><a href="../direction/direction_bigdata.ftl">研究方向</a></li>
+                <li class="navitem"><a href="../teams/team_bigdata.ftl">研究团队</a></li>
+                <li class="navitem"><a href="../achievments/achievments.ftl">研究成果</a></li>
+                <li class="navitem"><a href="../solution/solutionlist.ftl">解决方案</a></li>
+                <li class="navitem"><a href="../download/down.ftl">资料下载</a></li>
+                <li class="navitem"><a href="/">证书查询</a></li>
+                <li class="navitem"><a href="../about/about_us.ftl">关于我们</a></li>
+                <!-- <li class="navitem"><a href="theme/ztcx.html">专题查询</a></li> -->
+            </ul>
         </div>
     </div>
 </header>
@@ -87,25 +100,25 @@
                     <div style="position: relative;">
                         <img src="../static/images/u0.jpg" />
                         <div style="position:absolute;z-indent:2;left: 0;top: 0;">
-                            <div style=" float: left;">
+                            <div style=" float: left;width: 50%;">
                                 <h1 style="margin-left: 120px; margin-top: 100px">培训合格证书</h1>
                                 <br>
                                 <p style="width: 248px;margin-left: 100px;">&nbsp;&nbsp;${certificate.name}同志于${certificate.enddate}通过${certificate.ctype}培训，考试合格。</p>
                                 <p style="margin-left: 80px">特发此证。</p>
                                 <br>
-
                                 <img style="margin-left: 140px" width="25%" src="../static/images/u1.png">
                                 <br><br><p style="margin-left: 80px">证书编号：${certificate.number}</p>
                             </div>
-
-                            <div style="margin-left: 40px;margin-top: 190px;float: right;">
+                            <div style="float: right;width: 50%;margin-top: 70px;">
+                                <img style="display: block; padding-left:80px;width: 24%;margin-left: 40px;padding-bottom: 20px;" src="../static/images/${certificate.headpic}">
+                                <div style="margin-left: 40px;">
                                 <p>姓名：${certificate.name}&nbsp;&nbsp;&nbsp;&nbsp;性别：${certificate.sex}</p>
                                 <p>身份证号码：${certificate.idcard}</p>
                                 <p>单位：${certificate.organization}</p><br>
                                 <h3 style="margin-left: 30px;">西南交通大学中国<br>&nbsp;&nbsp;土地信息大数据研究院</h3><br>
                                 <p style="margin-left: 30px;">发证日期：${certificate.signdate}</p>
+                                </div>
                             </div>
-
                         </div>
                     </div>
                 </div>

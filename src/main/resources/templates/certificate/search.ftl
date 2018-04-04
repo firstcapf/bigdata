@@ -16,6 +16,7 @@
 
 <body>
 <!--切换图代码-->
+
  <a name="pagetop" id="pagetop"></a>
  <div id="banner">
     <div id="nyshow">
@@ -30,7 +31,20 @@
    <div class="top">
      <h1 id="logo"><div  class="imglog"><img src="../static/images/logo.png"/></div></h1>
      <div class="rtop">
-       <p id="lang"><span id="btn">搜索</span>|<a href="index.html">中文</a>|<a target="_blank" href="#">Egnlish</a><!-- <a target="_blank" href="http://www.wrisc.cn/wrisc/en/index.html">Egnlish</a> --></p>       
+       <p id="lang"><span id="btn">搜索</span>|<a href="index.html">中文</a>|<a target="_blank" href="#">Egnlish</a><!-- <a target="_blank" href="http://www.wrisc.cn/wrisc/en/index.html">Egnlish</a> --></p>
+         <ul id="nav" style="width: 740px;">
+             <li id="moved"></li>
+             <li id="navactive" class="navitem"><a href="/">网站首页</a></li>
+             <li class="navitem"><a href="../content/newslist.ftl">动态消息</a></li>
+             <li class="navitem"><a href="../direction/direction_bigdata.ftl">研究方向</a></li>
+             <li class="navitem"><a href="../teams/team_bigdata.ftl">研究团队</a></li>
+             <li class="navitem"><a href="../achievments/achievments.ftl">研究成果</a></li>
+             <li class="navitem"><a href="../solution/solutionlist.ftl">解决方案</a></li>
+             <li class="navitem"><a href="../download/down.ftl">资料下载</a></li>
+             <li class="navitem"><a href="/">证书查询</a></li>
+             <li class="navitem"><a href="../about/about_us.ftl">关于我们</a></li>
+             <!-- <li class="navitem"><a href="theme/ztcx.html">专题查询</a></li> -->
+         </ul>
      </div>
    </div>
  </header>
@@ -120,20 +134,5 @@
   <!--解决方案结束 -->      
 </div>
 
-<!--导航效果的js-->
-<script src="../static/js/jquery-1.7.2.min.js"></script>
-<script src="../static/js/nav.min.js" type="text/javascript"></script>
-<!--导航效果的js END-->
-<!--导航切换和回到顶部JS-->
-<script src="../static/js/back_top.js" type="text/javascript"></script>
-<script type="text/javascript">
-	//初始化函数
-	$(".yjiu_hz").hide();
-	$("#shContent").show();
-	function show(name){
-		$(".yjiu_hz").hide();
-		$("#"+name).show("slow");
-	}
-</script>
 </body>
 </html>  

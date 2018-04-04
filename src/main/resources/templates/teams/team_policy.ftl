@@ -173,9 +173,9 @@
                 <a href="../theme/ztcx.html">专题查询</a>|
                 <a href="../job/recruit.ftl">人才招聘</a>
             </div>
-            <div class="bott_link">
-                <a href="#">隐私条约</a> <a href="#">使用条款</a> <a href="#">反馈</a>
-            </div>
+            <#--<div class="bott_link">-->
+                <#--<a href="#">隐私条约</a> <a href="#">使用条款</a> <a href="#">反馈</a>-->
+            <#--</div>-->
             <div id="foot_cont">
                 <div id="ft_conbox">
                     <div class="yjlx add">
