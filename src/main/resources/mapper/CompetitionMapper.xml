@@ -21,6 +21,26 @@
     </resultMap>
 
 
+    <sql id="Base_Column_List" >
+        id,competionname,studentname1 ,studenttel1,studentclass1,studentname2 ,studenttel2,studentclass2,studentname3 ,studenttel3,studentclass3,regtime,isdel
+    </sql>
+
+
+    <select id="selectCompetitionbystudent1" resultMap="BaseResultMap" parameterType="com.wang.entity.Competition">
+        select  <include refid="Base_Column_List" />
+        from competition where studentname1=#{studentname1} and  studenttel1=#{studenttel1}
+    </select>
+
+    <select id="selectCompetitionbystudent2" resultMap="BaseResultMap" parameterType="com.wang.entity.Competition">
+        select  <include refid="Base_Column_List" />
+        from competition where studentname1=#{studentname2} and  studenttel1=#{studenttel2}
+    </select>
+
+    <select id="selectCompetitionbystudent3" resultMap="BaseResultMap" parameterType="com.wang.entity.Competition">
+        select  <include refid="Base_Column_List" />
+        from competition where studentname1=#{studentname3} and  studenttel1=#{studenttel3}
+    </select>
+
     <insert id="addCompetition" parameterType="com.wang.entity.Competition" >
         INSERT INTO competition (competionname,studentname1 ,studenttel1,studentclass1,studentname2 ,studenttel2,studentclass2,studentname3 ,studenttel3,studentclass3,regtime,isdel)
         SELECT
