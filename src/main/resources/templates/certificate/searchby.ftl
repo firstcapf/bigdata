@@ -94,7 +94,7 @@
                                 <p style="margin-left: 80px">特发此证。</p>
                                 <br>
 
-                                <img style="margin-left: 140px" width="25%" src="../static/images/u1.png">
+                                <img style="margin-left: 140px" width="25%" src="/weixin/qrcode?ctype=${certificate.ctype}&name=${certificate.name}&number=${certificate.number}&idcard=${certificate.idcard}">
                                 <br><br><p style="margin-left: 80px">证书编号：${certificate.number}</p>
                             </div>
 
