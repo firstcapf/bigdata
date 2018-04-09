@@ -52,7 +52,14 @@ public class Certificate {
         String idcard = request.getParameter("idcard");
         String number =request.getParameter("number");
         String name = request.getParameter("name");
-        model.put("certificate", certificateService.selectcertificateby(idcard,number,name));
+
+
+        com.wang.entity.Certificate cer= certificateService.selectcertificateby(idcard,number,name);
+        if(cer==null) {
+            return "certificate/noresult";// 没有查到证书@
+        }
+
+        model.put("certificate", cer);
         return "certificate/searchby";//返回的内容就是templetes下面文件的名称
     }
 

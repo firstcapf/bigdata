@@ -41,7 +41,7 @@ public class Weixin {
         String number = request.getParameter("number");
         String name = request.getParameter("name");
         String ctype = request.getParameter("ctype");
-        String text = "证书名称："+idcard+"\r\n姓名："+name+"\r\n证书编号："+number+"\r\n身份证号码："+idcard;
+        String text = "证书名称："+ctype+"\r\n姓名："+name+"\r\n证书编号："+number+"\r\n身份证号码："+idcard;
         return  QRcode.getResponseEntity(text, 200, 200, "png");
     }
 
