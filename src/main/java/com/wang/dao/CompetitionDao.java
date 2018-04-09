@@ -2,8 +2,14 @@ package com.wang.dao;
 
 import com.wang.entity.Competition;
 
+import java.util.List;
+
 public interface CompetitionDao {
 
+    List<Competition> listCompetition();
+
+
+    int  delCompetition(int id);
 
     int  addCompetition(Competition sin);
 

@@ -2,7 +2,7 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
 <mapper namespace="com.wang.dao.CompetitionDao" >
     <resultMap id="BaseResultMap" type="com.wang.entity.Competition" >
-        <result column="id" property="id" jdbcType="VARCHAR" />
+        <result column="id" property="id" jdbcType="INTEGER" />
         <result column="competionname" property="competionname" jdbcType="VARCHAR" />
         <result column="studentname1" property="studentname1" jdbcType="VARCHAR" />
         <result column="studenttel1" property="studenttel1" jdbcType="VARCHAR" />
@@ -22,7 +22,7 @@
 
 
     <sql id="Base_Column_List" >
-        id,competionname,studentname1 ,studenttel1,studentclass1,studentname2 ,studenttel2,studentclass2,studentname3 ,studenttel3,studentclass3,regtime,isdel
+        id as cid,competionname,studentname1 ,studenttel1,studentclass1,studentname2 ,studenttel2,studentclass2,studentname3 ,studenttel3,studentclass3,regtime,isdel
     </sql>
 
 
@@ -59,6 +59,16 @@
         FROM DUAL WHERE NOT EXISTS (SELECT id FROM  competition WHERE competionname = #{competionname,jdbcType=VARCHAR} and studentname1 = #{studentname1,jdbcType=VARCHAR} )
     </insert>
 
+
+    <select id="listCompetition" resultType="com.wang.entity.Competition"  parameterType="java.lang.Integer"  >
+        select  <include refid="Base_Column_List" />
+        from competition
+    </select>
+
+
+    <delete id="delCompetition"   parameterType="java.lang.Integer"  >
+       delete   from competition  where id=#{id}
+    </delete>
 
 
 </mapper>

@@ -14,6 +14,8 @@ import java.util.Map;
 @RequestMapping("/")
 public class main {
 
+
+
     @RequestMapping("/")
     public String regcompetion1(HttpServletRequest request, Map<String,Object> model){
         return "competion/reg";

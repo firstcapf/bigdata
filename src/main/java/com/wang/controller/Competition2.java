@@ -1,6 +1,7 @@
 package com.wang.controller;
 
 
+import com.wang.entity.Competition;
 import com.wang.entity.Result;
 import com.wang.service.CompetitionService;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
@@ -10,6 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
+import java.util.List;
 import java.util.Map;
 
 //@Controller
@@ -21,6 +23,13 @@ public class Competition2 {
     @Resource
     private CompetitionService competitionService;
 
+
+
+
+    @RequestMapping("/adminlist")
+    public List<Competition> listcompetion1(HttpServletRequest request, Map<String,Object> model){
+        return competitionService.listCompetition();
+    }
 
     @RequestMapping("/reg")
     public String regcompetion(HttpServletRequest request, Map<String,Object> model){

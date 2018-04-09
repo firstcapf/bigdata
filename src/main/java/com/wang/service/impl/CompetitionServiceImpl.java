@@ -7,6 +7,7 @@ import com.wang.entity.Result;
 import com.wang.service.CompetitionService;
 import org.springframework.stereotype.Service;
 import javax.annotation.Resource;
+import java.util.List;
 
 
 @Service("competitionService")
@@ -71,5 +72,15 @@ public class CompetitionServiceImpl implements CompetitionService {
           return re;
 
       }
+    }
+
+    @Override
+    public List<Competition> listCompetition() {
+        return competitionDao.listCompetition();
+    }
+
+    @Override
+    public int delCompetition(int id) {
+        return competitionDao.delCompetition(id);
     }
 }
