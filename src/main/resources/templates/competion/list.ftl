@@ -38,7 +38,7 @@
         </tr>
             <#list competitionlist as com>
                 <tr>
-                    <td>${com.competionname}</td>
+                    <td>${com_index+1}</td> <td>${com.competionname}</td>
                     <td>${com.studentname1}</td><td>${com.studenttel1}</td><td>${com.studentclass1}</td>
                     <td>${com.studentname2}</td><td>${com.studenttel2}</td><td>${com.studentclass2}</td>
                     <td>${com.studentname3}</td><td>${com.studenttel3}</td><td>${com.studentclass3}</td>
