@@ -36,7 +36,7 @@ public class Weixin {
 
     @RequestMapping("/qrcode")
     public ResponseEntity<byte[]> downloadIOSAPPController(HttpServletRequest request)
-            throws WriterException, IOException {
+            throws IOException, WriterException {
         String idcard = request.getParameter("idcard");
         String number = request.getParameter("number");
         String name = request.getParameter("name");
@@ -45,11 +45,8 @@ public class Weixin {
         return  QRcode.getResponseEntity(text, 200, 200, "png");
     }
 
-
     /**
      * 新闻内容详情查看
-
-
      */
   //  @ApiOperation(value="详情查看", notes="根据url的id来查看新闻内容详情")
   //  @RequestMapping(value="/newsbyid", method=RequestMethod.GET)
