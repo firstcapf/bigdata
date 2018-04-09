@@ -4,6 +4,9 @@ server:
   tomcat.max-threads: 0
   tomcat.uri-encoding: UTF-8
 
+
+
+
 #默认使用配置
 spring:
   profiles:
@@ -20,7 +23,6 @@ mybatis:
 #开发配置
 spring:
   profiles: prod
-
   datasource:
     url: jdbc:mysql://192.168.32.21:3306/bootdo?useUnicode=true&characterEncoding=UTF-8
     username: root

@@ -1,0 +1,41 @@
+Manifest-Version: 1.0
+Class-Path: unbescape-1.1.0.RELEASE.jar springfox-spring-web-2.7.0.jar
+  spring-webmvc-4.3.6.RELEASE.jar aspectjweaver-1.8.9.jar hibernate-co
+ mmons-annotations-5.0.1.Final.jar spring-boot-starter-tomcat-1.5.1.RE
+ LEASE.jar springfox-spi-2.7.0.jar byte-buddy-1.6.14.jar classmate-1.3
+ .3.jar spring-core-4.3.6.RELEASE.jar jandex-2.0.0.Final.jar spring-pl
+ ugin-core-1.2.0.RELEASE.jar tomcat-juli-8.5.11.jar spring-boot-starte
+ r-freemarker-1.5.1.RELEASE.jar spring-context-support-4.3.6.RELEASE.j
+ ar spring-plugin-metadata-1.2.0.RELEASE.jar jul-to-slf4j-1.7.22.jar m
+ ybatis-3.4.5.jar mybatis-spring-1.3.1.jar jackson-annotations-2.8.0.j
+ ar hibernate-core-5.0.11.Final.jar javassist-3.21.0-GA.jar spring-boo
+ t-starter-data-jpa-1.5.1.RELEASE.jar ognl-3.0.8.jar reflections-0.9.1
+ 1.jar thymeleaf-2.1.5.RELEASE.jar spring-data-jpa-1.11.0.RELEASE.jar 
+ spring-boot-1.5.1.RELEASE.jar dom4j-1.6.1.jar hibernate-entitymanager
+ -5.0.11.Final.jar javax.transaction-api-1.2.jar slf4j-api-1.7.22.jar 
+ spring-web-4.3.6.RELEASE.jar logback-classic-1.1.9.jar spring-boot-st
+ arter-aop-1.5.1.RELEASE.jar mybatis-spring-boot-starter-1.3.1.jar spr
+ ing-boot-autoconfigure-1.5.1.RELEASE.jar hibernate-jpa-2.1-api-1.0.0.
+ Final.jar guava-18.0.jar spring-boot-starter-1.5.1.RELEASE.jar swagge
+ r-annotations-1.5.13.jar springfox-schema-2.7.0.jar mybatis-spring-bo
+ ot-autoconfigure-1.3.1.jar mapstruct-1.1.0.Final.jar tomcat-embed-el-
+ 8.5.11.jar tools.jar spring-data-commons-1.13.0.RELEASE.jar validatio
+ n-api-1.1.0.Final.jar jackson-core-2.8.6.jar swagger-models-1.5.13.ja
+ r spring-tx-4.3.6.RELEASE.jar groovy-2.4.7.jar antlr-2.7.7.jar spring
+ -context-4.3.6.RELEASE.jar spring-boot-starter-web-1.5.1.RELEASE.jar 
+ springfox-swagger-common-2.7.0.jar freemarker-2.3.25-incubating.jar s
+ pring-beans-4.3.6.RELEASE.jar druid-1.1.0.jar javase-3.2.0.jar spring
+ -expression-4.3.6.RELEASE.jar logback-core-1.1.9.jar hibernate-valida
+ tor-5.3.4.Final.jar jackson-databind-2.8.6.jar log4j-over-slf4j-1.7.2
+ 2.jar spring-boot-starter-jdbc-1.5.1.RELEASE.jar tomcat-embed-websock
+ et-8.5.11.jar jcl-over-slf4j-1.7.22.jar spring-aop-4.3.6.RELEASE.jar 
+ spring-aspects-4.3.6.RELEASE.jar spring-orm-4.3.6.RELEASE.jar thymele
+ af-spring4-2.1.5.RELEASE.jar tomcat-jdbc-8.5.11.jar thymeleaf-layout-
+ dialect-1.4.0.jar springfox-swagger2-2.7.0.jar tomcat-embed-core-8.5.
+ 11.jar spring-boot-starter-thymeleaf-1.5.1.RELEASE.jar spring-boot-st
+ arter-logging-1.5.1.RELEASE.jar jconsole.jar springfox-swagger-ui-2.7
+ .0.jar snakeyaml-1.17.jar mysql-connector-java-5.1.40.jar core-3.2.0.
+ jar jboss-logging-3.3.0.Final.jar springfox-core-2.7.0.jar spring-jdb
+ c-4.3.6.RELEASE.jar
+Main-Class: com.wang.Application
+
