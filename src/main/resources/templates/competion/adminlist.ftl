@@ -26,22 +26,23 @@
 <body>
     <header>
         <i class="am-icon-angle-left back"></i>
-        <p>ACM校园选拔赛预报名信息</p>
+        <p>预报名结果</p>
     </header>
-    <div align="center" class="register">
+    <div class="register">
 
 
         <table align="center" border="1">
 
         <tr>
-            <td >序号</td><td width="30%">学生1</td><td width="30%">学生2</td><td width="30%">学生3</td>
+            <td>序号</td><td>比赛名称</td><td>学生1</td><td>学生1电话</td><td>学生1班级</td><td>学生2</td><td>学生2电话</td><td>学生2班级</td><td>学生3</td><td>学生3电话</td><td>学生3班级</td><td>注册时间</td><td>操作</td>
         </tr>
             <#list competitionlist as com>
                 <tr>
-                    <td>${com_index+1}</td>
-                    <td>${com.studentname1}</td>
-                    <td>${com.studentname2}</td>
-                    <td>${com.studentname3}</td>
+                    <td>${com_index+1}</td> <td>${com.competionname}</td>
+                    <td>${com.studentname1}</td><td>${com.studenttel1}</td><td>${com.studentclass1}</td>
+                    <td>${com.studentname2}</td><td>${com.studenttel2}</td><td>${com.studentclass2}</td>
+                    <td>${com.studentname3}</td><td>${com.studenttel3}</td><td>${com.studentclass3}</td>
+                    <td>${com.regtime}1</td><td><a href="admindel?id=${com.cid}">删除</a></td>
                 </tr>
             </#list>
         </table>
