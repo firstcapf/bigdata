@@ -19,9 +19,9 @@ package com.wang.conf;
 @Configuration
 public class WebAppConfig extends WebMvcConfigurerAdapter {
     //获取配置文件中图片的路径
-   // @Value("file:/E:/image/")
+   // @Value("file:/E:/images/")
 
-    @Value("file:///root/bigdata_jar/")
+    @Value("file:/root/bigdata_jar/images/")
     private String mImagesPath;
     //访问图片方法
     @Override

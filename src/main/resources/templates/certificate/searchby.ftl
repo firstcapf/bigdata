@@ -99,7 +99,7 @@
                             </div>
 
                             <div style="margin-left: 40px;margin-top: 190px;float: right;">
-                                <img style="margin-left: 140px" width="25%" src="/images/${certificate.headpic}" >
+                                <img style="margin-left: 50px;margin-top: -120px;" width="80px" src="/images/${certificate.headpic}" >
                                 <p>姓名：${certificate.name}&nbsp;&nbsp;&nbsp;&nbsp;性别：${certificate.sex}</p>
                                 <p>身份证号码：${certificate.idcard}</p>
                                 <p>单位：${certificate.organization}</p><br>
