@@ -4,9 +4,6 @@ server:
   tomcat.max-threads: 0
   tomcat.uri-encoding: UTF-8
 
-
-
-
 #默认使用配置
 spring:
   profiles:
@@ -16,7 +13,6 @@ spring:
 mybatis:
   typeAliasesPackage: com.wang.entity
   mapperLocations: classpath:mapper/*.xml
-
 
 ---
 
