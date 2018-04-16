@@ -2,7 +2,9 @@ package com.wang.controller;
 
 import com.google.zxing.WriterException;
 import com.wang.Tools.QRcode;
+import com.wang.entity.Attachment;
 import com.wang.entity.Content;
+import com.wang.service.AttachmentService;
 import com.wang.service.ContentService;
 import io.swagger.annotations.ApiImplicitParam;
 import io.swagger.annotations.ApiOperation;
@@ -10,10 +12,7 @@ import io.swagger.annotations.ApiParam;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
@@ -32,6 +31,9 @@ public class Weixin {
     @Resource
     private ContentService contentService;
 
+    @Resource
+    private AttachmentService attachmentService;
+
 
 
     @RequestMapping("/qrcode")
@@ -41,9 +43,26 @@ public class Weixin {
         String number = request.getParameter("number");
         String name = request.getParameter("name");
         String ctype = request.getParameter("ctype");
+
         String text = "证书名称："+ctype+"\r\n姓名："+name+"\r\n证书编号："+number+"\r\n身份证号码："+idcard;
         return  QRcode.getResponseEntity(text, 200, 200, "png");
     }
+
+
+    /**
+     * 新闻内容详情查看
+     * @param request
+     * @return
+     */
+    @RequestMapping("/getnewsbyid")
+    public Content getnewsbyid(HttpServletRequest request){
+
+        int cid = Integer.parseInt(request.getParameter("cid"));
+        return contentService.selectcontentbycid(cid);
+
+    }
+
+
 
     /**
      * 新闻内容详情查看
@@ -78,9 +97,24 @@ public class Weixin {
          */
     @ApiOperation(value="获取新闻动态列表", notes="")
     @RequestMapping("/newslist")
+    @ResponseBody
     public  List<Content> newslist(HttpServletRequest request, Map<String,Object> model){
         int type=1;
         return contentService.newslist(type);
+    }
+
+
+
+    /**
+     * 政策要问列表
+     * @return
+     */
+    @RequestMapping("/attachmentlist")
+    public List<Attachment> attachmentlist(){
+
+        int a=0;
+     //   return attachmentService.attachmentlist();
+        return     attachmentService.attachmentlist();
     }
 
     /**

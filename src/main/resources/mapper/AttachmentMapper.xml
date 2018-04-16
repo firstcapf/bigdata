@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.wang.dao.AttachmentDao" >
+    <resultMap id="BaseResultMap" type="com.wang.entity.Attachment" >
+        <result column="name" property="name" jdbcType="VARCHAR" />
+        <result column="url" property="url" jdbcType="VARCHAR" />
+    </resultMap>
+
+    <sql id="Base_Column_List" >
+      id as cid ,name,url
+    </sql>
+
+    <select id="attachmentlist"  resultType="com.wang.entity.Attachment" >
+        select  <include refid="Base_Column_List" />
+        from attachment
+    </select>
+
+
+</mapper>
+
