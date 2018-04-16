@@ -168,9 +168,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="tab-nested" style="display: none;">111111111</div>
-                <div class="tab-nested" style="display: none;">22222222222</div>
-                <div class="tab-nested" style="display: none;">3333333333</div>
+                <div class="tab-nested" style="display: none;">正在建設中……</div>
+                <div class="tab-nested" style="display: none;">正在建設中……</div>
+                <div class="tab-nested" style="display: none;">正在建設中……</div>
 
             </div>
             <script type="text/javascript" src="../static/js/tab.js"></script>

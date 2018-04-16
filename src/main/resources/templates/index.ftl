@@ -78,14 +78,14 @@
        <ul id="nav" style="width: 740px;">
           <li id="moved"></li>
           <li id="navactive" class="navitem"><a href="/">网站首页</a></li>
-          <li class="navitem"><a href="content/newslist">动态消息</a></li>
-          <li class="navitem"><a href="direction/direction_bigdata">研究方向</a></li>
-          <li class="navitem"><a href="teams/team_bigdata">研究团队</a></li>
-          <li class="navitem"><a href="achievments/achievments">研究成果</a></li>
-          <li class="navitem"><a href="solution/solutionlist">解决方案</a></li>
-          <li class="navitem"><a href="download/down">资料下载</a></li>
-          <li class="navitem"><a href="certificate/search">证书查询</a></li>
-          <li class="navitem"><a href="about/about_us">关于我们</a></li>
+          <li class="navitem"><a href="content/newslist.ftl">动态消息</a></li>
+          <li class="navitem"><a href="direction/direction_bigdata.ftl">研究方向</a></li>
+          <li class="navitem"><a href="teams/team_bigdata.ftl">研究团队</a></li>
+          <li class="navitem"><a href="achievments/achievments.ftl">研究成果</a></li>
+          <li class="navitem"><a href="solution/solutionlist.ftl">解决方案</a></li>
+          <li class="navitem"><a href="download/down.ftl">资料下载</a></li>
+          <li class="navitem"><a href="certificate/search.ftl">证书查询</a></li>
+          <li class="navitem"><a href="about/about_us.ftl">关于我们</a></li>
           <!-- <li class="navitem"><a href="theme/ztcx.html">专题查询</a></li> -->
        </ul>
      </div>
@@ -174,15 +174,15 @@
     <div class="newimg">
     <#list topimagenewslist2 as toppicnews >
         <dl>
-            <dt><a href="${toppicnews.link}" title="" target="_blank" ><img src="static/images/img/ZC_20170072.png"></a>
+            <dt><a href="content/news?cid=${toppicnews.cid}" title="" target="_blank" ><img src="static/images/${toppicnews.image_url}"></a>
             </dt>
-            <dd><a href="${toppicnews.link}" title="" target="_blank">${toppicnews.title}</a></dd>
+            <dd><a href="content/news?cid=${toppicnews.cid}" title="" target="_blank">${toppicnews.title}</a></dd>
         </dl>
     </#list>
     </div>
      <ul class="newlist">
       <#list topnewslist2 as topnews>
-          <li><a href="${topnews.link}" >【${topnews.publish_date}】&nbsp;${topnews.title}</a></li>
+          <li><a href="content/news?cid=${topnews.cid}" >【${topnews.publish_date}】&nbsp;${topnews.title}</a></li>
       </#list>
       </ul>
   </div>
