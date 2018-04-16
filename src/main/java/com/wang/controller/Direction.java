@@ -1,9 +1,11 @@
 package com.wang.controller;
 
+import com.wang.service.DirectionService;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
+import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
 import java.util.Map;
 
@@ -12,9 +14,19 @@ import java.util.Map;
 @RequestMapping("/direction")
 public class Direction {
 
+    @Resource
+    private DirectionService directionService;
+    /**
+     * 研究方向
+     * @param request
+     * @param model
+     * @return
+     */
+
     @RequestMapping("/direction_bigdata")
     public String direction_bigdata(HttpServletRequest request, Map<String,Object> model){
-
+        /**int did = Integer.parseInt(request.getParameter("did"));
+        model.put("directions", directionService.selectdirectionbydid(did));**/
         return "direction/direction_bigdata";//返回的内容就是templetes下面文件的名称
     }
 

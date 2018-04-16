@@ -4,14 +4,14 @@ import com.google.zxing.WriterException;
 import com.wang.Tools.QRcode;
 import com.wang.entity.Attachment;
 import com.wang.entity.Content;
+import com.wang.entity.Direction;
 import com.wang.service.AttachmentService;
 import com.wang.service.ContentService;
+import com.wang.service.DirectionService;
 import io.swagger.annotations.ApiImplicitParam;
 import io.swagger.annotations.ApiOperation;
-import io.swagger.annotations.ApiParam;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.http.ResponseEntity;
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
@@ -30,12 +30,14 @@ public class Weixin {
 
     @Resource
     private ContentService contentService;
-
     @Resource
     private AttachmentService attachmentService;
+    @Resource
+    private DirectionService directionService;
 
-
-
+    /**
+     * 证书二维码
+     */
     @RequestMapping("/qrcode")
     public ResponseEntity<byte[]> downloadIOSAPPController(HttpServletRequest request)
             throws IOException, WriterException {
@@ -43,11 +45,9 @@ public class Weixin {
         String number = request.getParameter("number");
         String name = request.getParameter("name");
         String ctype = request.getParameter("ctype");
-
         String text = "证书名称："+ctype+"\r\n姓名："+name+"\r\n证书编号："+number+"\r\n身份证号码："+idcard;
         return  QRcode.getResponseEntity(text, 200, 200, "png");
     }
-
 
     /**
      * 新闻内容详情查看
@@ -56,13 +56,9 @@ public class Weixin {
      */
     @RequestMapping("/getnewsbyid")
     public Content getnewsbyid(HttpServletRequest request){
-
         int cid = Integer.parseInt(request.getParameter("cid"));
         return contentService.selectcontentbycid(cid);
-
     }
-
-
 
     /**
      * 新闻内容详情查看
@@ -70,7 +66,6 @@ public class Weixin {
   //  @ApiOperation(value="详情查看", notes="根据url的id来查看新闻内容详情")
   //  @RequestMapping(value="/newsbyid", method=RequestMethod.GET)
   //  @ApiImplicitParam(name="cid",value="用户id",dataType="long",required = true,paramType = "query",example="143")
-
 
     @ApiOperation(value="删除用户", notes="根据url的id来指定删除对象")
     @ApiImplicitParam(name = "id", value = "用户ID", required = true, dataType = "Integer")
@@ -81,13 +76,6 @@ public class Weixin {
         return  contentService.selectcontentbycid(id);
 
     }
-
-
-
-
-
-
-
 
         /**
          * 新闻动态
@@ -103,19 +91,25 @@ public class Weixin {
         return contentService.newslist(type);
     }
 
-
-
     /**
-     * 政策要问列表
+     * demo
      * @return
      */
     @RequestMapping("/attachmentlist")
     public List<Attachment> attachmentlist(){
-
-        int a=0;
-     //   return attachmentService.attachmentlist();
-        return     attachmentService.attachmentlist();
+        return attachmentService.attachmentlist();
     }
+
+
+    /**
+     * 研究方向
+     * @return
+     */
+    @RequestMapping("/directionslist")
+    public List<Direction> directionslist(){
+        return directionService.directionslist();
+    }
+
 
     /**
      * 政策要问列表

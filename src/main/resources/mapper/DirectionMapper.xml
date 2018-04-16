@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.wang.dao.DirectionDao" >
+    <resultMap id="BaseResultMap" type="com.wang.entity.Direction" >
+        <result column="name" property="name" jdbcType="VARCHAR" />
+        <result column="overview" property="overview" jdbcType="VARCHAR" />
+    </resultMap>
+    <sql id="Base_Column_List" >
+      did , name , overview
+    </sql>
+
+    <select id="directionslist" resultType="com.wang.entity.Direction"  parameterType="java.lang.Integer"  >
+        select  <include refid="Base_Column_List" />
+        from research_direction
+    </select>
+
+    <select id="selectdirectionbydid" resultType="com.wang.entity.Direction"  parameterType="java.lang.Integer"  >
+        select  <include refid="Base_Column_List" />
+        from research_direction
+    </select>
+
+</mapper>
+
