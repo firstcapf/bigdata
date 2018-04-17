@@ -54,11 +54,16 @@ public class Weixin {
      * @param request
      * @return
      */
-    @RequestMapping("/getnewsbyid")
+  /**  @RequestMapping("/getnewsbyid")
     public Content getnewsbyid(HttpServletRequest request){
         int cid = Integer.parseInt(request.getParameter("cid"));
         return contentService.selectcontentbycid(cid);
+    }**/
+    @RequestMapping("/getnewsbyid")
+    public  Content getnewsbyid(int id){
+        return  contentService.selectcontentbycid(id);
     }
+
 
     /**
      * 新闻内容详情查看
@@ -94,12 +99,11 @@ public class Weixin {
     /**
      * demo
      * @return
-     */
+
     @RequestMapping("/attachmentlist")
     public List<Attachment> attachmentlist(){
         return attachmentService.attachmentlist();
-    }
-
+    } */
 
     /**
      * 研究方向
@@ -109,16 +113,18 @@ public class Weixin {
     public List<Direction> directionslist(){
         return directionService.directionslist();
     }
-
+    @RequestMapping("/directionbydid")
+    public Direction directionbydid(int did){
+        return directionService.selectdirectionbydid(did);
+    }
 
     /**
      * 政策要问列表
      * @param request
-     * @param model
      * @return
      */
     @RequestMapping("/zcywlist")
-    public List<Content> zcywlist(HttpServletRequest request, Map<String,Object> model){
+    public List<Content> zcywlist(HttpServletRequest request){
         int type=2;
         return contentService.newslist(type);
     }
@@ -130,23 +136,19 @@ public class Weixin {
      */
     @RequestMapping("/newslistapi")
     public List<com.wang.entity.Content> news_content(Map<String,Object> model){
-
         contentService.topnews(1);
     //    model.put("topnewslist", contentService.topnews());
-
         return  contentService.topnews(1);
        // return "index";//返回的内容就是templetes下面文件的名称
     }
 
     /**
      * 热门新闻 5条
-     * @param model
      * @return
      */
     @RequestMapping("/newstoplist")
-    public List<com.wang.entity.Content> newstoplist(Map<String,Object> model){
+    public List<com.wang.entity.Content> newstoplist(){
         contentService.topnews(1);
         return  contentService.topnews(1);
     }
-
 }
