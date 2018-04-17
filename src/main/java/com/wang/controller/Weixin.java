@@ -10,6 +10,7 @@ import com.wang.service.AttachmentService;
 import com.wang.service.ContentService;
 import com.wang.service.DirectionService;
 import com.wang.service.SolutionService;
+import com.wang.service.FileDownloadService;
 import io.swagger.annotations.ApiImplicitParam;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
@@ -18,6 +19,7 @@ import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.List;
 import java.util.Map;
@@ -29,6 +31,7 @@ import java.util.Map;
  * 新闻内容相关
  */
 public class Weixin {
+
 
     @Resource
     private ContentService contentService;
@@ -42,6 +45,9 @@ public class Weixin {
     /**
      * 证书二维码
      */
+    @Resource
+    private FileDownloadService fileDownloadService;
+
     @RequestMapping("/qrcode")
     public ResponseEntity<byte[]> downloadIOSAPPController(HttpServletRequest request)
             throws IOException, WriterException {
@@ -168,4 +174,16 @@ public class Weixin {
         contentService.topnews(1);
         return  contentService.topnews(1);
     }
+
+    /**
+     * 下载文献
+     * @return
+     */
+    @ResponseBody
+    @RequestMapping("/fileDownload")
+    public List<com.wang.entity.FileDownload> fileDownload(HttpServletResponse response){
+        response.setHeader("Access-Control-Allow-Origin", "*");
+        return  fileDownloadService.fileDownload();
+    }
+
 }
