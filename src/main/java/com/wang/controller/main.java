@@ -1,6 +1,7 @@
 package com.wang.controller;
 
 import com.wang.service.ContentService;
+import com.wang.service.SolutionService;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -16,6 +17,8 @@ public class main {
 
     @Resource
     private ContentService contentService;
+    @Resource
+    private SolutionService solutionService;
 
     @RequestMapping("/hello")
     public String hello() {
@@ -36,6 +39,7 @@ public class main {
         model.put("topnewslist1", contentService.topnews(1));
         model.put("topnewslist2", contentService.topnews(2));
         model.put("topnewslist3", contentService.topnews(3));
+        model.put("solutionslist", solutionService.solutionslist());
 
         return "index";//返回的内容就是templetes下面文件的名称
     }

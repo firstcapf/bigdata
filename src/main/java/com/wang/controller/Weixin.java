@@ -5,9 +5,11 @@ import com.wang.Tools.QRcode;
 import com.wang.entity.Attachment;
 import com.wang.entity.Content;
 import com.wang.entity.Direction;
+import com.wang.entity.Solution;
 import com.wang.service.AttachmentService;
 import com.wang.service.ContentService;
 import com.wang.service.DirectionService;
+import com.wang.service.SolutionService;
 import io.swagger.annotations.ApiImplicitParam;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
@@ -34,6 +36,8 @@ public class Weixin {
     private AttachmentService attachmentService;
     @Resource
     private DirectionService directionService;
+    @Resource
+    private SolutionService solutionService;
 
     /**
      * 证书二维码
@@ -116,6 +120,19 @@ public class Weixin {
     @RequestMapping("/directionbydid")
     public Direction directionbydid(int did){
         return directionService.selectdirectionbydid(did);
+    }
+
+    /**
+     * 解决方案
+     * @return
+     */
+    @RequestMapping("/solutionslist")
+    public List<Solution> solutionslist(){
+        return solutionService.solutionslist();
+    }
+    @RequestMapping("/solutionbydid")
+    public Solution solutionbydid(int sid){
+        return solutionService.selectSolutionbysid(sid);
     }
 
     /**

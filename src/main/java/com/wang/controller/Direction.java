@@ -25,8 +25,7 @@ public class Direction {
 
     @RequestMapping("/direction_bigdata")
     public String direction_bigdata(HttpServletRequest request, Map<String,Object> model){
-        /**int did = Integer.parseInt(request.getParameter("did"));
-        model.put("directions", directionService.selectdirectionbydid(did));**/
+        model.put("directionsli", directionService.directionslist());
         return "direction/direction_bigdata";//返回的内容就是templetes下面文件的名称
     }
 

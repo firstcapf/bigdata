@@ -1,10 +1,10 @@
 package com.wang.controller;
 
 import com.wang.service.ContentService;
+import com.wang.service.SolutionService;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
 
 import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
@@ -88,5 +88,7 @@ public class Content {
         return  contentService.topnews(1);
         // return "index";//返回的内容就是templetes下面文件的名称
     }
+
+
 
 }

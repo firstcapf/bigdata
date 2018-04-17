@@ -6,7 +6,7 @@
         <result column="overview" property="overview" jdbcType="VARCHAR" />
     </resultMap>
     <sql id="Base_Column_List" >
-      did , name , overview
+        did , name , overview
     </sql>
 
     <select id="directionslist" resultType="com.wang.entity.Direction"  parameterType="java.lang.Integer"  >
@@ -17,7 +17,7 @@
     <select id="selectdirectionbydid" resultType="com.wang.entity.Direction"  parameterType="java.lang.Integer"  >
         select  <include refid="Base_Column_List" />
         from research_direction
+        where did= #{did,jdbcType=INTEGER};
     </select>
 
 </mapper>
-

@@ -194,12 +194,11 @@
       <span><a href="solution/solutionlist" target="_blank">更多&gt;&gt;</a></span>
       <h2 class="xinwen_title">解决方案:</h2>
       <div id="announ" class="announ3">
-         <ul>
-		    <li><a href="solution/solutionlist.ftl" target="_blank">智慧国土大数据综合管理平台</a></li>
-		    <li><a href="solution/solutiondetail.ftl" target="_blank">智慧林业大数据综合管理平台</a></li>
-		    <li><a href="solution/solution_agriculture.ftl" target="_blank">智慧农业大数据综合管理平台</a></li>
-		    <li><a href="solution/data_acquisition.ftl" target="_blank">智慧采集大数据综合管理平台</a></li>
-	     </ul>
+          <ul>
+          <#list solutionslist as solutions>
+              <li><a href="#"></a>${solutions.solution_title}</li>
+          </#list>
+          </ul>
       </div>
   </div>
   <!---滚动解决方案代码end-->
@@ -211,23 +210,25 @@
         <div class="nextpic_c">
           <div class="img-list">
               <ul>
-		            <li>
-	                  	<a href="solution/solutionlist" ><img src="LandBigData/zhihui_guotu.png" alt="智慧国土" /></a>
-	                </li>
-
-		            <li>
-	                  	<a href="solution/solutiondetail" ><img src="LandBigData/zhihui_linye.png" alt="智慧林业" /></a>
-	                </li>
-
-		            <li>
-	                  	<a href="solution/solutiondetail" ><img src="LandBigData/zhihui_nongye.png" alt="智慧农业" /></a>
-	                </li>
-
-		            <li>
-	                  	<a href="solution/solutiondetail" ><img src="LandBigData/zhihui_shucai.png" alt="智慧数采" /></a>
-	                </li>
-
+              <#list solutionslist as solutions>
+                  <li><a href="#"></a><img src="LandBigData${solutions.image_url}"/></li>
+              </#list>
               </ul>
+
+              <#--<ul>-->
+		            <#--<li>-->
+	                  	<#--<a href="solution/solutionlist" ><img src="LandBigData/zhihui_guotu.png" alt="智慧国土" /></a>-->
+	                <#--</li>-->
+		            <#--<li>-->
+	                  	<#--<a href="solution/solutiondetail" ><img src="LandBigData/zhihui_linye.png" alt="智慧林业" /></a>-->
+	                <#--</li>-->
+		            <#--<li>-->
+	                  	<#--<a href="solution/solutiondetail" ><img src="LandBigData/zhihui_nongye.png" alt="智慧农业" /></a>-->
+	                <#--</li>-->
+		            <#--<li>-->
+	                  	<#--<a href="solution/solutiondetail" ><img src="LandBigData/zhihui_shucai.png" alt="智慧数采" /></a>-->
+	                <#--</li>-->
+              <#--</ul>-->
           </div><!-- img-list -->
         </div>
   </div>
