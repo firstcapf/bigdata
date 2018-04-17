@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.wang.dao.FileDownloadDao" >
+    <resultMap id="BaseResultMap" type="com.wang.entity.FileDownload" >
+        <result column="data_dec" property="title" jdbcType="VARCHAR" />
+        <result column="down_url" property="url" jdbcType="VARCHAR" />
+        <result column="publish_time" property="time" jdbcType="VARCHAR" />
+    </resultMap>
+
+    <sql id="Base_Column_List" >
+      data_dec,down_url,publish_time
+    </sql>
+
+
+
+    <select id="fileDownload" resultMap="BaseResultMap">
+        select  <include refid="Base_Column_List" />
+        from data_download
+    </select>
+
+</mapper>
+

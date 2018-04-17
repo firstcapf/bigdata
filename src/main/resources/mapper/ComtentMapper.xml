@@ -12,7 +12,7 @@
         <result column="publish_date" property="publish_date" jdbcType="VARCHAR" />
     </resultMap>
     <sql id="Base_Column_List" >
-      cid,title,content ,image_url,hits,source,type,publish_date,link
+      cid,title,content ,image_url,hits,type,publish_date,link
     </sql>
 
 
