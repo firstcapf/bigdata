@@ -145,6 +145,11 @@ public class Weixin {
         int type=2;
         return contentService.newslist(type);
     }
+    @RequestMapping("/getzcywbyid")
+    public Content getzcywbyid(int id){
+        int type=2;
+        return contentService.getzcywbyid(id);
+    }
 
     /**
      * API测试

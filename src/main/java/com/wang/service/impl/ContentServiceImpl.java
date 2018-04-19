@@ -33,4 +33,10 @@ public class ContentServiceImpl implements ContentService {
         contentDao.updatehits(cid);
         return contentDao.selectcontentbycid(cid);
     }
+
+    @Override
+    public Content getzcywbyid(int type) {
+        contentDao.updatehits(type);
+        return contentDao.getzcywbyid(type);
+    }
 }

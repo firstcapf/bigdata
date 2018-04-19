@@ -10,6 +10,8 @@ public interface ContentDao {
     Content selectcontentbycid(int cid);
     void updatehits(int cid);
 
+    Content getzcywbyid(int cid);
+
     List<Content> topimagenews(int type);
 
 }

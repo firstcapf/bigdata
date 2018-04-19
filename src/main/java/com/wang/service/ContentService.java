@@ -10,5 +10,7 @@ public interface ContentService {
     public List<Content> topimagenews(int type);
     public List<Content> newslist(int type);
 
+    public Content getzcywbyid(int type);
+
     public Content selectcontentbycid(int cid);
 }
