@@ -26,7 +26,7 @@
 <body>
     <header>
         <i class="am-icon-angle-left back"></i>
-        <p>ACM校园选拔赛预报名信息</p>
+        <p>微信小程序应用开发赛预报名信息</p>
     </header>
     <div align="center" class="register">
 
@@ -34,11 +34,12 @@
         <table align="center" border="1">
 
         <tr>
-            <td >序号</td><td width="30%">学生1</td><td width="30%">学生2</td><td width="30%">学生3</td>
+            <td >序号</td><td width="30%">参赛队名</td><td width="30%">学生1</td><td width="30%">学生2</td><td width="30%">学生3</td>
         </tr>
             <#list competitionlist as com>
                 <tr>
                     <td>${com_index+1}</td>
+                    <td>${com.teamname}</td>
                     <td>${com.studentname1}</td>
                     <td>${com.studentname2}</td>
                     <td>${com.studentname3}</td>

@@ -21,6 +21,15 @@ public class Competition {
 
     private String cid;
 
+    public String getTeamname() {
+        return teamname;
+    }
+
+    public void setTeamname(String teamname) {
+        this.teamname = teamname;
+    }
+
+
     public String getCompetionname() {
         return competionname;
     }
@@ -117,21 +126,22 @@ public class Competition {
         this.isdel = isdel;
     }
 
-    private  String competionname ;   //'比赛名称',
-    private  String studentname1;   //'学生姓名1',
-    private  String studenttel1;   //'学生电话1',
-    private  String studentclass1;   //'学生班级1',
+    private String teamname="";
+    private  String competionname="";  //'比赛名称',
+    private  String studentname1="";   //'学生姓名1',
+    private  String studenttel1="";  //'学生电话1',
+    private  String studentclass1="";   //'学生班级1',
 
-    private  String studentname2;   //'学生姓名1',
-    private  String studenttel2;   //'学生电话1',
-    private  String studentclass2;   //'学生班级1',
+    private  String studentname2="";  //'学生姓名1',
+    private  String studenttel2="";   //'学生电话1',
+    private  String studentclass2="";   //'学生班级1',
 
-    private  String studentname3;   //'学生姓名1',
-    private  String studenttel3;   //'学生电话1',
-    private  String studentclass3;   //'学生班级1',
+    private  String studentname3="";   //'学生姓名1',
+    private  String studenttel3="";  //'学生电话1',
+    private  String studentclass3="";   //'学生班级1',
 
-    private  String regtime;   // '提交时间',
-    private  String isdel;   // '提交时间',
+    private  String regtime="";   // '提交时间',
+    private  String isdel="";   // '提交时间',
 
 
 

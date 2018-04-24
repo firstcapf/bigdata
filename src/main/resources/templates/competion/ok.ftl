@@ -31,6 +31,8 @@
     <div class="register">
         <p style="font-size: 25px;line-height: 40px;text-align: center;color: red; margin-top: 30px;">您好，${result.data.studentname1}  </p>
         <p style="font-size: 25px;line-height: 40px;text-align: center;color: red; margin-top: 30px;">${result.msg}</p>
+
+        <p style="font-size: 25px;line-height: 40px;text-align: center;color: red; margin-top: 30px;">  <a href="list">点击查看</a>报名信息</p>
     </div>
 </body>
 </html>

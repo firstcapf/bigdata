@@ -4,6 +4,7 @@
     <resultMap id="BaseResultMap" type="com.wang.entity.Competition" >
         <result column="id" property="id" jdbcType="INTEGER" />
         <result column="competionname" property="competionname" jdbcType="VARCHAR" />
+        <result column="teamname" property="teamname" jdbcType="VARCHAR" />
         <result column="studentname1" property="studentname1" jdbcType="VARCHAR" />
         <result column="studenttel1" property="studenttel1" jdbcType="VARCHAR" />
         <result column="studentclass1" property="studentclass1" jdbcType="VARCHAR" />
@@ -22,7 +23,7 @@
 
 
     <sql id="Base_Column_List" >
-        id as cid,competionname,studentname1 ,studenttel1,studentclass1,studentname2 ,studenttel2,studentclass2,studentname3 ,studenttel3,studentclass3,regtime,isdel
+        id as cid,competionname,teamname,studentname1 ,studenttel1,studentclass1,studentname2 ,studenttel2,studentclass2,studentname3 ,studenttel3,studentclass3,regtime,isdel
     </sql>
 
 
@@ -42,9 +43,10 @@
     </select>
 
     <insert id="addCompetition" parameterType="com.wang.entity.Competition" >
-        INSERT INTO competition (competionname,studentname1 ,studenttel1,studentclass1,studentname2 ,studenttel2,studentclass2,studentname3 ,studenttel3,studentclass3,regtime,isdel)
+        INSERT INTO competition (competionname,teamname,studentname1 ,studenttel1,studentclass1,studentname2 ,studenttel2,studentclass2,studentname3 ,studenttel3,studentclass3,regtime,isdel)
         SELECT
         #{competionname},
+        #{teamname},
         #{studentname1},
         #{studenttel1},
         #{studentclass1},

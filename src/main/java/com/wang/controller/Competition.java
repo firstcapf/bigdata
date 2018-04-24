@@ -54,14 +54,19 @@ public class Competition {
 
     @RequestMapping("/reg")
     public String regcompetion(HttpServletRequest request, Map<String,Object> model){
-        return "competion/reg";
+     //   return "competion/reg";
+
+        return "competion/weixinreg";
     }
+
+
+
 
     @RequestMapping("/add")
     public String addcompetion(HttpServletRequest request, Map<String,Object> model){
         com.wang.entity.Competition cin=new com.wang.entity.Competition();
-        cin.setCompetionname("ACM");
-     //   cin.setCompetionname(request.getParameter("competionname"));
+        cin.setCompetionname("weixin");
+        cin.setTeamname(request.getParameter("teamname"));
         cin.setStudentname1(request.getParameter("studentname1"));
         cin.setStudenttel1(request.getParameter("studenttel1"));
         cin.setStudentclass1(request.getParameter("studentclass1"));
