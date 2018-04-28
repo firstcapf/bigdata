@@ -230,6 +230,10 @@
                     </div>
                 </div>
             </div>
+        </div>
+    </div>
+</div>
+</div>
             <script type="text/javascript" src="../static/js/tab.js"></script>
             <script type="text/javascript">
                 var tabber2 = new Yetii({
@@ -237,10 +241,7 @@
                     tabclass: 'tab-nested'
                 });
             </script>
-        </div>
-    </div>
-</div>
-</div>
+
 <footer>
     <div id="yj_cont">
         <div class="foot_nav">
@@ -251,13 +252,14 @@
             <a href="../achievments/achievments">研究成果</a>|
             <a href="../solution/solutionlist">解决方案</a>|
             <a href="../download/down">资料下载</a>|
+            <a href="../certificate/search.ftl">证书查询</a>|
             <a href="../about/adout-us">关于我们</a>|
             <a href="../theme/themes">专题查询</a>|
             <a href="../job/recruit">人才招聘</a>
         </div>
-        <div class="bott_link">
-            <a href="#">隐私条约</a> <a href="#">使用条款</a> <a href="#">反馈</a>
-        </div>
+        <#--<div class="bott_link">-->
+            <#--<a href="#">隐私条约</a> <a href="#">使用条款</a> <a href="#">反馈</a>-->
+        <#--</div>-->
         <div id="foot_cont">
             <div id="ft_conbox">
                 <div class="yjlx add">

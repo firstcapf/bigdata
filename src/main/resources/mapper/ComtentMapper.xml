@@ -38,6 +38,12 @@
         where cid= #{cid,jdbcType=INTEGER} AND type=1;
     </select>
 
+    <select id="selectcontentzcywbycid" resultMap="BaseResultMap"  parameterType="java.lang.Integer"  >
+        select  <include refid="Base_Column_List" />
+        from b_content
+        where cid= #{cid,jdbcType=INTEGER} AND type=2;
+    </select>
+
     <select id="getzcywbyid" resultMap="BaseResultMap"  parameterType="java.lang.Integer"  >
         select  <include refid="Base_Column_List" />
         from b_content

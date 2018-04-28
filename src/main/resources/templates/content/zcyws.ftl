@@ -1,7 +1,6 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta http-equiv="Cache-Control" content="no-store" />
 <meta http-equiv="Pragma" content="no-cache" />
@@ -19,7 +18,7 @@
  <a name="pagetop" id="pagetop"></a>
  <div id="banner">
     <div id="nyshow">
-      <div class="jdtu"><img src="../static/images/news_show.png" alt="新闻动态" /></div>
+      <div class="jdtu"><img src="../static/images/news_show.png" alt="新闻中心" /></div>
     </div>
     <div class="min_show">西南交通大学中国土地信息大数据研究院</div>
  </div>
@@ -84,17 +83,14 @@
             <div class="lanmu_title">动态消息</div>
             <div id="lanmu_list">
               <ul>
-
-    <#if type == 1>
-    <li  id="cbnavactive"><a href="newslist">新闻动态</a></li>
-    <li ><a href="zcywlist">政策要闻</a></li>
-    <#else>
-    <li  ><a href="newslist">新闻动态</a></li>
-    <li id="cbnavactive" ><a href="zcywlist">政策要闻</a></li>
-    </#if>
-
-
-      <li id="cbnmove"><img src="../static/images/lmbg.jpg" width="228" height="32" /></li>
+              <#if (zcyws.type == "2")>
+                  <li ><a href="newslist">新闻动态</a></li>
+                  <li  id="cbnavactive"><a href="zcywlist">政策要闻</a></li>
+              <#else>
+                  <li id="cbnavactive" ><a href="newslist">新闻动态</a></li>
+                  <li ><a href="zcywlist">政策要闻</a></li>
+              </#if>
+                  <li id="cbnmove"><img src="../static/images/lmbg.jpg" width="228" height="32" /></li>
               </ul>
             </div>
      </div>
@@ -102,31 +98,11 @@
 
      <!--右侧代码-->
      <div id="right_box">
-        <ul id="news_list">
-        <#list newslist as nlist>
-            <li>
-            <#if type == 1>
-            <a href="news?cid=${nlist.cid}" >【${nlist.publish_date}】&nbsp;${nlist.title}</a>  <span>点击量：${nlist.hits}</span>
-            <#else>
+        <h3 class="news_title">   ${zcyws.title}</h3>
+        <br>
 
-            <a href="${nlist.link}" >【${nlist.publish_date}】&nbsp;${nlist.title}</a>
-            </#if>
-            </li>
-        </#list>
-        </ul>
-		<form  id="navPage" action="/dsjyjy/newscenter" method="post">
-	        <div class="pages">
-	              <a href="javascript:jumpPage(1)">首页</a>
-	              <a href="javascript:jumpPage(1)" class="pageprev"  ></a>
-	              <a href="javascript:jumpPage(2)" class="pagenext"  id="pageactive"  ></a>
-	              <a href="javascript:jumpPage(5)">尾页</a>
-	        </div>
-        	<input type="hidden" name="pageNo" id="pageNo" value="1" />
-			<input type="hidden" name="orderBy" id="orderBy"
-			value="publishTime" />
-			<input type="hidden" name="order" id="order" value="desc" />
-			<input type="hidden" name="filter_EQS_isView" value="0"/>
-        </form>
+        ${zcyws.content}
+
      </div>
 </div>
 
@@ -134,17 +110,17 @@
 <footer>
   <div id="yj_cont">
      <div class="foot_nav">
-         <a href="/" style="/">网站首页</a>|
-         <a href="../content/newslist">动态消息</a>|
-         <a href="../direction/direction_bigdata">研究方向</a>|
-         <a href="../teams/teamlist">研究团队</a>|
-         <a href="../achievments/achievments">研究成果</a>|
-         <a href="../solution/solutionlist">解决方案</a>|
-         <a href="../download/down">资料下载</a>|
+        <a href="/" style="/">网站首页</a>|
+        <a href="../content/newslist">动态消息</a>|
+        <a href="../direction/direction_bigdata">研究方向</a>|
+        <a href="../teams/teamlist">研究团队</a>|
+        <a href="../achievments/achievments">研究成果</a>|
+        <a href="../solution/solutionlist">解决方案</a>|
+        <a href="../download/down">资料下载</a>|
          <a href="../certificate/search.ftl">证书查询</a>|
-         <a href="../about/adout-us">关于我们</a>|
-         <a href="../theme/themes">专题查询</a>|
-         <a href="../job/recruit">人才招聘</a>
+        <a href="../about/adout-us">关于我们</a>|
+        <a href="../theme/themes">专题查询</a>|
+        <a href="../job/recruit">人才招聘</a>
      </div>
      <#--<div class="bott_link">-->
      <#--<a href="#">隐私条约</a> <a href="#">使用条款</a> <a href="#">反馈</a>-->

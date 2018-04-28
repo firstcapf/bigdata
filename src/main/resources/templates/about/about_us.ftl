@@ -38,7 +38,7 @@
                 <li class="navitem"><a href="../teams/team_bigdata">研究团队</a></li>
                 <li class="navitem"><a href="../achievments/achievments">研究成果</a></li>
                 <li class="navitem"><a href="../solution/solutionlist">解决方案</a></li>
-                <li id="navactive"><a href="../download/down">资料下载</a></li>
+                <li class="navactive"><a href="../download/down">资料下载</a></li>
                 <li class="navitem"><a href="../certificate/search">证书查询</a></li>
                 <li id="navactive"><a href="/">关于我们</a></li>
             </ul>
@@ -120,6 +120,7 @@
 
 
     </div>
+</div>
 
     <script type="text/javascript" src="../static/js/tab.js"></script>
     <script type="text/javascript">
@@ -134,17 +135,18 @@
                 <a href="/" style="/">网站首页</a>|
                 <a href="../content/newslist">动态消息</a>|
                 <a href="../direction/direction_bigdata">研究方向</a>|
-                <a href="../teams/teamlist">研究团队</a>|
+                <a href="../teams/team_bigdata.ftl">研究团队</a>|
                 <a href="../achievments/achievments">研究成果</a>|
                 <a href="../solution/solutionlist">解决方案</a>|
                 <a href="../download/down">资料下载</a>|
-                <a href="../about/adout-us">关于我们</a>|
+                <a href="../certificate/search.ftl">证书查询</a>|
+                <a href="#">关于我们</a>|
                 <a href="../theme/themes">专题查询</a>|
                 <a href="../job/recruit">人才招聘</a>
             </div>
-            <div class="bott_link">
-                <a href="#">隐私条约</a> <a href="#">使用条款</a> <a href="#">反馈</a>
-            </div>
+            <#--<div class="bott_link">-->
+                <#--<a href="#">隐私条约</a> <a href="#">使用条款</a> <a href="#">反馈</a>-->
+            <#--</div>-->
             <div id="foot_cont">
                 <div id="ft_conbox">
                     <div class="yjlx add">

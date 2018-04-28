@@ -192,14 +192,15 @@
             <a href="../teams/yjtd1.html">研究团队</a>|
             <a href="../achievments/yjcg.html">研究成果</a>|
             <a href="../solution/solutionlist.ftl">解决方案</a>|
-            <a href="../download/zlxz.html">资料下载</a>|
-            <a href="about/adout-us.html">关于我们</a>|
-            <a href="../theme/ztcx.html">专题查询</a>|
+            <a href="../download/zlxz.ftl">资料下载</a>|
+            <a href="../certificate/search.ftl">证书查询</a>|
+            <a href="../about/adout-us.ftl">关于我们</a>|
+            <a href="../theme/themes.ftl">专题查询</a>|
             <a href="../job/recruit.ftl">人才招聘</a>
         </div>
-        <div class="bott_link">
-            <a href="#">隐私条约</a> <a href="#">使用条款</a> <a href="#">反馈</a>
-        </div>
+        <#--<div class="bott_link">-->
+            <#--<a href="#">隐私条约</a> <a href="#">使用条款</a> <a href="#">反馈</a>-->
+        <#--</div>-->
         <div id="foot_cont">
             <div id="ft_conbox">
                 <div class="yjlx add">

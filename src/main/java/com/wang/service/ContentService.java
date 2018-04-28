@@ -13,4 +13,6 @@ public interface ContentService {
     public Content getzcywbyid(int type);
 
     public Content selectcontentbycid(int cid);
+    public Content selectcontentzcywbycid(int cid);
+
 }

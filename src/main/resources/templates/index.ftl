@@ -21,35 +21,36 @@
 #warp #warp-nav li .sm1{ background:url(static/images/sm1.png); height:30px;}
 #warp #warp-nav li .sm2{ background:url(static/images/sm2.jpg); height:30px;}
 #warp #warp-nav li .sm3{ background:url(static/images/sm3.jpg); height:30px;}
+
 </style>
 <body>
     <!--切换图代码-->
 <a name="pagetop" id="pagetop"></a>
  <div id="banner">
     <div id="xiaoguo">
-      <div id="warp">
+      <div id="warp" >
     <ul id="warp-con">
-              <li><a href="content/20170828.html" target="_blank"><img src="LandBigData/lb_20170828.jpg"/></a>
+              <li><a target="_blank"><img src="LandBigData/lb_20170828.jpg"/></a>
               </li>
               <!--
                   <li><a href="http://www.wrisc.cn/wrisc/investment" target="_blank"><img src="/wrisc/static/v2/images/bg1.jpg" /></a></li>
                   -->
-              <li><a href="content/20170726.html" target="_blank"><img src="LandBigData/lb_20170726.png"/></a>
+              <li><a target="_blank"><img src="LandBigData/lb_20170726.png"/></a>
               </li>
               <!--
                   <li><a href="http://www.wrisc.cn/wrisc/demoproject/projects" target="_blank"><img src="/wrisc/static/v2/images/bg1.jpg" /></a></li>
                   -->
-              <li><a href="content/20170613.html" target="_blank">
+              <li><a target="_blank">
               <img src="LandBigData/20170613_1.png"/></a></li>
               <!--
                   <li><a href="http://" target="_blank"><img src="/wrisc/static/v2/images/bg1.jpg" /></a></li>
                   -->
-              <li><a href="http://" target="_blank">
+              <li><a target="_blank">
               <img src="LandBigData/lb_linye.png"/></a></li>
               <!--
                   <li><a href="http://www.wrisc.cn/wrisc/type/zhcs" target="_blank"><img src="/wrisc/static/v2/images/bg1.jpg" /></a></li>
                   -->
-              <li><a href="#" target="_blank">
+              <li><a target="_blank">
               <img src="LandBigData/lb_guotu.png"/></a></li>
               <!--
                   <li><a href="http://" target="_blank"><img src="/wrisc/static/v2/images/bg1.jpg" /></a></li>
@@ -160,8 +161,8 @@
       <h2 class="xinwen_title">政策要闻:</h2>
       <div id="announ" class="announ2">
           <ul>
-          <#list topnewslist2 as topnews>
-              <li><a href="content/news?cid=${topnews.cid}" >【${topnews.publish_date}】&nbsp;${topnews.title}</a></li>
+          <#list topnewslist2 as topzcyws>
+              <li><a href="content/zcyws?cid=${topzcyws.cid}" >【${topzcyws.publish_date}】&nbsp;${topzcyws.title}</a></li>
           </#list>
           </ul>
       </div>
@@ -172,17 +173,17 @@
 <div class="home_main min20">
   <div class="newbox">
     <div class="newimg">
-    <#list topimagenewslist2 as toppicnews >
+    <#list topimagenewslist2 as toppiczcyws >
         <dl>
-            <dt><a href="content/news?cid=${toppicnews.cid}" title="" target="_blank" ><img src="static/images/${toppicnews.image_url}"></a>
+            <dt><a href="content/zcyws?cid=${toppiczcyws.cid}" title="" target="_blank" ><img src="static/images/${toppiczcyws.image_url}"></a>
             </dt>
-            <dd><a href="content/news?cid=${toppicnews.cid}" title="" target="_blank">${toppicnews.title}</a></dd>
+            <dd><a href="content/zcyws?cid=${toppiczcyws.cid}" title="" target="_blank">${toppiczcyws.title}</a></dd>
         </dl>
     </#list>
     </div>
      <ul class="newlist">
-      <#list topnewslist2 as topnews>
-          <li><a href="content/news?cid=${topnews.cid}" >【${topnews.publish_date}】&nbsp;${topnews.title}</a></li>
+      <#list topnewslist2 as topzcyws>
+          <li><a href="content/zcyws?cid=${topzcyws.cid}" >【${topzcyws.publish_date}】&nbsp;${topzcyws.title}</a></li>
       </#list>
       </ul>
   </div>
@@ -268,7 +269,8 @@
          <a href="../achievments/achievments">研究成果</a>|
          <a href="../solution/solutionlist">解决方案</a>|
          <a href="../download/down">资料下载</a>|
-         <a href="about/adout-us">关于我们</a>|
+         <a href="../certificate/search">证书查询</a>|
+         <a href="../about/adout-us">关于我们</a>|
          <a href="../theme/themes">专题查询</a>|
          <a href="../job/recruit">人才招聘</a>
      </div>

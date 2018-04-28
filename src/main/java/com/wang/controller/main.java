@@ -44,13 +44,22 @@ public class main {
         return "index";//返回的内容就是templetes下面文件的名称
     }
 
-    @RequestMapping("/news")
-    public String news_content(Map<String,Object> model){
+//    @RequestMapping("/news")
+//    public String news_content(Map<String,Object> model){
+//
+//       // contentService.topnews();
+//        model.put("topnewslist", contentService.topnews(1));
+//
+//        return "index";//返回的内容就是templetes下面文件的名称
+//    }
+//
+//    @RequestMapping("/zcyws")
+//    public String zcyws_content(Map<String,Object> model){
+//
+//        model.put("topzcywslist", contentService.topnews(2));
+//
+//        return "index";//返回的内容就是templetes下面文件的名称
+//    }
 
-       // contentService.topnews();
-        model.put("topnewslist", contentService.topnews(1));
-
-        return "index";//返回的内容就是templetes下面文件的名称
-    }
 
 }

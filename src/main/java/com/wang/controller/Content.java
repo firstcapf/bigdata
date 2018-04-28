@@ -43,11 +43,24 @@ public class Content {
      * @return
      */
     @RequestMapping("/newslist")
-    public String content_newsdt(HttpServletRequest request, Map<String,Object> model){
+    public String content_newslist(HttpServletRequest request, Map<String,Object> model){
         int type=1;
         model.put("newslist", contentService.newslist(type));
         model.put("type",type);
         return "content/newslist";//返回的内容就是templetes下面文件的名称
+    }
+    /**
+     * 政策要问
+     * @param request
+     * @param model
+     * @return
+     */
+    @RequestMapping("/zcyws")
+    public String content_zcyws(HttpServletRequest request, Map<String,Object> model){
+
+        int cid = Integer.parseInt(request.getParameter("cid"));
+        model.put("zcyws", contentService.selectcontentzcywbycid(cid));
+        return "content/zcyws";//返回的内容就是templetes下面文件的名称
     }
 
     /**
