@@ -93,12 +93,25 @@
      <!--左侧栏目END-->
      <!--右侧代码-->
      <div id="right_box">
-        <ul id="news_list">
-             <#list newslist as nlist>
-            <li><a href="news?cid=${nlist.cid}" >【${nlist.publish_date}】&nbsp;${nlist.title}</a></li>
-            </#list>
 
-        </ul>
+         <ul id="news_list">
+         <#list newslist as nlist>
+             <li>
+                 <#if type == 2>
+                     <a href="zcyws?cid=${nlist.cid}" >【${nlist.publish_date}】&nbsp;${nlist.title}</a>
+                 <#else>
+                     <a href="${nlist.link}" >【${nlist.publish_date}】&nbsp;${nlist.title}</a>
+                 </#if>
+             </li>
+         </#list>
+         </ul>
+
+        <#--<ul id="news_list">-->
+             <#--<#list zcywlist as nlist>-->
+            <#--<li><a href="content/zcyws?cid=${nlist.cid}" >【${nlist.publish_date}】&nbsp;${nlist.title}</a></li>-->
+            <#--</#list>-->
+
+        <#--</ul>-->
     <form  id="navPage" action="/wrisc/newszhqy" method="post">
           <div class="pages">
                 <a href="javascript:jumpPage(1)">首页</a>

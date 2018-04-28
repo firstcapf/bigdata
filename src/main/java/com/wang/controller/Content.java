@@ -74,7 +74,7 @@ public class Content {
         int type=2;
         model.put("newslist", contentService.newslist(type));
         model.put("type",type);
-        return "content/newslist";//返回的内容就是templetes下面文件的名称
+        return "content/zcywlist";//返回的内容就是templetes下面文件的名称
     }
 
     /**
