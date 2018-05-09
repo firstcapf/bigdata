@@ -30,6 +30,11 @@
     <div id="xiaoguo">
       <div id="warp" >
     <ul id="warp-con">
+        <li><a target="_blank"><img src="LandBigData/lb_20180508.jpg"/></a>
+        </li>
+        <!--
+                 <li><a href="http://www.wrisc.cn/wrisc/investment" target="_blank"><img src="/wrisc/static/v2/images/bg1.jpg" /></a></li>
+                 -->
               <li><a target="_blank"><img src="LandBigData/lb_20170828.jpg"/></a>
               </li>
               <!--
@@ -50,8 +55,8 @@
               <!--
                   <li><a href="http://www.wrisc.cn/wrisc/type/zhcs" target="_blank"><img src="/wrisc/static/v2/images/bg1.jpg" /></a></li>
                   -->
-              <li><a target="_blank">
-              <img src="LandBigData/lb_guotu.png"/></a></li>
+              <#--<li><a target="_blank">-->
+              <#--<img src="LandBigData/lb_guotu.png"/></a></li>-->
               <!--
                   <li><a href="http://" target="_blank"><img src="/wrisc/static/v2/images/bg1.jpg" /></a></li>
                   -->
@@ -133,7 +138,6 @@
       </div>
   </div>
   <!---滚动新闻代码end-->
-
 <!-- 新闻动态开始 -->
 <div class="home_main min20">
   <div class="newbox">
