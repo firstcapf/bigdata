@@ -2,14 +2,10 @@ package com.wang.controller;
 
 import com.google.zxing.WriterException;
 import com.wang.Tools.QRcode;
-import com.wang.entity.Attachment;
 import com.wang.entity.Content;
 import com.wang.entity.Direction;
 import com.wang.entity.Solution;
-import com.wang.service.AttachmentService;
-import com.wang.service.ContentService;
-import com.wang.service.DirectionService;
-import com.wang.service.SolutionService;
+import com.wang.service.*;
 import io.swagger.annotations.ApiImplicitParam;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
@@ -18,6 +14,7 @@ import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.List;
 import java.util.Map;
@@ -38,6 +35,8 @@ public class Weixin {
     private DirectionService directionService;
     @Resource
     private SolutionService solutionService;
+    @Resource
+    private FileDownloadService fileDownloadService;
 
     /**
      * 证书二维码
@@ -172,5 +171,16 @@ public class Weixin {
     public List<com.wang.entity.Content> newstoplist(){
         contentService.topnews(1);
         return  contentService.topnews(1);
+    }
+
+    /**
+     * 下载文献
+     * @return
+     */
+    @ResponseBody
+    @RequestMapping("/fileDownload")
+    public List<com.wang.entity.FileDownload> fileDownload(HttpServletResponse response){
+        response.setHeader("Access-Control-Allow-Origin", "*");
+        return  fileDownloadService.fileDownload();
     }
 }
