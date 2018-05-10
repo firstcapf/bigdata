@@ -2,9 +2,9 @@ package com.wang.controller;
 
 import com.google.zxing.WriterException;
 import com.wang.Tools.QRcode;
+import com.wang.entity.*;
 import com.wang.entity.Content;
 import com.wang.entity.Direction;
-import com.wang.entity.Solution;
 import com.wang.service.*;
 import io.swagger.annotations.ApiImplicitParam;
 import io.swagger.annotations.ApiOperation;
@@ -37,6 +37,10 @@ public class Weixin {
     private SolutionService solutionService;
     @Resource
     private FileDownloadService fileDownloadService;
+    @Resource
+    private ResearchResultService researchResultService;
+    @Resource
+    private ResearchTeamService researchTeamService;
 
     /**
      * 证书二维码
@@ -117,8 +121,8 @@ public class Weixin {
         return directionService.directionslist();
     }
     @RequestMapping("/directionbydid")
-    public Direction directionbydid(int did){
-        return directionService.selectdirectionbydid(did);
+    public Direction directionbydid(int id){
+        return directionService.selectdirectionbydid(id);
     }
 
     /**
@@ -130,8 +134,8 @@ public class Weixin {
         return solutionService.solutionslist();
     }
     @RequestMapping("/solutionbydid")
-    public Solution solutionbydid(int sid){
-        return solutionService.selectSolutionbysid(sid);
+    public Solution solutionbydid(int id){
+        return solutionService.selectSolutionbysid(id);
     }
 
     /**
@@ -183,4 +187,35 @@ public class Weixin {
         response.setHeader("Access-Control-Allow-Origin", "*");
         return  fileDownloadService.fileDownload();
     }
+
+    /**
+     * 研究成果
+     * @return
+     */
+    @ResponseBody
+    @RequestMapping("/researchresult")
+    public List<com.wang.entity.ResearchResult> researchResult(){
+        return  researchResultService.researchResult();
+    }
+    @RequestMapping("/researchresultbyid")
+    public ResearchResult researchResultById(int id) {
+        return researchResultService.researchResultById(id);
+    }
+
+
+    /**
+     * 研究团队
+     * @return
+     */
+    @ResponseBody
+    @RequestMapping("/researchTeam")
+    public List<com.wang.entity.ResearchTeam> researchTeam(){
+        return  researchTeamService.researchTeam();
+    }
+    @RequestMapping("/teamInfoById")
+    public ResearchTeam teamInfoById(int id) {
+        return researchTeamService.teamInfoById(id);
+    }
+
+
 }
