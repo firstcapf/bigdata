@@ -2,6 +2,7 @@ package com.wang.service.impl;
 
 import com.wang.dao.ResearchTeamDao;
 import com.wang.entity.ResearchTeam;
+import com.wang.entity.TeamRepresent;
 import com.wang.service.ResearchTeamService;
 import org.springframework.stereotype.Service;
 
@@ -20,6 +21,11 @@ public class ResearchTeamServiceImpl implements ResearchTeamService {
     @Override
     public ResearchTeam teamInfoById(int tid) {
         return researchTeamDao.teamInfoById(tid);
+    }
+
+    @Override
+    public List<TeamRepresent> teamRepresentById(int tsId){
+        return researchTeamDao.teamRepresentById(tsId);
     }
 
 }

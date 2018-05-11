@@ -7,8 +7,12 @@
     </resultMap>
 
     <sql id="Base_Column_List" >
-            tid, name, p_info
-        </sql>
+          tid, name, p_info
+    </sql>
+
+    <sql id="Team_Represent_Column_List" >
+          trid, represen_avatar, name, info, direction
+    </sql>
 
     <select id="researchTeam" resultMap="BaseResultMap" parameterType="java.lang.Integer"  >
         select  <include refid="Base_Column_List" />
@@ -19,6 +23,12 @@
         select  <include refid="Base_Column_List" />
         from team
         where tid= #{tid,jdbcType=INTEGER};
+    </select>
+
+    <select id="teamRepresentById" resultType="com.wang.entity.TeamRepresent" parameterType="java.lang.Integer"  >
+        select  <include refid="Team_Represent_Column_List" />
+        from team_representative,re_team_representative
+        where t_id= #{stId,jdbcType=INTEGER} and represent_id=trid;
     </select>
 
 </mapper>

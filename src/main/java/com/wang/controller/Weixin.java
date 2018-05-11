@@ -216,6 +216,10 @@ public class Weixin {
     public ResearchTeam teamInfoById(int id) {
         return researchTeamService.teamInfoById(id);
     }
+    @RequestMapping("/teamRepresentById")
+    public List<TeamRepresent> teamRepresentById(int id) {
+        return researchTeamService.teamRepresentById(id);
+    }
 
 
 }
