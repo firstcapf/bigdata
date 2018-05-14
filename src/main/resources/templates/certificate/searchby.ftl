@@ -90,7 +90,7 @@
                             <div style=" float: left;">
                                 <h1 style="margin-left: 120px; margin-top: 100px">培训合格证书</h1>
                                 <br>
-                                <p style="width: 248px;margin-left: 100px;">&nbsp;&nbsp;${certificate.name}同志于${certificate.enddate}通过${certificate.ctype}培训，考试合格。</p>
+                                <p style="width: 248px;margin-left: 100px;">&nbsp;&nbsp;${certificate.name}同志于${certificate.begindate}至${certificate.enddate}通过${certificate.ctype}培训，考核合格。</p>
                                 <p style="margin-left: 80px">特发此证。</p>
                                 <br>
 
