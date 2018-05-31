@@ -30,6 +30,16 @@
     <div id="xiaoguo">
       <div id="warp" >
     <ul id="warp-con">
+
+        <!--
+              <li><a href="http://www.wrisc.cn/wrisc/investment" target="_blank"><img src="/wrisc/static/v2/images/bg1.jpg" /></a></li>
+              -->
+
+        <li><a target="_blank"><img src="LandBigData/lb_20180530.png"/></a>
+        </li>
+        <!--
+                <li><a href="http://www.wrisc.cn/wrisc/investment" target="_blank"><img src="/wrisc/static/v2/images/bg1.jpg" /></a></li>
+                -->
         <li><a target="_blank"><img src="LandBigData/lb_20180508.jpg"/></a>
         </li>
         <!--
@@ -47,21 +57,7 @@
                   -->
               <li><a target="_blank">
               <img src="LandBigData/20170613_1.png"/></a></li>
-              <!--
-                  <li><a href="http://" target="_blank"><img src="/wrisc/static/v2/images/bg1.jpg" /></a></li>
-                  -->
-              <li><a target="_blank">
-              <img src="LandBigData/lb_linye.png"/></a></li>
-              <!--
-                  <li><a href="http://www.wrisc.cn/wrisc/type/zhcs" target="_blank"><img src="/wrisc/static/v2/images/bg1.jpg" /></a></li>
-                  -->
-              <#--<li><a target="_blank">-->
-              <#--<img src="LandBigData/lb_guotu.png"/></a></li>-->
-              <!--
-                  <li><a href="http://" target="_blank"><img src="/wrisc/static/v2/images/bg1.jpg" /></a></li>
-                  -->
-              <!-- <li><a href="#" target="_blank">
-              <img src="LandBigData/lb_shucai.png"/></a></li> -->
+
      </ul>
       <ul id="warp-nav">
                   <li class="selected"><img src="../static/images/xyd.png"></li>
