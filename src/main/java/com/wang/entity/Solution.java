@@ -48,6 +48,15 @@ public class Solution {
     private  String solution_title;
     private  String publish_time;
     private  String image_url;
+    private  String solution_text;
+
+    public String getSolution_text() {
+        return solution_text;
+    }
+
+    public void setSolution_text(String solution_text) {
+        this.solution_text = solution_text;
+    }
 
     public String getSolution_link() {
         return solution_link;
