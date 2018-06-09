@@ -6,7 +6,7 @@
     <result column="overview" property="overview" jdbcType="VARCHAR" />
 </resultMap>
 <sql id="Base_Column_List" >
-    sid ,stid, solution_title, solution_text, publish_time, image_url, solution_link
+    sid ,stid, solution_title, solution_text, publish_time, image_url, solution_link,logo_url
 </sql>
 
 <select id="solutionslist" resultType="com.wang.entity.Solution"  parameterType="java.lang.Integer"  >

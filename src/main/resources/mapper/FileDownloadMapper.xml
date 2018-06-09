@@ -5,10 +5,11 @@
         <result column="data_dec" property="title" jdbcType="VARCHAR" />
         <result column="down_url" property="url" jdbcType="VARCHAR" />
         <result column="publish_time" property="time" jdbcType="VARCHAR" />
+        <result column="image_url" property="image_url" jdbcType="VARCHAR" />
     </resultMap>
 
     <sql id="Base_Column_List" >
-      data_dec,down_url,publish_time
+      data_dec,down_url,publish_time,image_url
     </sql>
 
 

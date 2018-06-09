@@ -24,7 +24,7 @@
 
     <select id="topnews" resultType="com.wang.entity.Content"  parameterType="java.lang.Integer"  >
         select  <include refid="Base_Column_List" />
-        from b_content     where type= #{type,jdbcType=INTEGER}  ORDER BY publish_date desc  limit 0  , 5
+        from b_content     where type= #{type,jdbcType=INTEGER}  and image_url is not null ORDER BY publish_date desc  limit 0  , 5
     </select>
 
     <select id="newslist" resultType="com.wang.entity.Content"  parameterType="java.lang.Integer"  >
