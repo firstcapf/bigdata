@@ -68,4 +68,14 @@ public class Solution {
 
     private  String solution_link;
 
+    public String getLogo_url() {
+        return logo_url;
+    }
+
+    public void setLogo_url(String logo_url) {
+        this.logo_url = logo_url;
+    }
+
+    private  String logo_url;
+
 }
