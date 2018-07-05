@@ -1,11 +1,11 @@
 package com.wang.controller;
 
-import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
-import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.RequestMapping;
+        import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
+        import org.springframework.stereotype.Controller;
+        import org.springframework.web.bind.annotation.RequestMapping;
 
-import javax.servlet.http.HttpServletRequest;
-import java.util.Map;
+        import javax.servlet.http.HttpServletRequest;
+        import java.util.Map;
 
 @Controller
 @EnableAutoConfiguration

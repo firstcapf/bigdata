@@ -1,6 +1,7 @@
 package com.wang.controller;
 
 import com.google.zxing.WriterException;
+import com.wang.Tools.CommonUtil;
 import com.wang.Tools.QRcode;
 import com.wang.entity.*;
 import com.wang.entity.Content;
@@ -16,6 +17,9 @@ import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.security.KeyManagementException;
+import java.security.NoSuchAlgorithmException;
+import java.security.NoSuchProviderException;
 import java.util.List;
 import java.util.Map;
 
@@ -41,6 +45,10 @@ public class Weixin {
     private ResearchResultService researchResultService;
     @Resource
     private ResearchTeamService researchTeamService;
+
+
+    @Resource
+    private WXuserService wxuserService;
 
     /**
      * 证书二维码
@@ -87,9 +95,17 @@ public class Weixin {
     public Content newsbyid(@PathVariable int id, HttpServletResponse response){
         response.setHeader("Access-Control-Allow-Origin", "*");
         //   int id = Integer.parseInt(request.getParameter("cid"));
+
+
+
+
         return  contentService.selectcontentbycid(id);
 
     }
+
+
+
+
 
     /**
      * 新闻动态
