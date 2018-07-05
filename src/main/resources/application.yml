@@ -26,3 +26,5 @@ spring:
     driver-class-name: com.mysql.jdbc.Driver
     # 使用druid数据源
     type: com.alibaba.druid.pool.DruidDataSource
+  resources:
+    static-locations：classpath:file:///C:/Users/sully/Desktop/bigdata/out/artifacts/bigdata_jar/images/news_image/

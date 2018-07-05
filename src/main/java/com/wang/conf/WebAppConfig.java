@@ -1,8 +1,6 @@
 package com.wang.conf;
 
-
-
-        import org.slf4j.LoggerFactory;
+import org.slf4j.LoggerFactory;
         import org.springframework.beans.factory.annotation.Value;
         import org.springframework.context.annotation.Configuration;
         import org.springframework.util.ClassUtils;
@@ -18,10 +16,13 @@ package com.wang.conf;
  */
 @Configuration
 public class WebAppConfig extends WebMvcConfigurerAdapter {
-    //获取配置文件中图片的路径
+   /* //获取配置文件中图片的路径
    // @Value("file:/E:/images/")
 
-    @Value("file:/root/bigdata_jar/images/")
+  //  @Value("file:/root/bigdata_jar/images/news_image/")
+    @Value("file:///C:/Users/sully/Desktop/bigdata/out/artifacts/bigdata_jar/images/news_image/")
+
+
     private String mImagesPath;
     //访问图片方法
     @Override
@@ -39,5 +40,5 @@ public class WebAppConfig extends WebMvcConfigurerAdapter {
         LoggerFactory.getLogger(WebAppConfig.class).info("imagesPath="+mImagesPath);
         registry.addResourceHandler("/images/**").addResourceLocations(mImagesPath);
         super.addResourceHandlers(registry);
-    }
+    }*/
 }

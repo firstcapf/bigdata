@@ -68,12 +68,12 @@
         <img style="width:100%;" src="../static/images/true.jpg">
     </div>
     <div>
-        <h1 style="position:absolute;top: 40%;right: 10%;color: #FFFFFF; z-index: 999"><p>国土三调研讨会</p></h1>
+        <h2 style="position:absolute;top: 40%;right: 10%;color: #FFFFFF; z-index: 999"><p>四川省第三次全国土地调查培训班(第1期)</p></h2>
     </div>
 </div>
 <div class="register">
     <form method="post" action="wxmeetingadd" >
-        <input type="hidden"  name="meetingname" value="国土三调研讨会" >
+        <input type="hidden"  name="meetingname" value="四川省第三次全国土地调查培训班(第1期)" >
         <input type="hidden"  name="meetingaddr" value="西南交通大学九里校区" >
         <input type="hidden"  name="meetingtime" value="2018年7月15日-19日" >
         <input type="hidden"  name="openId" value="${userinfo.openId}" >
@@ -82,17 +82,17 @@
         <label class="labe"><span style="color:red">*</span>姓名:</label>
         <div class="res-item">
 
-            <input type="text" placeholder="姓名" name="truename" value="王敏" class="input-item truename">
+            <input type="text" placeholder="姓名" name="truename" value="" class="input-item truename">
             <i class="res-icon am-icon-phone"></i>
         </div>
         <label class="labe"><span style="color:red">*</span>电话:</label>
         <div class="res-item">
-            <input type="tel" placeholder="电话" name="tel"  value="13880000000"  class="input-item telephone">
+            <input type="tel" placeholder="电话" name="tel"  value=""  class="input-item telephone">
             <i class="res-icon am-icon-phone"></i>
         </div>
         <label class="labe"><span style="color:red">*</span>单位:</label>
         <div class="res-item">
-            <input type="text" placeholder="单位" name="company"  value="西南交大的"  class="input-item company">
+            <input type="text" placeholder="单位" name="company"  value=""  class="input-item company">
             <i class="res-icon am-icon-mobile"></i>
         </div>
 
