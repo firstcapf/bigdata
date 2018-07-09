@@ -104,6 +104,7 @@ public class MXuser {
 
         WXuser wxuserinfo=new WXuser();
 
+        wxuserinfo.setTruename(userinfo.getNickname());
         wxuserinfo.setNickname(userinfo.getNickname());
         wxuserinfo.setOpenId(userinfo.getOpenId());
         wxuserinfo.setSex(String.valueOf(userinfo.getSex()));

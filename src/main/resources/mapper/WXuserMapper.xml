@@ -37,9 +37,10 @@
 
 
     <insert id="insertWXuser" parameterType="com.wang.entity.WXuser" >
-        INSERT INTO wx_user (openId,nickname ,sex,country,province,city,headImgUrl,regtime,lastlogtime,remark,isdel)
+        INSERT INTO wx_user (openId,nickname,truename ,sex,country,province,city,headImgUrl,regtime,lastlogtime,remark,isdel)
         SELECT
         #{openId},
+        #{truename},
         #{nickname},
         #{sex},
         #{country},
