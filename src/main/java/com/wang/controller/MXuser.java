@@ -10,6 +10,7 @@ import io.swagger.annotations.ApiOperation;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
@@ -17,6 +18,7 @@ import java.io.IOException;
 import java.security.KeyManagementException;
 import java.security.NoSuchAlgorithmException;
 import java.security.NoSuchProviderException;
+import java.util.List;
 import java.util.Map;
 
 @Controller
@@ -34,9 +36,33 @@ public class MXuser {
 
 
 
+    //用户列表
+    @RequestMapping("/wxadmin/adminuserlist")
+    public String wxadmin_wxmeetingadd(HttpServletRequest request, Map<String,Object> model) throws KeyManagementException, NoSuchAlgorithmException, NoSuchProviderException, IOException {
+        model.put("userlist", wxuserService.listWXuser());
+        return "WXuser/adminuserlist";//返回的内容就是templetes下面文件的名称
+
+    }
+
+
+    //用户列表
+    @RequestMapping("/wxadmin/sendmessage")
+    @ResponseBody
+    public String wxadmin_sendmessage(HttpServletRequest request, Map<String,Object> model) throws KeyManagementException, NoSuchAlgorithmException, NoSuchProviderException, IOException {
+
+        String txtContent = request.getParameter("txtContent");
+        List<WXuser> users = wxuserService.listWXuser();
+            for (int i = 0; i < users.size(); i++) {
+
+             CommonUtil.sendCustomMessage(users.get(i).getOpenId(), txtContent);
+         }
+
+        return "OK!";//返回的内容就是templetes下面文件的名称
+
+    }
+
 
     @RequestMapping("/wxmeetingadd")
-
     public String wxmeetingadd(HttpServletRequest request, Map<String,Object> model) throws KeyManagementException, NoSuchAlgorithmException, NoSuchProviderException, IOException {
 
         String truename =request.getParameter("truename");
@@ -61,7 +87,6 @@ public class MXuser {
         meeting.setMeetingaddr(meetingaddr);
         meeting.setMeetingname(meetingname);
         meeting.setMeetingtime(meetingtime);
-
 
         Result result=meetingService.insertMeeting(meeting);
 

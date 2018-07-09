@@ -7,9 +7,7 @@ import java.util.List;
 
 public interface WXuserDao {
 
-    WXuser selectwxuserbyopenid(int openId);
-
-
+    List<WXuser>  listWXuser();
 
     void updateWXuser(WXuser wxuser);
     void insertWXuser(WXuser wxuser);

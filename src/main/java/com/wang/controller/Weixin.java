@@ -64,6 +64,8 @@ public class Weixin {
         return  QRcode.getResponseEntity(text, 200, 200, "png");
     }
 
+
+
     /**
      * 新闻内容详情查看
      * @param request
