@@ -19,9 +19,12 @@ import java.util.logging.Logger;
 public class CommonUtil {
 
 
+    static String access_token=null;
     static String appId="wxe68e474aba8ac509";
     static  String appSecret="d16a5b67158bc0d42745665fbb3cf477";
 
+
+    static long long_last_time=0;
 
     /**
      * 获取网页授权凭证
@@ -42,6 +45,7 @@ public class CommonUtil {
             try {
                 wat = new WeixinOauth2Token();
                 wat.setAccessToken(jsonObject.getString("access_token"));
+                System.out.println("access_token:"+wat.getAccessToken());
                 wat.setExpiresIn(jsonObject.getInteger("expires_in"));
                 wat.setRefreshToken(jsonObject.getString("refresh_token"));
                 wat.setOpenId(jsonObject.getString("openid"));
@@ -56,6 +60,60 @@ public class CommonUtil {
         return wat;
     }
 
+
+
+    public static String WeixinAccess_Token() throws IOException, NoSuchAlgorithmException, NoSuchProviderException, KeyManagementException {
+
+        String url = "https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&appid="+ appId + "&secret=" + appSecret;
+
+
+        //得到当前时间
+        long current_time = System.currentTimeMillis();
+
+        // 每次调用，如果token时间超时，重新获取，expires_in有效期为7200秒
+        if ((current_time - long_last_time) / 1000 >= 200)
+        //if ((current_time - long_last_time) / 1000 >= 7200)
+        {
+            JSONObject jsonObject=JSONObject.parseObject(CommonUtil.httpsRequest(url, "GET", null).toString());
+            if (null != jsonObject) {
+                String j_access_token = (String) jsonObject.get("access_token");
+                //保存access_token
+                if (j_access_token != null) {
+                    access_token = j_access_token;
+                    long_last_time = System.currentTimeMillis();
+                }
+
+            }
+        }
+        return access_token;
+
+    }
+
+
+
+    public static boolean sendCustomMessage(String openId,String content) throws IOException, NoSuchAlgorithmException, NoSuchProviderException, KeyManagementException {
+
+
+        String token=WeixinAccess_Token();
+        content.replace("\"", "\\\"");
+        String  jsonMsg="{\"touser\":\"%s\",\"msgtype\":\"text\",\"text\":{\"content\":\"%s\"}}";
+        jsonMsg=String.format(jsonMsg, openId,content);
+        boolean flag=false;
+        String requestUrl="https://api.weixin.qq.com/cgi-bin/message/custom/send?access_token=ACCESS_TOKEN";
+        requestUrl=requestUrl.replace("ACCESS_TOKEN", token);
+        JSONObject jsonResult =JSONObject.parseObject(CommonUtil.httpsRequest(requestUrl, "POST", jsonMsg).toString());
+        if(jsonResult!=null){
+            int errorCode=jsonResult.getInteger("errcode");
+            String errorMessage=jsonResult.getString("errmsg");
+            if(errorCode==0){
+                flag=true;
+            }else{
+                System.out.println("客服消息发送失败:"+errorCode+","+errorMessage);
+                flag=false;
+            }
+        }
+        return flag;
+    }
 
     /**
      * 通过网页授权获取用户信息

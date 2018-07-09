@@ -19,12 +19,11 @@ public class WXuserServiceImpl implements WXuserService {
     private WXuserDao wxuserDao;
 
 
+
     @Override
-    public WXuser selectwxuserbyopenid(int openId) {
-        return null;
+    public List<WXuser> listWXuser() {
+      return  wxuserDao.listWXuser();
     }
-
-
 
     @Override
     public  void updateWXuser(WXuser wxuser)

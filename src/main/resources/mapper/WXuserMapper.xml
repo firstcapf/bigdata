@@ -25,6 +25,10 @@
         <result column="isdel" property="isdel" jdbcType="VARCHAR" />
     </resultMap>
 
+    <sql id="Base_Column_List" >
+      username,password,openId ,nickname,sex,country,province,city,headpic,truename,tel,company,email,regtime,lastlogtime,remark,addr,isdel
+    </sql>
+
 
 
     <select id="updateWXuser" parameterType="com.wang.entity.WXuser" >
@@ -50,6 +54,11 @@
     </insert>
 
 
+
+    <select id="listWXuser" resultType="com.wang.entity.WXuser"   >
+        select  <include refid="Base_Column_List" />
+        from wx_user
+    </select>
 
 
 </mapper>
