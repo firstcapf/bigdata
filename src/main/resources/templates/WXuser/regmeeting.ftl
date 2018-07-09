@@ -90,6 +90,11 @@
             <input type="tel" placeholder="电话" name="tel"  value=""  class="input-item telephone">
             <i class="res-icon am-icon-phone"></i>
         </div>
+        <label class="labe"><span style="color:red">*</span>邮箱:</label>
+        <div class="res-item">
+            <input type="email" placeholder="邮箱" name="email"  value=""  class="input-item email">
+            <i class="res-icon am-icon-email"></i>
+        </div>
         <label class="labe"><span style="color:red">*</span>单位:</label>
         <div class="res-item">
             <input type="text" placeholder="单位" name="company"  value=""  class="input-item company">
@@ -100,6 +105,10 @@
             <button type="submit" id="res-btn" class="am-btn am-btn-block">报名</button>
         </div>
     </form>
+
+
+
+
 </div>
 <div style="font-size: 12px;">
     <p>犀浦校区地址：中国四川省成都市高新区西部园区西南交通大学九号教学楼<br>九里校区地址：中国四川省成都市二环路北一段111号西南交通大学创新大厦
