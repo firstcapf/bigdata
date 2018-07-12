@@ -74,7 +74,7 @@
 <div class="register">
     <form method="post" action="wxmeetingadd" >
         <input type="hidden"  name="meetingname" value="四川省第三次全国土地调查培训班(第1期)" >
-        <input type="hidden"  name="meetingaddr" value="西南交通大学九里校区" >
+        <input type="hidden"  name="meetingaddr"  value="西南交通大学九里校区" >
         <input type="hidden"  name="meetingtime" value="2018年7月15日-19日" >
         <input type="hidden"  name="openId"  value="${userinfo.openId}" >
 
