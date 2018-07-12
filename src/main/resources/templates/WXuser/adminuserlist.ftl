@@ -38,6 +38,7 @@
                 $.ajax({
                     type: "POST",
                     url: "/wxadmin/sendmessage",
+                    data: { txtContent: $("#txtContent").val() },
                     success: function (responseTest) {
 
                         $("#resultMesage").text(responseTest);

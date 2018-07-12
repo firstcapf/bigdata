@@ -71,7 +71,7 @@ public class CommonUtil {
         long current_time = System.currentTimeMillis();
 
         // 每次调用，如果token时间超时，重新获取，expires_in有效期为7200秒
-        if ((current_time - long_last_time) / 1000 >= 200)
+    //    if ((current_time - long_last_time) / 1000 >= 200)
         //if ((current_time - long_last_time) / 1000 >= 7200)
         {
             JSONObject jsonObject=JSONObject.parseObject(CommonUtil.httpsRequest(url, "GET", null).toString());
