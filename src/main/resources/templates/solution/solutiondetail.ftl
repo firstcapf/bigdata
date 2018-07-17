@@ -32,13 +32,13 @@
        <p id="lang"><span id="btn">搜索</span>|<a href="index.html">中文</a>|<a target="_blank" href="#">Egnlish</a><!-- <a target="_blank" href="http://www.wrisc.cn/wrisc/en/index.html">Egnlish</a> --></p>
        <ul id="nav" style="width: 740px;">
          <li id="moved"></li>
-          <li class="navitem"><a href="/">网站首页</a></li>
-          <li class="navitem"><a href="../content/newslist">动态消息</a></li>
-          <li class="navitem"><a href="../direction/direction_bigdata">研究方向</a></li>
-          <li class="navitem"><a href="../teams/team_bigdata">研究团队</a></li>
-          <li class="navitem"><a href="../achievments/achievments">研究成果</a></li>
-          <li id="navactive" class="navitem"><a href="solutionlist">解决方案</a></li>
-           <li class="navitem"><a href="../download/down">资料下载</a></li>
+           <li class="navitem"><a href="/">网站首页</a></li>
+           <li class="navitem"><a href="../content/newslist.ftl">动态消息</a></li>
+           <li class="navitem"><a href="/">研究方向</a></li>
+           <li class="navitem"><a href="../teams/team_bigdata.ftl">研究团队</a></li>
+           <li class="navitem"><a href="../apply/achievments.ftl">应用成果</a></li>
+           <li class="navitem"><a href="../basics/achievment.ftl">基础成果</a></li>
+           <li class="navitem"><a href="../cooperation/wins.ftl">合作共赢</a> </li>
            <li class="navitem"><a href="../certificate/search">证书查询</a></li>
            <li class="navitem"><a href="../about/about_us">关于我们</a></li>
        </ul>
@@ -133,11 +133,12 @@
          <a href="../content/newslist">动态消息</a>|
          <a href="../direction/direction_bigdata">研究方向</a>|
          <a href="../teams/teamlist">研究团队</a>|
-         <a href="../achievments/achievments">研究成果</a>|
-         <a href="../solution/solutionlist">解决方案</a>|
-         <a href="../download/down">资料下载</a>|
-         <a href="../certificate/search.ftl">证书查询</a>|
+         <a href="../apply/achievments.ftl">应用成果</a>|
+         <a href="../basics/achievment.ftl">基础成果</a>|
+         <a href="../cooperation/wins.ftl">合作共赢</a>|
+         <a href="../certificate/search">证书查询</a>|
          <a href="../about/adout-us">关于我们</a>|
+         <a href="../download/down">资料下载</a>|
          <a href="../theme/themes">专题查询</a>|
          <a href="../job/recruit">人才招聘</a>
      </div>
