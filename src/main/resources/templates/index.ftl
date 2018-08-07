@@ -74,21 +74,20 @@
  <!--头部导航开始-->
 <header class="light">
    <div class="top">
-     <h1 id="logo"><div  class="imglog"><img src="static/images/logo.png"/></div></h1>
+     <h1 id="logo"><div class="imglog"><img src="static/images/logo.png"/></div></h1>
      <div class="rtop">
-         <p id="lang"><span ><a href="http://192.168.32.21:8080">登录</a></span></span> <span id="btn">搜索</span>|<a href="/">中文</a>|<a target="_blank" href="#">Egnlish</a></p>
+         <p id="lang"><span ><a href="http://192.168.32.21:8080">登录</a></span> <span id="btn">搜索</span>|<a href="/">中文</a>|<a target="_blank" href="#">Egnlish</a></p>
        <ul id="nav" style="width: 740px;">
           <li id="moved"></li>
           <li id="navactive" class="navitem"><a href="/">网站首页</a></li>
           <li class="navitem"><a href="content/newslist.ftl">动态消息</a></li>
           <li class="navitem"><a href="direction/direction_bigdata.ftl">研究方向</a></li>
           <li class="navitem"><a href="teams/team_bigdata.ftl">研究团队</a></li>
-          <li class="navitem"><a href="achievments/achievments.ftl">研究成果</a></li>
-          <li class="navitem"><a href="solution/solutionlist.ftl">解决方案</a></li>
-          <li class="navitem"><a href="download/down.ftl">资料下载</a></li>
+          <li class="navitem"><a href="apply/achievments.ftl">应用成果</a></li>
+          <li class="navitem"><a href="basics/achievment.ftl">基础成果</a></li>
+          <li class="navitem"><a href="cooperation/wins.ftl">合作共赢</a> </li>
           <li class="navitem"><a href="certificate/search.ftl">证书查询</a></li>
           <li class="navitem"><a href="about/about_us.ftl">关于我们</a></li>
-          <!-- <li class="navitem"><a href="theme/ztcx.html">专题查询</a></li> -->
        </ul>
      </div>
    </div>
@@ -237,23 +236,13 @@
   <!--友情链接-->
   <div id="frend_link">
     <h2>友情链接</h2>
-     <#--<div class="hz_links">-->
-      <#--<ul>-->
-          <#--<li><a href="http://www.swjtu.edu.cn/"  target="_blank"><img src="static/images/hzlj1.png" alt="西南交通大学" border="0" /></a></li>-->
-          <#--<li><a href="http://www.scst.gov.cn/" target="_blank"><img src="static/images/hzlj2.jpg" alt="四川省科技厅" border="0" /></a></li>-->
-          <#--<li><a href="http://www.scagri.gov.cn/"  target="_blank"><img src="static/images/hzlj3.png" alt="四川省农业厅" border="0" /></a></li>-->
-          <#--<li><a href="http://www.scdlr.gov.cn/" target="_blank"><img src="static/images/hzlj4.jpg" alt="四川省国土资源厅" border="0" /></a></li>-->
-      <#--</ul>-->
-  <#--</div>-->
     <div class="links_fd">
       <a href="http://www.swjtu.edu.cn/" title="西南交通大学" target="_blank">西南交通大学</a>|
       <a href="http://www.scst.gov.cn/" title="四川省科技厅" target="_blank">四川省科技厅</a>|
       <a href="http://www.scagri.gov.cn/" title="四川省农业厅" target="_blank">四川省农业厅</a>|
       <a href="http://www.scdlr.gov.cn/" title="四川省国土资源厅" target="_blank">四川省国土资源厅</a>
       <a href="http://www.cnscn.com.cn/" title="西藏自治区国土厅" target="_blank">西藏自治区国土厅</a>|
-      <a href="http://www.chinasmartcity.org/" title="西藏自治区农牧厅" target="_blank">西藏自治区农牧厅</a>|
-      <a href="http://www.ciotc.cn/" title="创想智慧城市网" target="_blank">创想智慧城市网</a>|
-      <a href="http://www.yktworld.com/" title="一卡通世界" target="_blank">一卡通世界</a>
+      <a href="http://www.chinasmartcity.org/" title="西藏自治区农牧厅" target="_blank">西藏自治区农牧厅</a>
     </div>
   </div>
   <!--友情链接结束 -->
@@ -266,11 +255,12 @@
          <a href="../content/newslist">动态消息</a>|
          <a href="../direction/direction_bigdata">研究方向</a>|
          <a href="../teams/teamlist">研究团队</a>|
-         <a href="../achievments/achievments">研究成果</a>|
-         <a href="../solution/solutionlist">解决方案</a>|
-         <a href="../download/down">资料下载</a>|
+         <a href="../apply/achievments.ftl">应用成果</a>|
+         <a href="../basics/achievment.ftl">基础成果</a>|
+         <a href="../cooperation/wins.ftl">合作共赢</a>|
          <a href="../certificate/search">证书查询</a>|
          <a href="../about/adout-us">关于我们</a>|
+         <a href="../download/down">资料下载</a>|
          <a href="../theme/themes">专题查询</a>|
          <a href="../job/recruit">人才招聘</a>
      </div>

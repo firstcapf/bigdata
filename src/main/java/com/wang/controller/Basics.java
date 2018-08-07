@@ -9,11 +9,15 @@ import java.util.Map;
 
 @Controller
 @EnableAutoConfiguration
-@RequestMapping("/download")
-public class down {
-    @RequestMapping("/down")
-    public String down(HttpServletRequest request, Map<String,Object> model){
+@RequestMapping("/basics")
 
-        return "download/down";//返回的内容就是templetes下面文件的名称
+public class Basics {
+
+    @RequestMapping("/basics")
+    public String basics(HttpServletRequest request, Map<String,Object> model){
+
+        return  "basics/achievment";
+        //返回的内容就是templetes下面文件的名称
     }
+
 }

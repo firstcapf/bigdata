@@ -20,15 +20,10 @@
         <ul id="news_list">
         <#list userlist as users>
             <li>
-
-
             <a>${users.nickname}   |    ${users.openId}  |  ${users.truename}  </a>
-
-
         </#list>
         </ul>
-
-</div>
+     </div>
 
     <script src="../static/js/jquery-1.7.2.min.js"></script>
     <script type="text/javascript" language="javascript">

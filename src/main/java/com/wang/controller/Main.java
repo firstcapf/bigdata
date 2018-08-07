@@ -13,7 +13,7 @@ import java.util.Map;
 
 @Controller
 @EnableAutoConfiguration
-public class main {
+public class Main {
 
     @Resource
     private ContentService contentService;

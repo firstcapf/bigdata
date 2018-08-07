@@ -10,7 +10,7 @@ import java.util.Map;
 @Controller
 @EnableAutoConfiguration
 @RequestMapping("/teams")
-public class teams {
+public class Teams {
 
     @RequestMapping("/team_bigdata")
     public String team_bigdata(HttpServletRequest request, Map<String,Object> model){
