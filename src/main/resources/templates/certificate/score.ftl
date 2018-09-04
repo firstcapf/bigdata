@@ -40,7 +40,7 @@
              <li class="navitem"><a href="../apply/achievments">应用成果</a></li>
              <li class="navitem"><a href="../basics/achievment">基础成果</a></li>
              <li class="navitem"><a href="../cooperation/wins">合作共赢</a> </li>
-             <li id="navactive" class="navitem"><a href="/">证书查询</a></li>
+             <li id="navactive" class="navitem"><a href="/">查询服务</a></li>
              <li class="navitem"><a href="../about/about_us">关于我们</a></li>
          </ul>
      </div>
@@ -85,8 +85,8 @@
            <div class="lanmu_title">查询服务</div>
            <div id="lanmu_list">
                <ul>
-                   <li ><a href="score">成绩查询</a></li>
-                   <li id="cbnavactive"><a href="#">证书查询</a></li>
+                   <li id="cbnavactive"><a href="#">成绩查询</a></li>
+                   <li ><a href="search">证书查询</a></li>
                    <li id="cbnmove"><img src="../static/images/lmbg.jpg" width="228" height="32" /></li>
                </ul>
            </div>
@@ -98,19 +98,18 @@
   <div class="img-scroll">
         <div class="nextpic_c">
              
-  <h2>证书真伪查询</h2>
+  <h2>成绩查询</h2>
   <br>
- 
+
   <div>
       <form action="searchby" method="get">
+          <select class="form-control" id="numbers">
+              <option value="1"  selected>四川省第三次全国土地调查专业技术培训班成绩查询</option>
+              <option value="2">#</option>
+          </select>
+          <br>
     <table class="dt2 fp_tb" cellpadding="0" cellspacing="0" style="line-height: 35px;">
       <tbody>
-        <tr>
-          <td width="316px" class="right">证书编号<font color="red">*</font>：
-          </td>
-          <td><input type="text" class="fp_input require" id="number" name="number" maxlength="20" data-rule="证书代码:required;gsfp" data-rule-gsfp="[/^(1?51|051)[0-9a-zA-Z]{8,9}$/,'您查询的不是西南交通大学中国土地信息大数据研究院颁发的证书']">
-          </td>
-        </tr>
          <tr>
           <td width="316px" class="right">姓&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;名<font color="red">*</font>：
           </td>
@@ -123,8 +122,8 @@
         </tr>
         <tr id="btn_tr">
           <td colspan="2" style="text-align: center;">
-          <input type="submit" id="submitBtn" value="提交">
-          <input type="reset" value="重置">
+          <input type="submit" id="submitBtn" value="点击查询">
+          <input type="reset" value="取消">
           </td>
         </tr>
       </tbody>

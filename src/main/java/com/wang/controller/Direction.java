@@ -23,28 +23,34 @@ public class Direction {
      * @return
      */
 
-    @RequestMapping("/direction_bigdata")
-    public String direction_bigdata(HttpServletRequest request, Map<String,Object> model){
+    @RequestMapping("/direction_one")
+    public String direction_one(HttpServletRequest request, Map<String,Object> model){
         model.put("directionsli", directionService.directionslist());
-        return "direction/direction_bigdata";//返回的内容就是templetes下面文件的名称
+        return "direction/direction_one";//返回的内容就是templetes下面文件的名称
     }
 
-    @RequestMapping("/direction_robot")
-    public String direction_robot(HttpServletRequest request, Map<String,Object> model){
+    @RequestMapping("/direction_two")
+    public String direction_two(HttpServletRequest request, Map<String,Object> model){
 
-        return "direction/direction_robot";//返回的内容就是templetes下面文件的名称
+        return "direction/direction_two";//返回的内容就是templetes下面文件的名称
     }
 
-    @RequestMapping("/direction_geographic")
-    public String direction_geographic(HttpServletRequest request, Map<String,Object> model){
+    @RequestMapping("/direction_three")
+    public String direction_three(HttpServletRequest request, Map<String,Object> model){
 
-        return "direction/direction_geographic";//返回的内容就是templetes下面文件的名称
+        return "direction/direction_three";//返回的内容就是templetes下面文件的名称
     }
 
-    @RequestMapping("/direction_policy")
-    public String direction_policy(HttpServletRequest request, Map<String,Object> model){
+    @RequestMapping("/direction_four")
+    public String direction_four(HttpServletRequest request, Map<String,Object> model){
 
-        return "direction/direction_policy";//返回的内容就是templetes下面文件的名称
+        return "direction/direction_four";//返回的内容就是templetes下面文件的名称
+    }
+
+    @RequestMapping("/direction_five")
+    public String direction_five(HttpServletRequest request, Map<String,Object> model){
+
+        return "direction/direction_five";//返回的内容就是templetes下面文件的名称
     }
 
 }

@@ -29,8 +29,8 @@
                 <li id="moved"></li>
                 <li id="navactive" class="navitem"><a href="/">网站首页</a></li>
                 <li class="navitem"><a href="content/newslist">动态消息</a></li>
-                <li class="navitem"><a href="direction/direction_bigdata">研究方向</a></li>
-                <li class="navitem"><a href="teams/team_bigdata">研究团队</a></li>
+                <li class="navitem"><a href="direction/direction_one">研究方向</a></li>
+                <li class="navitem"><a href="teams/team_one">研究团队</a></li>
                 <li class="navitem"><a href="achievments/achievments">研究成果</a></li>
                 <li class="navitem"><a href="solution/solutionlist">解决方案</a></li>
                 <li class="navitem"><a href="download/down">资料下载</a></li>
@@ -75,7 +75,7 @@
         <div class="foot_nav">
             <a href="/" style="/">网站首页</a>|
             <a href="../content/newslist">动态消息</a>|
-            <a href="../direction/direction_bigdata">研究方向</a>|
+            <a href="../direction/direction_one">研究方向</a>|
             <a href="../teams/teamlist">研究团队</a>|
             <a href="../achievments/achievments">研究成果</a>|
             <a href="../solution/solutionlist">解决方案</a>|

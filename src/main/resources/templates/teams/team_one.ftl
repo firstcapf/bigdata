@@ -31,14 +31,14 @@
 <div class="rtop">
 <p id="lang"><span id="btn">搜索</span>|<a href="index.html">中文</a>|<a target="_blank" href="#">Egnlish</a><!-- <a target="_blank" href="http://www.wrisc.cn/wrisc/en/index.html">Egnlish</a> --></p>
 <ul id="nav" style="width: 740px;">
-    <li id="moved"></li>
+<li id="moved"></li>
     <li class="navitem"><a href="/">网站首页</a></li>
-    <li class="navitem"><a href="../content/newslist.ftl">动态消息</a></li>
-    <li class="navitem"><a href="../direction/direction_bigdata.ftl">研究方向</a></li>
+    <li class="navitem"><a href="../content/newslist">动态消息</a></li>
+    <li class="navitem"><a href="../direction/direction_one">研究方向</a></li>
     <li id="navactive" class="navitem"><a href="/">研究团队</a></li>
-    <li class="navitem"><a href="../apply/achievments.ftl">应用成果</a></li>
-    <li class="navitem"><a href="../basics/achievment.ftl">基础成果</a></li>
-    <li class="navitem"><a href="../cooperation/wins.ftl">合作共赢</a> </li>
+    <li class="navitem"><a href="../apply/achievments">应用成果</a></li>
+    <li class="navitem"><a href="../basics/achievment">基础成果</a></li>
+    <li class="navitem"><a href="../cooperation/wins">合作共赢</a> </li>
     <li class="navitem"><a href="../certificate/search">证书查询</a></li>
     <li class="navitem"><a href="../about/about_us">关于我们</a></li>
 </ul>
@@ -84,10 +84,10 @@ window.onload =function(){
 <div class="lanmu_title">研究团队</div>
 <div id="lanmu_list">
 <ul>
-    <li  ><a href="team_bigdata" title="说明">大数据、云计算及智能技术团队</a></li>
-    <li id="cbnavactive"  ><a href="team_robot" title="说明">机器人与智能系统团队</a></li>
+    <li id="cbnavactive" ><a href="team_bigdata" title="说明">大数据、云计算及智能技术团队</a></li>
+    <li ><a href="team_robot" title="说明">机器人与智能系统团队</a></li>
     <li ><a href="team_geographic" title="说明">地理信息系统、虚拟地理环境领域团队</a></li>
-    <li  ><a href="team_policy" title="新增智慧环保">政策、制度、法律法规领域团队</a></li>
+    <li ><a href="team_policy" title="新增智慧环保">政策、制度、法律法规领域团队</a></li>
     <li id="cbnmove"><img src="../static/images/lmbg.jpg"
     width="228" height="32" />
     </li>
@@ -96,62 +96,59 @@ window.onload =function(){
 </div>
 <!--左侧栏目END-->
 <!--右侧代码-->
-<div class="yjiu_hz">
-<div id="demo-nested" class="cwBox boxHz">
-<ul id="demo-nested-nav">
-<li><a href="#">团队简介</a></li>
-<li><a href="#">团队代表</a></li>
-</ul>
-<div class="tabs-container">
-<div class="tab-nested ctbox">
-<br>
-<P>“机器人、智能系统与先进控制理论方向”有教师11人（含教授4人、副教授2人、讲师5人）、博士研究生5人、硕士研究生36人。</P>
-</div>
-<div class="tab-nested">
-<br>
-<ul>
-<li style="height: 180px;"><a href="http://userweb.swjtu.edu.cn/Userweb/xiaomagecc/english.htm">
-<img src="td/111222lh7rp1jpprpeefa0.jpg" class="img-responsive" alt="" style="width: 100px;float: left;padding-left: 15px"></a>
-<div class="event_box_caption" style="float: left;width: 310px;">
-<p> &nbsp; &nbsp; &nbsp;&nbsp;马磊，西南交通大学，博士，教授/博导<br>
-&nbsp; &nbsp; &nbsp;&nbsp;四川省“百人计划”专家<br>
-&nbsp; &nbsp; &nbsp;&nbsp;智能化物联网首席专家<br>
-</p>
-</div>
-<div class="event_box_caption" style="float: left;width: 255px;">
-<p>&nbsp; &nbsp;研究方向：<br>
-&nbsp; &nbsp; 机器人控制、多机器人系统、医疗机器人<br>
-&nbsp; &nbsp; 新能源系统控制<br>
-&nbsp; &nbsp; 高速列车服役安全性态监测与评估<br>
-</p>
-</div>
-</li>
-
-<li style="height: 180px;"><a href="http://userweb.swjtu.edu.cn/Userweb/jhuang/index.htm">
-<img src="td/huangjin.jpg" class="img-responsive" alt="" style="width: 100px;float: left;padding-left: 15px"></a>
-<div class="event_box_caption" style="float: left;width: 310px;">
-<p> &nbsp; &nbsp; &nbsp;&nbsp;黄进， 博士，副教授，硕士生导师<br>
-&nbsp; &nbsp; &nbsp;&nbsp;西南交通大学中国土地信息大数据研究院执行院长<br>
-&nbsp; &nbsp; &nbsp;&nbsp;硕士毕业于西南交通大学计算机应用技术专业<br>
-&nbsp; &nbsp; &nbsp;&nbsp;博士毕业于西南交通大学交通信息工程与控制专业<br>
-</p>
-</div>
-<div class="event_box_caption" style="float: left;width: 180px">
-<p>&nbsp; &nbsp; 研究方向：<br>
-&nbsp; &nbsp; 图像处理与计算机视觉<br>
-&nbsp; &nbsp; 大数据与数据挖掘<br>
-&nbsp; &nbsp; 云计算与计算智能<br>
-&nbsp; &nbsp; 模式识别与智能信息处理<br>
-</p>
-</div>
-</li>
-</ul>
-</div>
-</div>
-</div>
-
-
-</div>
+    <div class="yjiu_hz">
+        <div id="demo-nested" class="cwBox boxHz">
+            <ul id="demo-nested-nav">
+                <li><a href="#">团队简介</a></li>
+                <li><a href="#">团队代表</a></li>
+            </ul>
+            <div class="tabs-container">
+                <div class="tab-nested ctbox">
+                    <br>
+                    <P>“大数据、云计算及智能技术方向”有教师15人（含教授5人、副教授4人、讲师6人）、博士研究生26人（含留学生11人）、硕士研究生80余人（含留学生3人）。</P>
+                </div>
+                <div class="tab-nested">
+                    <br>
+                    <ul>
+                        <li style="height: 180px;"><a href="#">
+                            <img src="td/ccit_1490513037847_big.jpg" class="img-responsive" alt="" style="width: 100px; float: left; padding-left: 15px;"></a>
+                            <div class="event_box_caption" style="float: left;width: 310px;">
+                                <p> &nbsp; &nbsp; &nbsp;&nbsp;李天瑞， 博士，副教授，硕士生导师<br>
+                                    &nbsp; &nbsp; &nbsp;&nbsp;四川省云计算与智能技术重点实验室主任<br>
+                                    &nbsp; &nbsp; &nbsp;&nbsp;云计算首席专家
+                                </p>
+                            </div>
+                            <div class="event_box_caption" style="float: left; width: 180px;">
+                                <p>&nbsp; &nbsp;研究方向：<br>
+                                    &nbsp; &nbsp; 数据挖掘与知识发现<br>
+                                    &nbsp; &nbsp; 云计算与大数据<br>
+                                    &nbsp; &nbsp; 粒计算与粗糙集<br>
+                                </p>
+                            </div>
+                        </li>
+                        <li style="height: 180px;"><a href="http://userweb.swjtu.edu.cn/Userweb/jhuang/index.htm">
+                            <img src="td/huangjin.jpg" class="img-responsive" alt="" style="width: 100px;float: left;padding-left: 15px"></a>
+                            <div class="event_box_caption" style="float: left;width: 310px;">
+                                <p> &nbsp; &nbsp; &nbsp;&nbsp;黄进， 博士，副教授，硕士生导师<br>
+                                    &nbsp; &nbsp; &nbsp;&nbsp;西南交通大学中国土地信息大数据研究院执行院长<br>
+                                    &nbsp; &nbsp; &nbsp;&nbsp;硕士毕业于西南交通大学计算机应用技术专业<br>
+                                    &nbsp; &nbsp; &nbsp;&nbsp;博士毕业于西南交通大学交通信息工程与控制专业<br>
+                                </p>
+                            </div>
+                            <div class="event_box_caption" style="float: left;width: 180px">
+                                <p>&nbsp; &nbsp; 研究方向：<br>
+                                    &nbsp; &nbsp; 图像处理与计算机视觉<br>
+                                    &nbsp; &nbsp; 大数据与数据挖掘<br>
+                                    &nbsp; &nbsp; 云计算与计算智能<br>
+                                    &nbsp; &nbsp; 模式识别与智能信息处理<br>
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 
 <script type="text/javascript" src="../static/js/tab.js"></script>
@@ -166,11 +163,11 @@ var tabber2 = new Yetii({
 <div class="foot_nav">
     <a href="/" style="/">网站首页</a>|
     <a href="../content/newslist">动态消息</a>|
-    <a href="../direction/direction_bigdata">研究方向</a>|
+    <a href="../direction/direction_one">研究方向</a>|
     <a href="../teams/teamlist">研究团队</a>|
-    <a href="../apply/achievments.ftl">应用成果</a>|
-    <a href="../basics/achievment.ftl">基础成果</a>|
-    <a href="../cooperation/wins.ftl">合作共赢</a>|
+    <a href="../apply/achievments">应用成果</a>|
+    <a href="../basics/achievment">基础成果</a>|
+    <a href="../cooperation/wins">合作共赢</a>|
     <a href="../certificate/search">证书查询</a>|
     <a href="../about/adout-us">关于我们</a>|
     <a href="../download/down">资料下载</a>|

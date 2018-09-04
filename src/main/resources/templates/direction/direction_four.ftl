@@ -33,12 +33,12 @@
             <ul id="nav" style="width: 740px;">
                 <li id="moved"></li>
                 <li class="navitem"><a href="/">网站首页</a></li>
-                <li class="navitem"><a href="../content/newslist.ftl">动态消息</a></li>
+                <li class="navitem"><a href="../content/newslist">动态消息</a></li>
                 <li id="navactive" class="navitem"><a href="/">研究方向</a></li>
-                <li class="navitem"><a href="../teams/team_bigdata.ftl">研究团队</a></li>
-                <li class="navitem"><a href="../apply/achievments.ftl">应用成果</a></li>
-                <li class="navitem"><a href="../basics/achievment.ftl">基础成果</a></li>
-                <li class="navitem"><a href="../cooperation/wins.ftl">合作共赢</a> </li>
+                <li class="navitem"><a href="../teams/team_one">研究团队</a></li>
+                <li class="navitem"><a href="../apply/achievments">应用成果</a></li>
+                <li class="navitem"><a href="../basics/achievment">基础成果</a></li>
+                <li class="navitem"><a href="../cooperation/wins">合作共赢</a> </li>
                 <li class="navitem"><a href="../certificate/search">证书查询</a></li>
                 <li class="navitem"><a href="../about/about_us">关于我们</a></li>
             </ul>
@@ -84,13 +84,12 @@
         <div class="lanmu_title">研究方向</div>
         <div id="lanmu_list">
             <ul>
-                <li  ><a href="../direction/direction_bigdata" title="说明">大数据、云计算及智能技术领域</a></li>
-                <li  ><a href="../direction/direction_robot" title="说明">机器人与智能系统</a></li>
-                <li  ><a href="../direction/direction_geographic.ftl" title="说明">地理信息系统、虚拟地理环境领域</a></li>
-                <li id="cbnavactive" ><a href="/" title="新增智慧环保">政策、制度、法律法规领域</a></li>
-                <li id="cbnmove"><img src="../static/images/lmbg.jpg"
-                                      width="228" height="32" />
-                </li>
+                <li ><a href="../direction/direction_one" title="方向1：自然资源云计算与大数据基础理论及关键技术">方向1：自然资源云计算与大数据基础理论及关键技术</a></li>
+                <li ><a href="../direction/direction_two" title="方向2：自然资源环境空天地一体化智能感知与综合监控">方向2：自然资源环境空天地一体化智能感知与综合监控</a></li>
+                <li ><a href="../direction/direction_three" title="方向3：自然资源遥感影像大数据智能理解">方向3：自然资源遥感影像大数据智能理解</a></li>
+                <li id="cbnavactive"><a href="#" title="方向4：自然资源环境灾害预警与自动响应处置技术">方向4：自然资源环境灾害预警与自动响应处置技术</a></li>
+                <li ><a href="../direction/direction_five" title="方向5：自然资源调查与监测监管技术">方向5：自然资源调查与监测监管技术</a></li>
+                <li id="cbnmove"><img src="../static/images/lmbg.jpg" width="228" height="32" /></li>
             </ul>
         </div>
     </div>
@@ -106,57 +105,54 @@
             </ul>
             <div class="tabs-container">
                 <div class="tab-nested ctbox">
-                    <h4 class="yjbt_fl"><img src="../static/images/yj_1gs.jpg" />政策、制度、法律法规领域</h4>
+                    <h4 class="yjbt_fl"><img src="../static/images/yj_1gs.jpg" />自然资源环境灾害预警与自动响应处置技术</h4>
                     <div class="textbox">
-                        <p align="left">&nbsp; &nbsp; &nbsp;1) 政策</p>
-                        <p align="left">&nbsp; &nbsp; &nbsp;&nbsp;国家政权机关、政党组织和其他社会政治集团为了实现自己所代表的阶级、阶层的利益与意志，以权威形式标准化地规定在一定的历史时期内，应该达到的奋斗目标、遵循的行动原则、完成的明确任务、实行的工作方式、采取的一般步骤和具体措施。根据国家最新出台的行业相关政策，解读和分析最新政策，得出相关行业发展报告，作为大数据发展的正常方针指导战略思想。</p>
-                        <p align="left">&nbsp; &nbsp; &nbsp;2) 制度</p>
-                        <p align="left">&nbsp; &nbsp; &nbsp;&nbsp;制度一般指要求大家共同遵守的办事规程或行动准则，也指在一定历史条件下形成的法令、礼俗等规范或一定的规格。在不同的行业不同的部门不同的岗位都有其具体的做事准则，目的都是使各项工作按计划按要求达到预计目标。</p>
-                        <p align="left">&nbsp; &nbsp; &nbsp;3) 法律</p>
-                        <p align="left">&nbsp; &nbsp; &nbsp;&nbsp;法律，是国家的产物，是指统治阶级（统治集团就是政党，包括国王、君主），为了实现统治并管理国家的目的，经过一定立法程序，所颁布的基本法律和普通法律。法律是统治阶级意志的体现，国家的统治工具。通过对相关法律解读，以保证我们研发的产品符合国家基本法律要求。</p>
-                        <p align="left">&nbsp; &nbsp; &nbsp;4) 法规</p>
-                        <p align="left">&nbsp; &nbsp; &nbsp;&nbsp;法规指国家机关制定的规范性文件。如我国国务院制定和颁布的行政法规，省、自治区、直辖市人大及其常委会制定和公布的地方性法规。设区的市、自治州（2015《立法法》最新修订），也可以制定地方性法规，报省、自治区的人大及其常委会批准后施行。法规也具有法律效力。通过对相关法规解读，以保证我们研发的产品符合国家基本法规要求。</p>
+                        <p align="left">&nbsp; &nbsp; &nbsp;&nbsp;四川和西南地区地处“一带一路”重要战略位置，是“一带一路”交通工程建设的枢纽，但该地区地形地貌以多山和高原为主，面临着复杂多变的地质和环境灾害威胁，如突发山体崩塌、滑坡、泥石流、岩溶塌陷、地面沉降、风灾、火灾等。</p>
+                        <p align="left">&nbsp; &nbsp; &nbsp;1) 高速铁路沿线地质灾害评估、预警及处治关键技术</p>
+                        <p align="left">&nbsp; &nbsp; &nbsp;2) 高速铁路环境风险评估与应急处置关键技术</p>
+                        <p align="left">&nbsp; &nbsp; &nbsp;3) 高速铁路沿线灾害应急响应的地理信息系统平台关键技术</p>
                     </div>
                 </div>
                 <div class="tab-nested">
                     <h4 class="yjbt_fl"><img src="../static/images/yj_3sf.jpg" />示范项目1</h4>
                     <div class="textbox">
-                        <p align="left">&nbsp; &nbsp; &nbsp;&nbsp;政策制度指导解读</p>
+                        <p align="left">&nbsp; &nbsp; &nbsp;&nbsp;高速铁路环境风险评估</p>
                     </div>
                     <h4 class="yjbt_fl">&nbsp; &nbsp; &nbsp; &nbsp;项目简介</h4>
                     <div class="textbox">
-                        <p align="left">&nbsp; &nbsp; &nbsp; &nbsp;第一步，收集、整理、汇编研究院业务涉及的所有政策制度文献、法律法规。第二步，专家解读国家文件，汇编成战略指导手册。</p>
+                        <p align="left">&nbsp; &nbsp; &nbsp; &nbsp;暂无…</p>
                     </div>
                 </div>
                 <div class="tab-nested">
-                    <ul class="media">
-                        <li>
-                            <!--
-                              <embed src="http://player.youku.com/player.php/sid/XMzE3OTY4MzMy/v.swf"
-                              allowFullScreen="true" quality="high" width="420" height="205" align="middle" allowScriptAccess="always" type="application/x-shockwave-flash">
-                            </embed>
-                           -->
-                            <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,19,0" width="610" height="300">
-                                <param name="movie" value="http://player.youku.com/player.php/sid/XMzE3OTY4MzMy/v.swf" />
-                                <param name="quality" value="high" />
-                                <param name="wmode" value="transparent" />
-                                <embed src="http://player.youku.com/player.php/sid/XMzE3OTY4MzMy/v.swf" quality="high" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" width="610" height="300"></embed>
-                            </object>
-                        </li>
-                        <li>
-                            <!--
-                              <embed src="http://player.youku.com/player.php/sid/XNDQ1MTkyODI4/v.swf"
-                              allowFullScreen="true" quality="high" width="420" height="205" align="middle" allowScriptAccess="always" type="application/x-shockwave-flash">
-                            </embed>
-                           -->
-                            <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,19,0" width="610" height="300">
-                                <param name="movie" value="http://player.youku.com/player.php/sid/XNDQ1MTkyODI4/v.swf" />
-                                <param name="quality" value="high" />
-                                <param name="wmode" value="transparent" />
-                                <embed src="http://player.youku.com/player.php/sid/XNDQ1MTkyODI4/v.swf" quality="high" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" width="610" height="300"></embed>
-                            </object>
-                        </li>
-                    </ul>
+                    <p>正在建设中，敬请期待！</p>
+                    <#--<ul class="media">-->
+                        <#--<li>-->
+                            <#--<!---->
+                              <#--<embed src="http://player.youku.com/player.php/sid/XMzE3OTY4MzMy/v.swf"-->
+                              <#--allowFullScreen="true" quality="high" width="420" height="205" align="middle" allowScriptAccess="always" type="application/x-shockwave-flash">-->
+                            <#--</embed>-->
+                           <#--&ndash;&gt;-->
+                            <#--<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,19,0" width="610" height="300">-->
+                                <#--<param name="movie" value="http://player.youku.com/player.php/sid/XMzE3OTY4MzMy/v.swf" />-->
+                                <#--<param name="quality" value="high" />-->
+                                <#--<param name="wmode" value="transparent" />-->
+                                <#--<embed src="http://player.youku.com/player.php/sid/XMzE3OTY4MzMy/v.swf" quality="high" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" width="610" height="300"></embed>-->
+                            <#--</object>-->
+                        <#--</li>-->
+                        <#--<li>-->
+                            <#--<!---->
+                              <#--<embed src="http://player.youku.com/player.php/sid/XNDQ1MTkyODI4/v.swf"-->
+                              <#--allowFullScreen="true" quality="high" width="420" height="205" align="middle" allowScriptAccess="always" type="application/x-shockwave-flash">-->
+                            <#--</embed>-->
+                           <#--&ndash;&gt;-->
+                            <#--<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,19,0" width="610" height="300">-->
+                                <#--<param name="movie" value="http://player.youku.com/player.php/sid/XNDQ1MTkyODI4/v.swf" />-->
+                                <#--<param name="quality" value="high" />-->
+                                <#--<param name="wmode" value="transparent" />-->
+                                <#--<embed src="http://player.youku.com/player.php/sid/XNDQ1MTkyODI4/v.swf" quality="high" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" width="610" height="300"></embed>-->
+                            <#--</object>-->
+                        <#--</li>-->
+                    <#--</ul>-->
                 </div>
                 <div class="tab-nested">
                     <h4 class="yjbt_fl"><img src="../static/images/yj_3sf.jpg" />交流空间</h4>
@@ -187,9 +183,9 @@
             <a href="../content/newslist">动态消息</a>|
             <a href="../direction/direction_bigdata">研究方向</a>|
             <a href="../teams/teamlist">研究团队</a>|
-            <a href="../apply/achievments.ftl">应用成果</a>|
-            <a href="../basics/achievment.ftl">基础成果</a>|
-            <a href="../cooperation/wins.ftl">合作共赢</a>|
+            <a href="../apply/achievments">应用成果</a>|
+            <a href="../basics/achievment">基础成果</a>|
+            <a href="../cooperation/wins">合作共赢</a>|
             <a href="../certificate/search">证书查询</a>|
             <a href="../about/adout-us">关于我们</a>|
             <a href="../download/down">资料下载</a>|

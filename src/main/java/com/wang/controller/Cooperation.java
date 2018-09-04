@@ -13,7 +13,7 @@ import java.util.Map;
 
 public class Cooperation {
 
-    @RequestMapping("/cooperation")
+    @RequestMapping("/wins")
     public String cooperation(HttpServletRequest request, Map<String,Object> model){
 
         return  "cooperation/wins";

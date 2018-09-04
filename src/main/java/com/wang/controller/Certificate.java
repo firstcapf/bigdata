@@ -35,7 +35,11 @@ public class Certificate {
         return "certificate/search";//返回的内容就是templetes下面文件的名称
     }
 
-
+    @ApiOperation("")
+    @RequestMapping("/score")
+    public String certificate_score(HttpServletRequest request, Map<String,Object> model){
+        return "certificate/score";//返回的内容就是templetes下面文件的名称
+    }
 
 
     @RequestMapping("/searchbya")

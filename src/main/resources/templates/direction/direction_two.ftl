@@ -33,12 +33,12 @@
             <ul id="nav" style="width: 740px;">
                 <li id="moved"></li>
                 <li class="navitem"><a href="/">网站首页</a></li>
-                <li class="navitem"><a href="../content/newslist.ftl">动态消息</a></li>
+                <li class="navitem"><a href="../content/newslist">动态消息</a></li>
                 <li id="navactive" class="navitem"><a href="/">研究方向</a></li>
-                <li class="navitem"><a href="../teams/team_bigdata.ftl">研究团队</a></li>
-                <li class="navitem"><a href="../apply/achievments.ftl">应用成果</a></li>
-                <li class="navitem"><a href="../basics/achievment.ftl">基础成果</a></li>
-                <li class="navitem"><a href="../cooperation/wins.ftl">合作共赢</a> </li>
+                <li class="navitem"><a href="../teams/team_one">研究团队</a></li>
+                <li class="navitem"><a href="../apply/achievments">应用成果</a></li>
+                <li class="navitem"><a href="../basics/achievment">基础成果</a></li>
+                <li class="navitem"><a href="../cooperation/wins">合作共赢</a> </li>
                 <li class="navitem"><a href="../certificate/search">证书查询</a></li>
                 <li class="navitem"><a href="../about/about_us">关于我们</a></li>
             </ul>
@@ -84,13 +84,12 @@
         <div class="lanmu_title">研究方向</div>
         <div id="lanmu_list">
             <ul>
-                <li  ><a href="../direction/direction_bigdata" title="说明">大数据、云计算及智能技术领域</a></li>
-                <li id="cbnavactive" ><a href="/" title="说明">机器人与智能系统</a></li>
-                <li  ><a href="../direction/direction_geographic" title="说明">地理信息系统、虚拟地理环境领域</a></li>
-                <li  ><a href="../direction/direction_policy" title="新增智慧环保">政策、制度、法律法规领域</a></li>
-                <li id="cbnmove"><img src="../static/images/lmbg.jpg"
-                                      width="228" height="32" />
-                </li>
+                <li ><a href="../direction/direction_one" title="方向1：自然资源云计算与大数据基础理论及关键技术">方向1：自然资源云计算与大数据基础理论及关键技术</a></li>
+                <li id="cbnavactive"><a href="#" title="方向2：自然资源环境空天地一体化智能感知与综合监控">方向2：自然资源环境空天地一体化智能感知与综合监控</a></li>
+                <li ><a href="../direction/direction_three" title="方向3：自然资源遥感影像大数据智能理解">方向3：自然资源遥感影像大数据智能理解</a></li>
+                <li ><a href="../direction/direction_four" title="方向4：自然资源环境灾害预警与自动响应处置技术">方向4：自然资源环境灾害预警与自动响应处置技术</a></li>
+                <li ><a href="../direction/direction_five" title="方向5：自然资源调查与监测监管技术">方向5：自然资源调查与监测监管技术</a></li>
+                <li id="cbnmove"><img src="../static/images/lmbg.jpg" width="228" height="32" /></li>
             </ul>
         </div>
     </div>
@@ -106,14 +105,13 @@
             </ul>
             <div class="tabs-container">
                 <div class="tab-nested ctbox">
-                    <h4 class="yjbt_fl"><img src="../static/images/yj_1gs.jpg" />智能机器人</h4>
+                    <h4 class="yjbt_fl"><img src="../static/images/yj_1gs.jpg" />自然资源环境空天地一体化智能感知与综合监控</h4>
                     <div class="textbox">
-                        <p align="left">&nbsp; &nbsp; &nbsp;&nbsp;工业和信息化部、国家发展改革委、财政部等三部委联合印发了《机器人产业发展规划（2016-2020年）》，指出机器人产业发展要推进重大标志性产品率先突破。</p>
-                        <p align="left">&nbsp; &nbsp; &nbsp;&nbsp;在服务机器人领域，重点发展消防救援机器人、手术机器人、智能型公共服务机器人、智能护理机器人等4种标志性产品，推进专业服务机器人实现系列化，个人/家庭服务机器人实现商品化。</p>
-                        <p align="left">&nbsp; &nbsp; &nbsp;1) 交互型机器人</p>
-                        <p align="left">&nbsp; &nbsp; &nbsp;&nbsp;机器人通过计算机系统与操作员或程序员进行人－机对话，实现对机器人的控制与操作。虽然具有了部分处理和决策功能，能够独立地实现一些诸如轨迹规划、简单的避障等功能，但是还要受到外部的控制。</p>
-                        <p align="left">&nbsp; &nbsp; &nbsp;2) 自主型机器人</p>
-                        <p align="left">&nbsp; &nbsp; &nbsp;&nbsp;在设计制作之后，机器人无需人的干预，能够在各种环境下自动完成各项拟人任务。自主型机器人的本体上具有感知、处理、决策、执行等模块，可以就像一个自主的人一样独立地活动和处理问题。</p>
+                        <p align="left">&nbsp; &nbsp; &nbsp;&nbsp;基于四川和西南地区地形地貌以多山和高原为主的特点，面向自然资源环境的实时监控和演变趋势估计，系统研究空天地一体化智能感知与综合监控的理论、方法与技术。</p>
+                        <p align="left">&nbsp; &nbsp; &nbsp;1) 智能感知与综合监控平台架构与耦合关系</p>
+                        <p align="left">&nbsp; &nbsp; &nbsp;2) 认知与观测不确定性条件下观测数据语义分析与建模</p>
+                        <p align="left">&nbsp; &nbsp; &nbsp;3) 自然资源环境演变趋势估计与评估</p>
+                        <p align="left">&nbsp; &nbsp; &nbsp;4) 空天地多一体化平台优化协同感知</p>
                     </div>
                 </div>
                 <div class="tab-nested">
@@ -157,68 +155,56 @@
                     </div>
                     <h4 class="yjbt_fl">&nbsp; &nbsp; &nbsp; &nbsp;项目简介</h4>
                     <div class="textbox">
-                        <p align="left">&nbsp; &nbsp; &nbsp; &nbsp;自主机器人形状识别实时算法，主要是通过对机器人实时捕捉到的图片进行处理分析，并对不同形状做出反应的机制。
-                        </p>
-                        <p align="left">&nbsp; &nbsp; &nbsp; &nbsp;机器人可以根据前方的实际路况进行判断，做出暂停和转向等操作来避免路障。
-                        </p>
-                        <p align="left">&nbsp; &nbsp; &nbsp; &nbsp;机器人可以根据环境中光线的变化进行移动，实现实时的机器人反应。
-                        </p>
-                        &nbsp; &nbsp; &nbsp; 机器人在行进的过程中可以很久颜色的变化，先进行识别颜色，随之做出相应的追踪操作。
-                    </div>
-
-                    <h4 class="yjbt_fl"><img src="../static/images/yj_3sf.jpg" />示范项目5</h4>
-                    <div class="textbox">
-                        <p align="left">&nbsp; &nbsp; &nbsp;&nbsp;智慧数采、精准扶贫</p>
-                    </div>
-                    <h4 class="yjbt_fl">&nbsp; &nbsp; &nbsp; &nbsp;项目简介</h4>
-                    <div class="textbox">
-                        <p align="left">&nbsp; &nbsp; &nbsp; &nbsp;智慧数采系统将原始数据采集，经无线网络实时传递到数据中心的云端，经大数据处理中心分析，实现精准一对一扶贫。
-                        </p>
+                        <p align="left">&nbsp; &nbsp; &nbsp; &nbsp;自主机器人形状识别实时算法，主要是通过对机器人实时捕捉到的图片进行处理分析，并对不同形状做出反应的机制。</p>
+                        <p align="left">&nbsp; &nbsp; &nbsp; &nbsp;机器人可以根据前方的实际路况进行判断，做出暂停和转向等操作来避免路障。</p>
+                        <p align="left">&nbsp; &nbsp; &nbsp; &nbsp;机器人可以根据环境中光线的变化进行移动，实现实时的机器人反应。</p>
+                        <p align="left">&nbsp; &nbsp; &nbsp; 机器人在行进的过程中可以很久颜色的变化，先进行识别颜色，随之做出相应的追踪操作。</p>
                     </div>
 
                 </div>
                 <div class="tab-nested">
-                    <ul class="media">
-                        <li>
-                            <!--
-                              <embed src="http://player.youku.com/player.php/sid/XNDUwNjUwNDI0/v.swf"
-                              allowFullScreen="true" quality="high" width="420" height="205" align="middle" allowScriptAccess="always" type="application/x-shockwave-flash">
-                            </embed>
-                           -->
-                            <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,19,0" width="610" height="300">
-                                <param name="movie" value="http://player.youku.com/player.php/sid/XNDUwNjUwNDI0/v.swf" />
-                                <param name="quality" value="high" />
-                                <param name="wmode" value="transparent" />
-                                <embed src="http://player.youku.com/player.php/sid/XNDUwNjUwNDI0/v.swf" quality="high" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" width="610" height="300"></embed>
-                            </object>
-                        </li>
-                        <li>
-                            <!--
-                              <embed src="http://player.youku.com/player.php/sid/XMzE3OTY4MzMy/v.swf"
-                              allowFullScreen="true" quality="high" width="420" height="205" align="middle" allowScriptAccess="always" type="application/x-shockwave-flash">
-                            </embed>
-                           -->
-                            <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,19,0" width="610" height="300">
-                                <param name="movie" value="http://player.youku.com/player.php/sid/XMzE3OTY4MzMy/v.swf" />
-                                <param name="quality" value="high" />
-                                <param name="wmode" value="transparent" />
-                                <embed src="http://player.youku.com/player.php/sid/XMzE3OTY4MzMy/v.swf" quality="high" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" width="610" height="300"></embed>
-                            </object>
-                        </li>
-                        <li>
-                            <!--
-                              <embed src="http://player.youku.com/player.php/sid/XNDQ1MTkyODI4/v.swf"
-                              allowFullScreen="true" quality="high" width="420" height="205" align="middle" allowScriptAccess="always" type="application/x-shockwave-flash">
-                            </embed>
-                           -->
-                            <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,19,0" width="610" height="300">
-                                <param name="movie" value="http://player.youku.com/player.php/sid/XNDQ1MTkyODI4/v.swf" />
-                                <param name="quality" value="high" />
-                                <param name="wmode" value="transparent" />
-                                <embed src="http://player.youku.com/player.php/sid/XNDQ1MTkyODI4/v.swf" quality="high" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" width="610" height="300"></embed>
-                            </object>
-                        </li>
-                    </ul>
+                    <p>正在建设中，敬请期待！</p>
+                    <#--<ul class="media">-->
+                        <#--<li>-->
+                            <#--<!---->
+                              <#--<embed src="http://player.youku.com/player.php/sid/XNDUwNjUwNDI0/v.swf"-->
+                              <#--allowFullScreen="true" quality="high" width="420" height="205" align="middle" allowScriptAccess="always" type="application/x-shockwave-flash">-->
+                            <#--</embed>-->
+                           <#--&ndash;&gt;-->
+                            <#--<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,19,0" width="610" height="300">-->
+                                <#--<param name="movie" value="http://player.youku.com/player.php/sid/XNDUwNjUwNDI0/v.swf" />-->
+                                <#--<param name="quality" value="high" />-->
+                                <#--<param name="wmode" value="transparent" />-->
+                                <#--<embed src="http://player.youku.com/player.php/sid/XNDUwNjUwNDI0/v.swf" quality="high" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" width="610" height="300"></embed>-->
+                            <#--</object>-->
+                        <#--</li>-->
+                        <#--<li>-->
+                            <#--<!---->
+                              <#--<embed src="http://player.youku.com/player.php/sid/XMzE3OTY4MzMy/v.swf"-->
+                              <#--allowFullScreen="true" quality="high" width="420" height="205" align="middle" allowScriptAccess="always" type="application/x-shockwave-flash">-->
+                            <#--</embed>-->
+                           <#--&ndash;&gt;-->
+                            <#--<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,19,0" width="610" height="300">-->
+                                <#--<param name="movie" value="http://player.youku.com/player.php/sid/XMzE3OTY4MzMy/v.swf" />-->
+                                <#--<param name="quality" value="high" />-->
+                                <#--<param name="wmode" value="transparent" />-->
+                                <#--<embed src="http://player.youku.com/player.php/sid/XMzE3OTY4MzMy/v.swf" quality="high" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" width="610" height="300"></embed>-->
+                            <#--</object>-->
+                        <#--</li>-->
+                        <#--<li>-->
+                            <#--<!---->
+                              <#--<embed src="http://player.youku.com/player.php/sid/XNDQ1MTkyODI4/v.swf"-->
+                              <#--allowFullScreen="true" quality="high" width="420" height="205" align="middle" allowScriptAccess="always" type="application/x-shockwave-flash">-->
+                            <#--</embed>-->
+                           <#--&ndash;&gt;-->
+                            <#--<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,19,0" width="610" height="300">-->
+                                <#--<param name="movie" value="http://player.youku.com/player.php/sid/XNDQ1MTkyODI4/v.swf" />-->
+                                <#--<param name="quality" value="high" />-->
+                                <#--<param name="wmode" value="transparent" />-->
+                                <#--<embed src="http://player.youku.com/player.php/sid/XNDQ1MTkyODI4/v.swf" quality="high" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" width="610" height="300"></embed>-->
+                            <#--</object>-->
+                        <#--</li>-->
+                    <#--</ul>-->
                 </div>
                 <div class="tab-nested">
                     <h4 class="yjbt_fl"><img src="../static/images/yj_3sf.jpg" />交流空间</h4>
@@ -249,9 +235,9 @@
             <a href="../content/newslist">动态消息</a>|
             <a href="../direction/direction_bigdata">研究方向</a>|
             <a href="../teams/teamlist">研究团队</a>|
-            <a href="../apply/achievments.ftl">应用成果</a>|
-            <a href="../basics/achievment.ftl">基础成果</a>|
-            <a href="../cooperation/wins.ftl">合作共赢</a>|
+            <a href="../apply/achievments">应用成果</a>|
+            <a href="../basics/achievment">基础成果</a>|
+            <a href="../cooperation/wins">合作共赢</a>|
             <a href="../certificate/search">证书查询</a>|
             <a href="../about/adout-us">关于我们</a>|
             <a href="../download/down">资料下载</a>|
