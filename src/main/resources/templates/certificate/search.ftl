@@ -19,7 +19,7 @@
  <a name="pagetop" id="pagetop"></a>
  <div id="banner">
     <div id="nyshow">
-      <div class="jdtu"><img src="../static/images/ture_false.jpg" alt="证书查询" /></div>
+      <div class="jdtu"><img src="../static/images/ture_false.jpg" alt="培训服务" /></div>
     </div>
     <div class="min_show">西南交通大学中国土地信息大数据研究院</div>
  </div>
@@ -40,7 +40,7 @@
              <li class="navitem"><a href="../apply/achievments">应用成果</a></li>
              <li class="navitem"><a href="../basics/achievment">基础成果</a></li>
              <li class="navitem"><a href="../cooperation/wins">合作共赢</a> </li>
-             <li id="navactive" class="navitem"><a href="/">证书查询</a></li>
+             <li id="navactive" class="navitem"><a href="/">培训服务</a></li>
              <li class="navitem"><a href="../about/about_us">关于我们</a></li>
          </ul>
      </div>
@@ -76,13 +76,13 @@
  <!--搜索的代码结束-->
 <div id="mbaoxue">
   <div id="page_content">
-   您所在的位置 > <a href="../index.html">首页</a> > <span>证书查验 </span>
+   您所在的位置 > <a href="../index.html">首页</a> > <span>培训服务 </span>
   </div>
 </div>
 <div id="page_content">
 
    <div class="left_box" id="spleft">
-           <div class="lanmu_title">查询服务</div>
+           <div class="lanmu_title">培训服务</div>
            <div id="lanmu_list">
                <ul>
                    <li ><a href="score">成绩查询</a></li>

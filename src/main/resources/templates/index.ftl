@@ -88,7 +88,7 @@
           <li class="navitem"><a href="apply/achievments">应用成果</a></li>
           <li class="navitem"><a href="basics/achievment">基础成果</a></li>
           <li class="navitem"><a href="cooperation/wins">合作共赢</a> </li>
-          <li class="navitem"><a href="certificate/search">查询服务</a></li>
+          <li class="navitem"><a href="certificate/search">培训服务</a></li>
           <li class="navitem"><a href="about/about_us">关于我们</a></li>
        </ul>
      </div>
