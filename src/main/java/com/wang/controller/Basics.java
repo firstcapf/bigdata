@@ -13,7 +13,7 @@ import java.util.Map;
 
 public class Basics {
 
-    @RequestMapping("/basics")
+    @RequestMapping("/achievment")
     public String basics(HttpServletRequest request, Map<String,Object> model){
 
         return  "basics/achievment";

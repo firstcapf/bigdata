@@ -19,7 +19,7 @@
  <a name="pagetop" id="pagetop"></a>
  <div id="banner">
     <div id="nyshow">
-      <div class="jdtu"><img src="../static/images/ture_false.jpg" alt="证书查询" /></div>
+      <div class="jdtu"><img src="../static/images/ture_false.jpg" alt="培训服务" /></div>
     </div>
     <div class="min_show">西南交通大学中国土地信息大数据研究院</div>
  </div>
@@ -34,13 +34,13 @@
          <ul id="nav" style="width: 740px;">
              <li id="moved"></li>
              <li class="navitem"><a href="/">网站首页</a></li>
-             <li class="navitem"><a href="../content/newslist.ftl">动态消息</a></li>
-             <li class="navitem"><a href="../direction/direction_bigdata.ftl">研究方向</a></li>
-             <li class="navitem"><a href="../teams/team_bigdata.ftl">研究团队</a></li>
-             <li class="navitem"><a href="../apply/achievments.ftl">应用成果</a></li>
-             <li class="navitem"><a href="../basics/achievment.ftl">基础成果</a></li>
-             <li class="navitem"><a href="../cooperation/wins.ftl">合作共赢</a> </li>
-             <li id="navactive" class="navitem"><a href="/">证书查询</a></li>
+             <li class="navitem"><a href="../content/newslist">动态消息</a></li>
+             <li class="navitem"><a href="../direction/direction_one">研究方向</a></li>
+             <li class="navitem"><a href="../teams/team_one">研究团队</a></li>
+             <li class="navitem"><a href="../apply/achievments">应用成果</a></li>
+             <li class="navitem"><a href="../basics/achievment">基础成果</a></li>
+             <li class="navitem"><a href="../cooperation/wins">合作共赢</a> </li>
+             <li id="navactive" class="navitem"><a href="/">培训服务</a></li>
              <li class="navitem"><a href="../about/about_us">关于我们</a></li>
          </ul>
      </div>
@@ -76,17 +76,21 @@
  <!--搜索的代码结束-->
 <div id="mbaoxue">
   <div id="page_content">
-   您所在的位置 > <a href="../index.html">首页</a> > <span>证书查验 </span>
+   您所在的位置 > <a href="../index.html">首页</a> > <span>培训服务 </span>
   </div>
 </div>
 <div id="page_content">
 
    <div class="left_box" id="spleft">
-            <div class="lanmu_title">使用说明：</div>
-            <div id="lanmu_list">
-    <p>请您根据界面提示准确填写证书信息，提交查验后，系统将向你反馈查验结果。<br/>带“*”号的为必录项，请您完整填写。</p>
-            </div>
-     </div>
+           <div class="lanmu_title">培训服务</div>
+           <div id="lanmu_list">
+               <ul>
+                   <li ><a href="score">成绩查询</a></li>
+                   <li id="cbnavactive"><a href="#">证书查询</a></li>
+                   <li id="cbnmove"><img src="../static/images/lmbg.jpg" width="228" height="32" /></li>
+               </ul>
+           </div>
+       </div>
   
      <!--右侧代码-->
      <div id="shContent"  class="yjiu_hz">
@@ -139,11 +143,11 @@
                  <div class="foot_nav">
                      <a href="/" style="/">网站首页</a>|
                      <a href="../content/newslist">动态消息</a>|
-                     <a href="../direction/direction_bigdata">研究方向</a>|
+                     <a href="../direction/direction_one">研究方向</a>|
                      <a href="../teams/teamlist">研究团队</a>|
-                     <a href="../apply/achievments.ftl">应用成果</a>|
-                     <a href="../basics/achievment.ftl">基础成果</a>|
-                     <a href="../cooperation/wins.ftl">合作共赢</a>|
+                     <a href="../apply/achievments">应用成果</a>|
+                     <a href="../basics/achievment">基础成果</a>|
+                     <a href="../cooperation/wins">合作共赢</a>|
                      <a href="../certificate/search">证书查询</a>|
                      <a href="../about/adout-us">关于我们</a>|
                      <a href="../download/down">资料下载</a>|

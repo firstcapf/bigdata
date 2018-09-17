@@ -33,12 +33,12 @@
             <ul id="nav" style="width: 740px;">
                 <li id="moved"></li>
                 <li class="navitem"><a href="/">网站首页</a></li>
-                <li class="navitem"><a href="../content/newslist.ftl">动态消息</a></li>
+                <li class="navitem"><a href="../content/newslist">动态消息</a></li>
                 <li id="navactive" class="navitem"><a href="/">研究方向</a></li>
-                <li class="navitem"><a href="../teams/team_bigdata.ftl">研究团队</a></li>
-                <li class="navitem"><a href="../apply/achievments.ftl">应用成果</a></li>
-                <li class="navitem"><a href="../basics/achievment.ftl">基础成果</a></li>
-                <li class="navitem"><a href="../cooperation/wins.ftl">合作共赢</a> </li>
+                <li class="navitem"><a href="../teams/team_one">研究团队</a></li>
+                <li class="navitem"><a href="../apply/achievments">应用成果</a></li>
+                <li class="navitem"><a href="../basics/achievment">基础成果</a></li>
+                <li class="navitem"><a href="../cooperation/wins">合作共赢</a> </li>
                 <li class="navitem"><a href="../certificate/search">证书查询</a></li>
                 <li class="navitem"><a href="../about/about_us">关于我们</a></li>
             </ul>
@@ -84,13 +84,12 @@
         <div class="lanmu_title">研究方向</div>
         <div id="lanmu_list">
             <ul>
-                <li  ><a href="../direction/direction_bigdata" title="说明">大数据、云计算及智能技术领域</a></li>
-                <li  ><a href="../direction/direction_robot" title="说明">机器人与智能系统</a></li>
-                <li id="cbnavactive" ><a href="/" title="说明">地理信息系统、虚拟地理环境领域</a></li>
-                <li  ><a href="../direction/direction_policy.ftl" title="新增智慧环保">政策、制度、法律法规领域</a></li>
-                <li id="cbnmove"><img src="../static/images/lmbg.jpg"
-                                      width="228" height="32" />
-                </li>
+                <li ><a href="../direction/direction_one" title="方向1：自然资源云计算与大数据基础理论及关键技术">方向1：自然资源云计算与大数据基础理论及关键技术</a></li>
+                <li ><a href="../direction/direction_two" title="方向2：自然资源环境空天地一体化智能感知与综合监控">方向2：自然资源环境空天地一体化智能感知与综合监控</a></li>
+                <li id="cbnavactive"><a href="#" title="方向3：自然资源遥感影像大数据智能理解">方向3：自然资源遥感影像大数据智能理解</a></li>
+                <li ><a href="../direction/direction_four" title="方向4：自然资源环境灾害预警与自动响应处置技术">方向4：自然资源环境灾害预警与自动响应处置技术</a></li>
+                <li ><a href="../direction/direction_five" title="方向5：自然资源调查与监测监管技术">方向5：自然资源调查与监测监管技术</a></li>
+                <li id="cbnmove"><img src="../static/images/lmbg.jpg" width="228" height="32" /></li>
             </ul>
         </div>
     </div>
@@ -106,13 +105,14 @@
             </ul>
             <div class="tabs-container">
                 <div class="tab-nested ctbox">
-                    <h4 class="yjbt_fl"><img src="../static/images/yj_1gs.jpg" />地理信息系统&nbsp;虚拟地理环境</h4>
+                    <h4 class="yjbt_fl"><img src="../static/images/yj_1gs.jpg" />自然资源遥感影像大数据智能理解</h4>
                     <div class="textbox">
-                        <p align="left">&nbsp; &nbsp; &nbsp;&nbsp;虚拟地理环境，可以定义为是以化身人、化身人群、化身人类为主体的一个虚拟共享空间与环境，它既可以是现实地理环境的表达、模拟、延伸与超越，也可以仅是指赛博空间中存在的一个虚拟社会世界。其中的化身人、化身人群、化身人类是表示现实世界中的人与虚拟世界中的化身相结合后的集合体。化身是用户在虚拟世界中的三维图形表达，是一种身份表达。</p>
-                        <p align="left">&nbsp; &nbsp; &nbsp;1) 虚拟地理环境系统</p>
-                        <p align="left">&nbsp; &nbsp; &nbsp;&nbsp;投入式虚拟地理环境系统具体研究内容包括：三维数据模型，实时三维图形显示和实时交互，地学模型计算算法与可视表达的融合，面向大众和面向地学专家的人机交互界面设计，虚拟环境空间认知，群体决策等。该虚拟环境可用于数字城市、虚拟旅游、地学模型计算模拟等研究和应用领域。分布式虚拟地理环境系统具体研究内容包括：分布式三维数据模型，大数据量虚拟世界的网上实时显示和浏览，分布式多用户的共享空间和实时互操作，地学模型远程计算与地学试验，地学智能体，元胞自动机，应用程序服务器开发等。该系统可用于建设虚拟社区，支持区域可持续发展参与式规划、管理和决策，建设虚拟教育实习基地等。</p>
+                        <p align="left">&nbsp; &nbsp; &nbsp;&nbsp;面对日益增加的遥感数据源，面向诸多不同领域、不同层次的应用需求，本研究方向瞄准遥感大数据智能处理与分析中的前沿关键科学技术问题开展深入研究，以期打通从算法理论到实际应用链条中的关键环节，最终实现遥感大数据的深层次应用。</p>
+                        <p align="left">&nbsp; &nbsp; &nbsp;1) 先进数据表征理论和方法</p>
                         <p align="left">&nbsp; &nbsp; &nbsp;2) 地学可视化与地学知识发现</p>
-                        <p align="left">&nbsp; &nbsp; &nbsp;&nbsp;该方向结合数据挖掘技术，研究图形/图象/地图表达和图形思维用于地学知识发现的理论和方法。具体研究内容包括：地学可视化与地学图解，地学计算，(集聚) 知识表达，数据挖掘方法，多样化图形表达，面向地学问题求解的人机交互界面，多感知投入式问题求解方法，分布式群体合作研究方法，地图视觉认知，地理空间认知等。</p>
+                        <p align="left">&nbsp; &nbsp; &nbsp;3) 遥感时空大数据深度理解与智能化认知</p>
+                        <p align="left">&nbsp; &nbsp; &nbsp;4) 遥感大数据地球物理要素协同反演</p>
+                        <p align="left">&nbsp; &nbsp; &nbsp;5) 深度数据分析和知识发现</p>
                     </div>
                 </div>
                 <div class="tab-nested">
@@ -147,47 +147,48 @@
                     </div>
                 </div>
                 <div class="tab-nested">
-                    <ul class="media">
-                        <li>
-                            <!--
-                              <embed src="http://player.youku.com/player.php/sid/XNDUwNjUwNDI0/v.swf"
-                              allowFullScreen="true" quality="high" width="420" height="205" align="middle" allowScriptAccess="always" type="application/x-shockwave-flash">
-                            </embed>
-                           -->
-                            <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,19,0" width="610" height="300">
-                                <param name="movie" value="http://player.youku.com/player.php/sid/XNDUwNjUwNDI0/v.swf" />
-                                <param name="quality" value="high" />
-                                <param name="wmode" value="transparent" />
-                                <embed src="http://player.youku.com/player.php/sid/XNDUwNjUwNDI0/v.swf" quality="high" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" width="610" height="300"></embed>
-                            </object>
-                        </li>
-                        <li>
-                            <!--
-                              <embed src="http://player.youku.com/player.php/sid/XMzE3OTY4MzMy/v.swf"
-                              allowFullScreen="true" quality="high" width="420" height="205" align="middle" allowScriptAccess="always" type="application/x-shockwave-flash">
-                            </embed>
-                           -->
-                            <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,19,0" width="610" height="300">
-                                <param name="movie" value="http://player.youku.com/player.php/sid/XMzE3OTY4MzMy/v.swf" />
-                                <param name="quality" value="high" />
-                                <param name="wmode" value="transparent" />
-                                <embed src="http://player.youku.com/player.php/sid/XMzE3OTY4MzMy/v.swf" quality="high" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" width="610" height="300"></embed>
-                            </object>
-                        </li>
-                        <li>
-                            <!--
-                              <embed src="http://player.youku.com/player.php/sid/XNDQ1MTkyODI4/v.swf"
-                              allowFullScreen="true" quality="high" width="420" height="205" align="middle" allowScriptAccess="always" type="application/x-shockwave-flash">
-                            </embed>
-                           -->
-                            <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,19,0" width="610" height="300">
-                                <param name="movie" value="http://player.youku.com/player.php/sid/XNDQ1MTkyODI4/v.swf" />
-                                <param name="quality" value="high" />
-                                <param name="wmode" value="transparent" />
-                                <embed src="http://player.youku.com/player.php/sid/XNDQ1MTkyODI4/v.swf" quality="high" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" width="610" height="300"></embed>
-                            </object>
-                        </li>
-                    </ul>
+                    <p>正在建设中，敬请期待！</p>
+                    <#--<ul class="media">-->
+                        <#--<li>-->
+                            <#--<!---->
+                              <#--<embed src="http://player.youku.com/player.php/sid/XNDUwNjUwNDI0/v.swf"-->
+                              <#--allowFullScreen="true" quality="high" width="420" height="205" align="middle" allowScriptAccess="always" type="application/x-shockwave-flash">-->
+                            <#--</embed>-->
+                           <#--&ndash;&gt;-->
+                            <#--<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,19,0" width="610" height="300">-->
+                                <#--<param name="movie" value="http://player.youku.com/player.php/sid/XNDUwNjUwNDI0/v.swf" />-->
+                                <#--<param name="quality" value="high" />-->
+                                <#--<param name="wmode" value="transparent" />-->
+                                <#--<embed src="http://player.youku.com/player.php/sid/XNDUwNjUwNDI0/v.swf" quality="high" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" width="610" height="300"></embed>-->
+                            <#--</object>-->
+                        <#--</li>-->
+                        <#--<li>-->
+                            <#--<!---->
+                              <#--<embed src="http://player.youku.com/player.php/sid/XMzE3OTY4MzMy/v.swf"-->
+                              <#--allowFullScreen="true" quality="high" width="420" height="205" align="middle" allowScriptAccess="always" type="application/x-shockwave-flash">-->
+                            <#--</embed>-->
+                           <#--&ndash;&gt;-->
+                            <#--<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,19,0" width="610" height="300">-->
+                                <#--<param name="movie" value="http://player.youku.com/player.php/sid/XMzE3OTY4MzMy/v.swf" />-->
+                                <#--<param name="quality" value="high" />-->
+                                <#--<param name="wmode" value="transparent" />-->
+                                <#--<embed src="http://player.youku.com/player.php/sid/XMzE3OTY4MzMy/v.swf" quality="high" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" width="610" height="300"></embed>-->
+                            <#--</object>-->
+                        <#--</li>-->
+                        <#--<li>-->
+                            <#--<!---->
+                              <#--<embed src="http://player.youku.com/player.php/sid/XNDQ1MTkyODI4/v.swf"-->
+                              <#--allowFullScreen="true" quality="high" width="420" height="205" align="middle" allowScriptAccess="always" type="application/x-shockwave-flash">-->
+                            <#--</embed>-->
+                           <#--&ndash;&gt;-->
+                            <#--<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,19,0" width="610" height="300">-->
+                                <#--<param name="movie" value="http://player.youku.com/player.php/sid/XNDQ1MTkyODI4/v.swf" />-->
+                                <#--<param name="quality" value="high" />-->
+                                <#--<param name="wmode" value="transparent" />-->
+                                <#--<embed src="http://player.youku.com/player.php/sid/XNDQ1MTkyODI4/v.swf" quality="high" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" width="610" height="300"></embed>-->
+                            <#--</object>-->
+                        <#--</li>-->
+                    <#--</ul>-->
                 </div>
                 <div class="tab-nested">
                     <h4 class="yjbt_fl"><img src="../static/images/yj_3sf.jpg" />交流空间</h4>
@@ -218,9 +219,9 @@
             <a href="../content/newslist">动态消息</a>|
             <a href="../direction/direction_bigdata">研究方向</a>|
             <a href="../teams/teamlist">研究团队</a>|
-            <a href="../apply/achievments.ftl">应用成果</a>|
-            <a href="../basics/achievment.ftl">基础成果</a>|
-            <a href="../cooperation/wins.ftl">合作共赢</a>|
+            <a href="../apply/achievments">应用成果</a>|
+            <a href="../basics/achievment">基础成果</a>|
+            <a href="../cooperation/wins">合作共赢</a>|
             <a href="../certificate/search">证书查询</a>|
             <a href="../about/adout-us">关于我们</a>|
             <a href="../download/down">资料下载</a>|

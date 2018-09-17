@@ -13,7 +13,7 @@ import java.util.Map;
 
 public class Apply {
 
-    @RequestMapping("/apply")
+    @RequestMapping("/achievments")
     public String apply(HttpServletRequest request, Map<String,Object> model){
 
         return  "apply/achievments";

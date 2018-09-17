@@ -36,12 +36,12 @@
        <ul id="nav" style="width: 740px;">
           <li id="moved"></li>
            <li class="navitem"><a href="/">网站首页</a></li>
-           <li class="navitem"><a href="../content/newslist.ftl">动态消息</a></li>
-           <li class="navitem"><a href="/">研究方向</a></li>
-           <li class="navitem"><a href="../teams/team_bigdata.ftl">研究团队</a></li>
-           <li class="navitem"><a href="../apply/achievments.ftl">应用成果</a></li>
-           <li class="navitem"><a href="../basics/achievment.ftl">基础成果</a></li>
-           <li class="navitem"><a href="../cooperation/wins.ftl">合作共赢</a> </li>
+           <li class="navitem"><a href="../content/newslist">动态消息</a></li>
+           <li class="navitem"><a href="../direction/direction_one">研究方向</a></li>
+           <li class="navitem"><a href="../teams/team_one">研究团队</a></li>
+           <li class="navitem"><a href="../apply/achievments">应用成果</a></li>
+           <li class="navitem"><a href="../basics/achievment">基础成果</a></li>
+           <li class="navitem"><a href="../cooperation/wins">合作共赢</a> </li>
            <li class="navitem"><a href="../certificate/search">证书查询</a></li>
            <li id="navactive" class="navitem"><a href="../about/about_us">关于我们</a></li>
        </ul>
@@ -108,11 +108,11 @@
      <div class="foot_nav">
          <a href="/" style="/">网站首页</a>|
          <a href="../content/newslist">动态消息</a>|
-         <a href="../direction/direction_bigdata">研究方向</a>|
+         <a href="../direction/direction_one">研究方向</a>|
          <a href="../teams/teamlist">研究团队</a>|
-         <a href="../apply/achievments.ftl">应用成果</a>|
-         <a href="../basics/achievment.ftl">基础成果</a>|
-         <a href="../cooperation/wins.ftl">合作共赢</a>|
+         <a href="../apply/achievments">应用成果</a>|
+         <a href="../basics/achievment">基础成果</a>|
+         <a href="../cooperation/wins">合作共赢</a>|
          <a href="../certificate/search">证书查询</a>|
          <a href="../about/adout-us">关于我们</a>|
          <a href="../download/down">资料下载</a>|

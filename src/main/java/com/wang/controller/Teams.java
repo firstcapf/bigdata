@@ -12,30 +12,34 @@ import java.util.Map;
 @RequestMapping("/teams")
 public class Teams {
 
-    @RequestMapping("/team_bigdata")
-    public String team_bigdata(HttpServletRequest request, Map<String,Object> model){
+    @RequestMapping("/teams_one")
+    public String teams_one(HttpServletRequest request, Map<String,Object> model){
 
-        return "teams/team_bigdata";//返回的内容就是templetes下面文件的名称
+        return "teams/teams_one";//返回的内容就是templetes下面文件的名称
     }
 
-    @RequestMapping("/team_robot")
-    public String team_robot(HttpServletRequest request, Map<String,Object> model){
+    @RequestMapping("/team_two")
+    public String team_two(HttpServletRequest request, Map<String,Object> model){
 
-        return "teams/team_robot";//返回的内容就是templetes下面文件的名称
+        return "teams/team_two";//返回的内容就是templetes下面文件的名称
     }
 
-    @RequestMapping("/team_geographic")
-    public String team_geographic(HttpServletRequest request, Map<String,Object> model){
+    @RequestMapping("/team_three")
+    public String team_three(HttpServletRequest request, Map<String,Object> model){
 
-        return "teams/team_geographic";//返回的内容就是templetes下面文件的名称
+        return "teams/team_three";//返回的内容就是templetes下面文件的名称
     }
 
-    @RequestMapping("/team_policy")
-    public String team_policy(HttpServletRequest request, Map<String,Object> model){
+    @RequestMapping("/team_four")
+    public String team_four(HttpServletRequest request, Map<String,Object> model){
 
-        return "teams/team_policy";//返回的内容就是templetes下面文件的名称
+        return "teams/team_four";//返回的内容就是templetes下面文件的名称
     }
 
+    @RequestMapping("/team_five")
+    public String team_five(HttpServletRequest request, Map<String,Object> model){
 
+        return "teams/team_five";//返回的内容就是templetes下面文件的名称
+    }
 
 }

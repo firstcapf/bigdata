@@ -13,7 +13,7 @@
 .lanmu_title{ height:40px; line-height:40px; font-size:18px; background:#68a639; color:#fff; border-top-left-radius:5px; border-top-right-radius:5px; }
 #lanmu_list{ float:left; width:100%; margin-top:10px; padding-bottom:10px;}
 #lanmu_list ul{ float:left; width:100%; position:relative}
-#lanmu_list ul li{ height:32px; line-height:32px;}
+#lanmu_list ul li{ height:44px }
 #lanmu_list ul li#cbnmove{ position:absolute; top:0px; height:32px; z-index:99; left:0px; overflow:hidden; }
 #lanmu_list ul li#cbnavactive a{ color:#fff; }
 #lanmu_list ul li a{display:block; position:relative; z-index:999;color:#555;}
