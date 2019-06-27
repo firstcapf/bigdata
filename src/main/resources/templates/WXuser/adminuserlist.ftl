@@ -25,7 +25,7 @@
         </ul>
      </div>
 
-    <script src="../static/js/jquery-1.7.2.min.js"></script>
+    <script src="../static/js/jquery-3.4.1.min.js"></script>
     <script type="text/javascript" language="javascript">
         $(document).ready(function () {
             $("#btnTextSingleMessage").click(function () {
