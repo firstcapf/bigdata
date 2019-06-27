@@ -116,7 +116,7 @@
         <br>电话：+86-28-66367729</p>
     <p>Copyright © 2018 西南交通大学中国土地信息大数据研究院. All rights reserved.</p>
 </div>
-<script src=""../static/js/jquery-1.7.2.min.js"></script>
+<script src=""../static/js/jquery-3.4.1.min.js"></script>
 
 </body>
 </html>

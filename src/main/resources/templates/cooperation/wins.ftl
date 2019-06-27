@@ -268,11 +268,11 @@
 </footer>
 
 <!--导航效果的js-->
-<script src="../static/js/jquery-1.7.2.min.js"></script>
+<script src="../static/js/jquery-3.4.1.min.js"></script>
 <script src="../static/js/nav.min.js" type="text/javascript"></script>
 <!--导航效果的js END-->
 <!--切换图JS-->
-<script src="../static/js/jquery-1.7.2.min.js"></script>
+<script src="../static/js/jquery-3.4.1.min.js"></script>
 <script type="text/javascript" src="../static/js/banner.slide.jquery.js"></script>
 <!--导航切换和回到顶部JS-->
 <script src="../static/js/back_top.js" type="text/javascript"></script>

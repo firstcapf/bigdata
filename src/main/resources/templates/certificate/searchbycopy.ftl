@@ -88,20 +88,23 @@
                         <img src="../static/images/u0.jpg" />
                         <div style="position:absolute;z-indent:2;left: 0;top: 0;">
                             <div style=" float: left;">
-                                <p style="margin-left: 60px; margin-top: 100px;font-size: 20px;align-content: center;">四川省第三次全国国土调查<br>业务培训证书</p>
+                                <h1 style="margin-left: 120px; margin-top: 100px">培训合格证书</h1>
                                 <br>
-                                <img style="margin-left: 50px;margin-top: -120px;" width="80px" src="/images/${certificate.headpic}" >
-                                <br><br><p style="margin-left: 80px">证书编号：${certificate.number}</p>
+                                <p style="width: 248px;margin-left: 100px;">&nbsp;&nbsp;${certificate.name}同志于${certificate.begindate}至${certificate.enddate}通过${certificate.ctype}培训，考核合格。</p>
+                                <p style="margin-left: 80px">特发此证。</p>
+                                <br>
 
+                                <img style="margin-left: 140px" width="25%" src="/weixin/qrcode?ctype=${certificate.ctype}&name=${certificate.name}&number=${certificate.number}&idcard=${certificate.idcard}">
+                                <br><br><p style="margin-left: 80px">证书编号：${certificate.number}</p>
                             </div>
 
-                            <div style="margin-left: 40px;margin-top: 100px;">
-                                <p style="width: 500px;margin-left: 100px;">&nbsp;&nbsp;${certificate.name}同志：</p>
-                                <p style="margin-left: 180px">于${certificate.begindate}至${certificate.enddate}参加${certificate.ctype}培训，学习期满，经考核，成绩合格，特发此证。</p>
-                                <br>
-
-                                <p style="margin-left: 30px;">${certificate.signdate}</p>
-                            <#--<img style="margin-left: 50px;margin-top: -120px;" width="80px" src="/images/${certificate.headpic}" >-->
+                            <div style="margin-left: 40px;margin-top: 190px;float: right;">
+                                <img style="margin-left: 50px;margin-top: -120px;" width="80px" src="/images/${certificate.headpic}" >
+                                <p>姓名：${certificate.name}&nbsp;&nbsp;&nbsp;&nbsp;性别：${certificate.sex}</p>
+                                <p>身份证号码：${certificate.idcard}</p>
+                                <p>单位：${certificate.organization}</p><br>
+                                <h3 style="margin-left: 30px;">西南交通大学中国<br>&nbsp;&nbsp;土地信息大数据研究院</h3><br>
+                                <p style="margin-left: 30px;">发证日期：${certificate.signdate}</p>
                             </div>
 
                         </div>
