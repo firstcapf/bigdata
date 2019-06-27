@@ -31,33 +31,35 @@
       <div id="warp" >
     <ul id="warp-con">
 
-        <li><a target="_blank"><img src="LandBigData/lb_20180825.png"/></a>
+
+        <li><a target="_blank"><img src="LandBigData/lb_20190613.png"/></a>
         </li>
 
         <!--
               <li><a href="http://www.wrisc.cn/wrisc/investment" target="_blank"><img src="/wrisc/static/v2/images/bg1.jpg" /></a></li>
               -->
 
-        <li><a target="_blank"><img src="LandBigData/lb_20180530.png"/></a>
+        <li><a target="_blank"><img src="LandBigData/lb_20180825.png"/></a>
         </li>
         <!--
                 <li><a href="http://www.wrisc.cn/wrisc/investment" target="_blank"><img src="/wrisc/static/v2/images/bg1.jpg" /></a></li>
                 -->
-        <li><a target="_blank"><img src="LandBigData/lb_20180508.jpg"/></a>
+        <li><a target="_blank"><img src="LandBigData/lb_20180530.jpg"/></a>
         </li>
         <!--
                  <li><a href="http://www.wrisc.cn/wrisc/investment" target="_blank"><img src="/wrisc/static/v2/images/bg1.jpg" /></a></li>
                  -->
-              <li><a target="_blank"><img src="LandBigData/lb_20170828.jpg"/></a>
+              <li><a target="_blank"><img src="LandBigData/lb_20180508.jpg"/></a>
               </li>
               <!--
                   <li><a href="http://www.wrisc.cn/wrisc/investment" target="_blank"><img src="/wrisc/static/v2/images/bg1.jpg" /></a></li>
                   -->
-              <li><a target="_blank"><img src="LandBigData/lb_20170726.png"/></a>
-              </li>
-              <!--
-                  <li><a href="http://www.wrisc.cn/wrisc/demoproject/projects" target="_blank"><img src="/wrisc/static/v2/images/bg1.jpg" /></a></li>
-                  -->
+
+        <li><a target="_blank"><img src="LandBigData/lb_20170828.png"/></a>
+         </li>
+         <!--
+             <li><a href="http://www.wrisc.cn/wrisc/demoproject/projects" target="_blank"><img src="/wrisc/static/v2/images/bg1.jpg" /></a></li>
+             -->
               <#--<li><a target="_blank"><img src="LandBigData/20170613_1.png"/></a></li>-->
 
      </ul>
@@ -312,8 +314,8 @@ document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3
 </footer>
 
 <!--导航效果的js-->
-<script src="static/js/jquery-1.7.2.min.js"></script>
-<script src="static/js/nav.min.js" type="text/javascript"></script>
+    <script src="../static/static/js/jquery-3.4.1.min.js"></script>
+<script src="../static/static/js/nav.min.js" type="text/javascript"></script>
 <!--导航效果的js END-->
 
 <!--新闻切换JS-->
@@ -321,7 +323,7 @@ document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3
 <!--新闻切换JS END-->
 
 <!--切换图JS-->
-<script src="static/js/jquery-1.7.2.min.js"></script>
+<script src="static/js/jquery-3.4.1.min.js"></script>
 <script type="text/javascript" src="static/js/banner.slide.jquery.js"></script>
 <script type="text/javascript">
 $(function(){

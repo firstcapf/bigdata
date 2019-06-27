@@ -244,7 +244,7 @@ document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3
 </footer>
 
 <!--导航效果的js-->
-<script src="../static/js/jquery-1.7.2.min.js"></script>
+<script src="../static/js/jquery-3.4.1.min.js"></script>
 <script src="../static/js/nav.min.js" type="text/javascript"></script>
 <!--导航效果的js END-->
 <!--切换图JS-->
