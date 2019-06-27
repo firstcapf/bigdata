@@ -12,10 +12,11 @@ import java.util.Map;
 @RequestMapping("/teams")
 public class Teams {
 
-    @RequestMapping("/teams_one")
+    @RequestMapping("/team_one")
     public String teams_one(HttpServletRequest request, Map<String,Object> model){
 
-        return "teams/teams_one";//返回的内容就是templetes下面文件的名称
+    //    return "content/newslst";
+        return "teams/team_one";//返回的内容就是templetes下面文件的名称
     }
 
     @RequestMapping("/team_two")
