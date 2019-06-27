@@ -84,10 +84,10 @@ window.onload =function(){
 <div class="lanmu_title">研究团队</div>
 <div id="lanmu_list">
 <ul>
-    <li  ><a href="team_bigdata" title="说明">大数据、云计算及智能技术团队</a></li>
-    <li  ><a href="team_robot" title="说明">机器人与智能系统团队</a></li>
-    <li id="cbnavactive"  ><a href="team_geographic" title="说明">地理信息系统、虚拟地理环境领域团队</a></li>
-    <li ><a href="team_policy" title="新增智慧环保">政策、制度、法律法规领域团队</a></li>
+    <li  ><a href="team_one" title="说明">大数据、云计算及智能技术团队</a></li>
+    <li  ><a href="team_two" title="说明">机器人与智能系统团队</a></li>
+    <li id="cbnavactive"  ><a href="team_three" title="说明">地理信息系统、虚拟地理环境领域团队</a></li>
+    <li ><a href="team_four" title="新增智慧环保">政策、制度、法律法规领域团队</a></li>
     <li id="cbnmove"><img src="../static/images/lmbg.jpg"
     width="228" height="32" />
     </li>
