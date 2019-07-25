@@ -32,30 +32,30 @@
     <ul id="warp-con">
 
 
-        <li><a target="_blank"><img src="LandBigData/lb_20190613.png"/></a>
+        <li><a target="_blank"><img src="LandBigData/lb_20190625.png"/></a>
         </li>
 
         <!--
               <li><a href="http://www.wrisc.cn/wrisc/investment" target="_blank"><img src="/wrisc/static/v2/images/bg1.jpg" /></a></li>
               -->
 
-        <li><a target="_blank"><img src="LandBigData/lb_20180825.png"/></a>
+        <li><a target="_blank"><img src="LandBigData/lb_20190613.png"/></a>
         </li>
         <!--
                 <li><a href="http://www.wrisc.cn/wrisc/investment" target="_blank"><img src="/wrisc/static/v2/images/bg1.jpg" /></a></li>
                 -->
-        <li><a target="_blank"><img src="LandBigData/lb_20180530.jpg"/></a>
+        <li><a target="_blank"><img src="LandBigData/lb_20180825.png"/></a>
         </li>
         <!--
                  <li><a href="http://www.wrisc.cn/wrisc/investment" target="_blank"><img src="/wrisc/static/v2/images/bg1.jpg" /></a></li>
                  -->
-              <li><a target="_blank"><img src="LandBigData/lb_20180508.jpg"/></a>
+              <li><a target="_blank"><img src="LandBigData/lb_20180530.png"/></a>
               </li>
               <!--
                   <li><a href="http://www.wrisc.cn/wrisc/investment" target="_blank"><img src="/wrisc/static/v2/images/bg1.jpg" /></a></li>
                   -->
 
-        <li><a target="_blank"><img src="LandBigData/lb_20170828.png"/></a>
+        <li><a target="_blank"><img src="LandBigData/lb_20180508.jpg"/></a>
          </li>
          <!--
              <li><a href="http://www.wrisc.cn/wrisc/demoproject/projects" target="_blank"><img src="/wrisc/static/v2/images/bg1.jpg" /></a></li>
