@@ -27,4 +27,4 @@ spring:
     # 使用druid数据源
     type: com.alibaba.druid.pool.DruidDataSource
   resources:
-    static-locations：classpath:file:///C:/Users/sully/Desktop/bigdata/out/artifacts/bigdata_jar/images/news_image/
+    static-locations：classpath:file:///root/bigdata_jar/images
