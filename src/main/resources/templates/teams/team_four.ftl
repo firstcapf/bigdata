@@ -84,6 +84,7 @@
         <div class="lanmu_title">研究团队</div>
         <div id="lanmu_list">
             <ul>
+                <li  ><a href="team_main" title="说明">管理团队</a></li>
                 <li  ><a href="team_one" title="说明">大数据、云计算及智能技术团队</a></li>
                 <li  ><a href="team_two" title="说明">机器人与智能系统团队</a></li>
                 <li  ><a href="team_three" title="说明">地理信息系统、虚拟地理环境领域团队</a></li>

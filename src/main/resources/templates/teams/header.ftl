@@ -30,7 +30,7 @@
                 <li id="navactive" class="navitem"><a href="/">网站首页</a></li>
                 <li class="navitem"><a href="content/newslist">动态消息</a></li>
                 <li class="navitem"><a href="direction/direction_one">研究方向</a></li>
-                <li class="navitem"><a href="teams/team_one">研究团队</a></li>
+                <li class="navitem"><a href="teams/team_one">团队介绍</a></li>
                 <li class="navitem"><a href="achievments/achievments">研究成果</a></li>
                 <li class="navitem"><a href="solution/solutionlist">解决方案</a></li>
                 <li class="navitem"><a href="download/down">资料下载</a></li>

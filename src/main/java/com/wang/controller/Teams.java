@@ -25,6 +25,12 @@ public class Teams {
         return "teams/team_two";//返回的内容就是templetes下面文件的名称
     }
 
+    @RequestMapping("/team_main")
+    public String team_main(HttpServletRequest request, Map<String,Object> model){
+
+        return "teams/team_main";//返回的内容就是templetes下面文件的名称
+    }
+
     @RequestMapping("/team_three")
     public String team_three(HttpServletRequest request, Map<String,Object> model){
 

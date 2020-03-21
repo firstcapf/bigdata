@@ -80,17 +80,18 @@
    <div class="top">
      <h1 id="logo"><div class="imglog"><img src="static/images/logo.png"/></div></h1>
      <div class="rtop">
-         <p id="lang"><span ><a href="http://192.168.32.21:8080">登录</a></span> <span id="btn">搜索</span>|<a href="/">中文</a>|<a target="_blank" href="#">Egnlish</a></p>
-       <ul id="nav" style="width: 740px;">
+         <p id="lang"><span ><a href="http://landbigdata.swjtu.edu.cn">登录</a></span> <span id="btn">搜索</span>|<a href="/">中文</a>|<a target="_blank" href="#">Egnlish</a></p>
+       <ul id="nav" style="width: 840px;">
           <li id="moved"></li>
           <li id="navactive" class="navitem"><a href="/">网站首页</a></li>
           <li class="navitem"><a href="content/newslist">动态消息</a></li>
           <li class="navitem"><a href="direction/direction_one">研究方向</a></li>
-          <li class="navitem"><a href="teams/team_one">研究团队</a></li>
+          <li class="navitem"><a href="teams/team_main">研究团队</a></li>
           <li class="navitem"><a href="apply/achievments">应用成果</a></li>
           <li class="navitem"><a href="basics/achievment">基础成果</a></li>
           <li class="navitem"><a href="cooperation/wins">合作共赢</a> </li>
           <li class="navitem"><a href="certificate/search">培训服务</a></li>
+           <li class="navitem"><a href="http://ai.yizhangtu.com/">AI平台</a></li>
           <li class="navitem"><a href="about/about_us">关于我们</a></li>
        </ul>
      </div>

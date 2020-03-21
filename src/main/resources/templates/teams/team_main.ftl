@@ -75,17 +75,17 @@ window.onload =function(){
 <!--搜索的代码结束-->
 <div id="mbaoxue">
 <div id="page_content">
-您所在的位置 > <a href="../index.ftl">首页</a> > <span>研究团队 </span>
+您所在的位置 > <a href="../index.ftl">首页</a> > <span>团队介绍 </span>
 </div>
 </div>
 <div id="page_content">
 <!--左侧栏目-->
 <div class="left_box" id="spleft">
-<div class="lanmu_title">研究团队</div>
+<div class="lanmu_title">团队介绍</div>
 <div id="lanmu_list">
 <ul>
-    <li  ><a href="team_main" title="说明">管理团队</a></li>
-    <li id="cbnavactive" ><a href="team_one" title="说明">大数据、云计算及智能技术团队</a></li>
+    <li id="cbnavactive" ><a href="team_main" title="说明">管理团队</a></li>
+    <li  ><a href="team_one" title="说明">大数据、云计算及智能技术团队</a></li>
     <li ><a href="team_two" title="说明">机器人与智能系统团队</a></li>
     <li ><a href="team_three" title="说明">地理信息系统、虚拟地理环境领域团队</a></li>
     <li ><a href="team_flour" title="新增智慧环保">政策、制度、法律法规领域团队</a></li>
@@ -106,45 +106,12 @@ window.onload =function(){
             <div class="tabs-container">
                 <div class="tab-nested ctbox">
                     <br>
-                    <P>“大数据、云计算及智能技术方向”有教师15人（含教授5人、副教授4人、讲师6人）、博士研究生26人（含留学生11人）、硕士研究生80余人（含留学生3人）。</P>
+                    <P>管理团队：<br>黄进（院长）；张志鸿（主任），分管业务接洽、对外合作；王敏（技术总监），分管技术研发，方案设计。</P>
                 </div>
                 <div class="tab-nested">
                     <br>
                     <ul>
-                        <li style="height: 180px;"><a href="#">
-                            <img src="td/ccit_1490513037847_big.jpg" class="img-responsive" alt="" style="width: 100px; float: left; padding-left: 15px;"></a>
-                            <div class="event_box_caption" style="float: left;width: 310px;">
-                                <p> &nbsp; &nbsp; &nbsp;&nbsp;李天瑞， 博士，副教授，硕士生导师<br>
-                                    &nbsp; &nbsp; &nbsp;&nbsp;四川省云计算与智能技术重点实验室主任<br>
-                                    &nbsp; &nbsp; &nbsp;&nbsp;云计算首席专家
-                                </p>
-                            </div>
-                            <div class="event_box_caption" style="float: left; width: 180px;">
-                                <p>&nbsp; &nbsp;研究方向：<br>
-                                    &nbsp; &nbsp; 数据挖掘与知识发现<br>
-                                    &nbsp; &nbsp; 云计算与大数据<br>
-                                    &nbsp; &nbsp; 粒计算与粗糙集<br>
-                                </p>
-                            </div>
-                        </li>
-                        <li style="height: 180px;"><a href="http://userweb.swjtu.edu.cn/Userweb/jhuang/index.htm">
-                            <img src="td/huangjin.jpg" class="img-responsive" alt="" style="width: 100px;float: left;padding-left: 15px"></a>
-                            <div class="event_box_caption" style="float: left;width: 310px;">
-                                <p> &nbsp; &nbsp; &nbsp;&nbsp;黄进， 博士，副教授，硕士生导师<br>
-                                    &nbsp; &nbsp; &nbsp;&nbsp;西南交通大学中国土地信息大数据研究院执行院长<br>
-                                    &nbsp; &nbsp; &nbsp;&nbsp;硕士毕业于西南交通大学计算机应用技术专业<br>
-                                    &nbsp; &nbsp; &nbsp;&nbsp;博士毕业于西南交通大学交通信息工程与控制专业<br>
-                                </p>
-                            </div>
-                            <div class="event_box_caption" style="float: left;width: 180px">
-                                <p>&nbsp; &nbsp; 研究方向：<br>
-                                    &nbsp; &nbsp; 图像处理与计算机视觉<br>
-                                    &nbsp; &nbsp; 大数据与数据挖掘<br>
-                                    &nbsp; &nbsp; 云计算与计算智能<br>
-                                    &nbsp; &nbsp; 模式识别与智能信息处理<br>
-                                </p>
-                            </div>
-                        </li>
+
                     </ul>
                 </div>
             </div>
